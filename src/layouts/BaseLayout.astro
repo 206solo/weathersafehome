@@ -1,9 +1,5 @@
 ---
-// BaseLayout.astro
-// Every page on the site uses this layout.
-// It handles the <head>, navigation, footer, and disclosure.
 import { DISCLOSURE } from '../lib/affiliates.js'
-
 const { title, description } = Astro.props
 const currentPath = Astro.url.pathname
 ---
@@ -15,43 +11,59 @@ const currentPath = Astro.url.pathname
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content={description} />
   <title>{title} | Weather Safe Home</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
 
-  <!-- ── Navigation ── -->
   <header class="site-header">
     <div class="container">
       <a href="/" class="logo">
         <span class="logo-weather">Weather</span><span class="logo-safe">Safe</span><span class="logo-home">Home</span>
       </a>
       <nav class="main-nav">
-        <a href="/hurricanes" class:list={[{active: currentPath.startsWith('/hurricanes')}]}>Hurricanes</a>
-        <a href="/flooding" class:list={[{active: currentPath.startsWith('/flooding')}]}>Flooding</a>
-        <a href="/wildfires" class:list={[{active: currentPath.startsWith('/wildfires')}]}>Wildfires</a>
-        <a href="/winter-storms" class:list={[{active: currentPath.startsWith('/winter-storms')}]}>Winter Storms</a>
-        <a href="/tornadoes" class:list={[{active: currentPath.startsWith('/tornadoes')}]}>Tornadoes</a>
-        <a href="/generators" class:list={[{active: currentPath.startsWith('/generators')}]}>Generators</a>
-        <a href="/articles" class:list={[{active: currentPath.startsWith('/articles')}]}>Articles</a>
+        <a href="/free-checklists">Free Checklists</a>
+
+        <div class="nav-dropdown">
+          <span class="nav-parent">Threats ▾</span>
+          <div class="nav-dropdown-menu">
+            <a href="/hurricanes">Hurricanes</a>
+            <a href="/tornadoes">Tornadoes</a>
+            <a href="/winter-storms">Winter Storms</a>
+            <a href="/flooding">Flash Flooding</a>
+            <a href="/wildfires">Wildfires</a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <span class="nav-parent">Home Protection ▾</span>
+          <div class="nav-dropdown-menu">
+            <a href="/generators">Generators</a>
+            <a href="/insurance">Insurance</a>
+            <a href="/emergency-kits">Emergency Kits</a>
+            <a href="/flood-protection-products">Flood Protection Products</a>
+            <a href="/safe-rooms">Safe Rooms</a>
+            <a href="/backup-power">Backup Power</a>
+            <a href="/smart-home-devices">Smart Home Devices</a>
+          </div>
+        </div>
+
+        <a href="/articles">Articles</a>
+        <a href="/about">About</a>
       </nav>
     </div>
   </header>
 
-  <!-- ── Affiliate disclosure bar (shows on all pages) ── -->
   <div class="disclosure-bar">
     <div class="container">
       🔗 {DISCLOSURE}
     </div>
   </div>
 
-  <!-- ── Page content ── -->
   <main>
     <slot />
   </main>
 
-  <!-- ── Footer ── -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
@@ -59,7 +71,7 @@ const currentPath = Astro.url.pathname
         <p>Helping homeowners prepare for and protect against weather perils.</p>
       </div>
       <div>
-        <h4>Storm Types</h4>
+        <h4>Threats</h4>
         <a href="/hurricanes">Hurricanes</a>
         <a href="/flooding">Flooding</a>
         <a href="/wildfires">Wildfires</a>
@@ -67,14 +79,19 @@ const currentPath = Astro.url.pathname
         <a href="/tornadoes">Tornadoes</a>
       </div>
       <div>
-        <h4>Resources</h4>
+        <h4>Home Protection</h4>
         <a href="/generators">Generators</a>
         <a href="/insurance">Insurance</a>
-        <a href="/articles">All Articles</a>
+        <a href="/emergency-kits">Emergency Kits</a>
+        <a href="/flood-protection-products">Flood Protection</a>
+        <a href="/safe-rooms">Safe Rooms</a>
+        <a href="/backup-power">Backup Power</a>
       </div>
       <div>
         <h4>About</h4>
         <a href="/about">About Us</a>
+        <a href="/articles">Articles</a>
+        <a href="/free-checklists">Free Checklists</a>
         <a href="/contact">Contact</a>
         <a href="/privacy-policy">Privacy Policy</a>
         <a href="/terms">Terms of Service</a>
@@ -108,26 +125,13 @@ const currentPath = Astro.url.pathname
     --font:      'Inter', system-ui, sans-serif;
   }
 
-  body {
-    font-family: var(--font);
-    color: var(--dark);
-    background: var(--white);
-    line-height: 1.6;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
-  }
-
+  body { font-family: var(--font); color: var(--dark); background: var(--white); line-height: 1.6; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
   a { color: var(--sky); text-decoration: none; }
   a:hover { text-decoration: underline; }
 
-  /* ── Header ── */
   .site-header {
     background: var(--navy);
-    padding: 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -141,22 +145,14 @@ const currentPath = Astro.url.pathname
     height: 64px;
   }
 
-  .logo {
-    font-size: 1.3rem;
-    font-weight: 700;
-    text-decoration: none;
-  }
+  .logo { font-size: 1.3rem; font-weight: 700; text-decoration: none; }
   .logo-weather { color: var(--white); }
   .logo-safe    { color: var(--orange); }
   .logo-home    { color: var(--light-sky); }
 
-  .main-nav {
-    display: flex;
-    gap: 4px;
-    align-items: center;
-  }
+  .main-nav { display: flex; gap: 4px; align-items: center; }
 
-  .main-nav a {
+  .main-nav > a {
     color: rgba(255,255,255,0.8);
     font-size: 0.85rem;
     font-weight: 500;
@@ -166,13 +162,54 @@ const currentPath = Astro.url.pathname
     text-decoration: none;
   }
 
-  .main-nav a:hover,
-  .main-nav a.active {
-    color: var(--white);
+  .main-nav > a:hover { color: var(--white); background: rgba(255,255,255,0.12); }
+
+  .nav-dropdown { position: relative; }
+
+  .nav-parent {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+    display: block;
+  }
+
+  .nav-dropdown:hover .nav-parent {
+    color: white;
     background: rgba(255,255,255,0.12);
   }
 
-  /* ── Disclosure bar ── */
+  .nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--navy);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 6px;
+    padding: 8px 0;
+    min-width: 220px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    z-index: 200;
+  }
+
+  .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+
+  .nav-dropdown-menu a {
+    display: block;
+    color: rgba(255,255,255,0.8);
+    font-size: 0.85rem;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: all 0.15s;
+  }
+
+  .nav-dropdown-menu a:hover { color: white; background: rgba(255,255,255,0.08); }
+
   .disclosure-bar {
     background: var(--pale-blue);
     border-bottom: 1px solid var(--light-sky);
@@ -181,7 +218,6 @@ const currentPath = Astro.url.pathname
     padding: 6px 0;
   }
 
-  /* ── Footer ── */
   .site-footer {
     background: var(--navy);
     color: rgba(255,255,255,0.7);
@@ -196,12 +232,7 @@ const currentPath = Astro.url.pathname
     padding-bottom: 40px;
   }
 
-  .footer-logo {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 12px;
-  }
+  .footer-logo { font-size: 1.2rem; font-weight: 700; color: white; margin-bottom: 12px; }
 
   .footer-grid h4 {
     color: var(--orange);
@@ -230,7 +261,6 @@ const currentPath = Astro.url.pathname
 
   .footer-disclosure { margin-top: 6px; }
 
-  /* ── Utility classes used across pages ── */
   .btn {
     display: inline-block;
     padding: 12px 24px;
@@ -242,24 +272,10 @@ const currentPath = Astro.url.pathname
     cursor: pointer;
   }
 
-  .btn-primary {
-    background: var(--orange);
-    color: white;
-  }
-  .btn-primary:hover {
-    background: var(--amber);
-    text-decoration: none;
-  }
-
-  .btn-secondary {
-    background: transparent;
-    color: white;
-    border: 2px solid rgba(255,255,255,0.5);
-  }
-  .btn-secondary:hover {
-    border-color: white;
-    text-decoration: none;
-  }
+  .btn-primary { background: var(--orange); color: white; }
+  .btn-primary:hover { background: var(--amber); text-decoration: none; }
+  .btn-secondary { background: transparent; color: white; border: 2px solid rgba(255,255,255,0.5); }
+  .btn-secondary:hover { border-color: white; text-decoration: none; }
 
   h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.2; }
   h2 { font-size: clamp(1.4rem, 3vw, 2rem); line-height: 1.3; }
