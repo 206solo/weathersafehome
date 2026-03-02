@@ -1,0 +1,291 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+
+<BaseLayout 
+  title="Protect Your Home from Storms, Floods & Wildfires"
+  description="Learn how to prepare and protect your home from hurricanes, tornadoes, flooding, wildfires, and winter storms. Guides, checklists, and recommended products."
+>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Weather Preparedness for Homeowners</p>
+        <h1>Protect Your Home from Storms, Floods &amp; Wildfires</h1>
+        <p class="hero-sub">
+          Practical guides, checklists, and trusted product recommendations 
+          to help you prepare for any weather peril — before disaster strikes.
+        </p>
+        <div class="hero-ctas">
+          <a href="/articles" class="btn btn-primary">Browse All Guides</a>
+          <a href="/contact" class="btn btn-secondary">Get Free Checklist</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Peril categories ── -->
+  <section class="perils">
+    <div class="container">
+      <h2 class="section-title">What Are You Preparing For?</h2>
+      <p class="section-sub">Select a weather peril to find guides, checklists, and recommended products.</p>
+      <div class="peril-grid">
+
+        <a href="/hurricanes" class="peril-card hurricane">
+          <div class="peril-icon">🌀</div>
+          <h3>Hurricanes</h3>
+          <p>Roof protection, storm shutters, generators, and evacuation planning.</p>
+          <span class="peril-link">Explore guides →</span>
+        </a>
+
+        <a href="/flooding" class="peril-card flood">
+          <div class="peril-icon">🌊</div>
+          <h3>Flooding</h3>
+          <p>Sump pumps, flood barriers, flood insurance, and basement waterproofing.</p>
+          <span class="peril-link">Explore guides →</span>
+        </a>
+
+        <a href="/wildfires" class="peril-card wildfire">
+          <div class="peril-icon">🔥</div>
+          <h3>Wildfires</h3>
+          <p>Defensible space, ember-resistant vents, and evacuation go-bags.</p>
+          <span class="peril-link">Explore guides →</span>
+        </a>
+
+        <a href="/winter-storms" class="peril-card winter">
+          <div class="peril-icon">❄️</div>
+          <h3>Winter Storms</h3>
+          <p>Pipe insulation, heating backup, ice dams, and power outage prep.</p>
+          <span class="peril-link">Explore guides →</span>
+        </a>
+
+        <a href="/tornadoes" class="peril-card tornado">
+          <div class="peril-icon">🌪️</div>
+          <h3>Tornadoes</h3>
+          <p>Safe rooms, storm shelters, early warning systems, and structural reinforcement.</p>
+          <span class="peril-link">Explore guides →</span>
+        </a>
+
+        <a href="/generators" class="peril-card generator">
+          <div class="peril-icon">⚡</div>
+          <h3>Generators</h3>
+          <p>Portable vs. standby, sizing guides, safety tips, and top-rated picks.</p>
+          <span class="peril-link">Explore guides →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Why prepare ── -->
+  <section class="why-strip">
+    <div class="container why-grid">
+      <div class="why-item">
+        <div class="why-number">$1 → $6</div>
+        <p>Every $1 spent on mitigation saves $6 in future storm losses, according to FEMA.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-number">40%</div>
+        <p>Of businesses never reopen after a major disaster. Homeowners face the same risk.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-number">72 hrs</div>
+        <p>FEMA recommends being self-sufficient for at least 72 hours after any disaster.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Email capture ── -->
+  <section class="email-capture">
+    <div class="container email-inner">
+      <div>
+        <h2>Get the Free Storm Season Checklist</h2>
+        <p>150+ action items for hurricanes, flooding, wildfires, and winter storms — delivered free to your inbox.</p>
+      </div>
+      <form class="email-form" name="newsletter" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="newsletter" />
+        <input type="email" name="email" placeholder="your@email.com" required />
+        <button type="submit" class="btn btn-primary">Send Me the Checklist</button>
+      </form>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* ── Hero ── */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--steel) 100%);
+    color: white;
+    padding: 80px 0;
+  }
+
+  .hero-inner {
+    max-width: 720px;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--orange);
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .hero-sub {
+    font-size: 1.15rem;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 32px;
+    max-width: 560px;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  /* ── Perils ── */
+  .perils {
+    padding: 80px 0;
+    background: var(--off-white);
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .section-sub {
+    text-align: center;
+    color: var(--mid-gray);
+    margin-bottom: 48px;
+  }
+
+  .peril-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .peril-card {
+    background: white;
+    border-radius: 12px;
+    padding: 28px;
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .peril-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    text-decoration: none;
+  }
+
+  .peril-card.hurricane:hover { border-color: #2E86C1; }
+  .peril-card.flood:hover     { border-color: #1F618D; }
+  .peril-card.wildfire:hover  { border-color: #E74C3C; }
+  .peril-card.winter:hover    { border-color: #85C1E9; }
+  .peril-card.tornado:hover   { border-color: #7D3C98; }
+  .peril-card.generator:hover { border-color: var(--orange); }
+
+  .peril-icon {
+    font-size: 2.4rem;
+    margin-bottom: 14px;
+  }
+
+  .peril-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: var(--navy);
+  }
+
+  .peril-card p {
+    font-size: 0.88rem;
+    color: var(--mid-gray);
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  .peril-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--sky);
+  }
+
+  /* ── Why strip ── */
+  .why-strip {
+    background: var(--navy);
+    padding: 60px 0;
+  }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+  }
+
+  .why-item { color: rgba(255,255,255,0.8); }
+
+  .why-number {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--orange);
+    margin-bottom: 12px;
+    line-height: 1;
+  }
+
+  .why-item p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* ── Email capture ── */
+  .email-capture {
+    background: var(--pale-blue);
+    border-top: 3px solid var(--sky);
+    padding: 60px 0;
+  }
+
+  .email-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .email-inner h2 { margin-bottom: 10px; }
+  .email-inner p  { color: var(--mid-gray); }
+
+  .email-form {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+
+  .email-form input {
+    padding: 12px 16px;
+    border: 2px solid var(--light-sky);
+    border-radius: 6px;
+    font-size: 0.95rem;
+    min-width: 260px;
+    outline: none;
+    font-family: var(--font);
+  }
+
+  .email-form input:focus {
+    border-color: var(--sky);
+  }
+</style>

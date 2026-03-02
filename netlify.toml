@@ -1,0 +1,33 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# ── Redirect old Squarespace URLs ──────────────────────────
+[[redirects]]
+  from = "/protecting-your-home-from-flood-and-wind-damage/"
+  to   = "/flooding"
+  status = 301
+
+[[redirects]]
+  from = "/considering-climate-risks-in-new-home-purchases/"
+  to   = "/articles"
+  status = 301
+
+[[redirects]]
+  from = "/top-10-steps-to-making-your-home-safer-from-wildfires/"
+  to   = "/wildfires"
+  status = 301
+
+[[redirects]]
+  from = "/our-story/"
+  to   = "/about"
+  status = 301
+
+[[redirects]]
+  from = "/district-of-columbia-dc/"
+  to   = "/"
+  status = 301
+
+# ── Netlify form handling ───────────────────────────────────
+[build.environment]
+  NODE_VERSION = "24"
