@@ -1,118 +1,81 @@
 ---
-// ProductCard.astro
-// Reusable affiliate product card.
-// Usage: <ProductCard name="Wayne CDU980E" asin="B00123456" price="$189" 
-//          store="amazon" img="url" desc="Best budget sump pump" />
-
-import { amazonLink, homedepotLink, lowesLink } from '../lib/affiliates.js'
-
 const { name, asin, url, price, store = 'amazon', img, desc, badge } = Astro.props
+import { amazonLink } from '../lib/affiliates.js'
 
-function getLink() {
-  if (store === 'amazon' && asin) return amazonLink(asin)
-  if (store === 'homedepot' && url) return homedepotLink(url)
-  if (store === 'lowes' && url) return lowesLink(url)
-  return url || '#'
-}
-
-const storeName = {
-  amazon: 'Amazon',
-  homedepot: 'Home Depot',
-  lowes: "Lowe's",
-  acehardware: 'Ace Hardware',
-}[store] || store
+let href = url
+if (store === 'amazon' && asin) href = amazonLink(asin)
 ---
 
 <div class="product-card">
-  {badge && <div class="product-badge">{badge}</div>}
-  {img && <img src={img} alt={name} class="product-img" />}
-  <div class="product-body">
-    <h3 class="product-name">{name}</h3>
-    {desc && <p class="product-desc">{desc}</p>}
-    <div class="product-footer">
-      {price && <span class="product-price">{price}</span>}
-      <a 
-        href={getLink()} 
-        target="_blank" 
-        rel="nofollow sponsored noopener"
-        class="product-btn"
-      >
-        View on {storeName} →
-      </a>
-    </div>
+  {badge && <div class="badge">{badge}</div>}
+  <h4>{name}</h4>
+  {desc && <p>{desc}</p>}
+  <div class="card-footer">
+    <span class="price">{price}</span>
+    <a href={href} target="_blank" rel="nofollow sponsored noopener" class="buy-btn">
+      View on {store === 'amazon' ? 'Amazon' : store === 'homedepot' ? 'Home Depot' : 'Lowe\'s'} →
+    </a>
   </div>
 </div>
 
 <style>
   .product-card {
-    border: 1px solid #e2eaf2;
-    border-radius: 10px;
-    overflow: hidden;
     background: white;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    transition: box-shadow 0.2s;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     position: relative;
   }
 
-  .product-card:hover {
-    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-  }
-
-  .product-badge {
-    position: absolute;
-    top: 12px;
-    left: 12px;
+  .badge {
+    display: inline-block;
     background: var(--orange);
     color: white;
-    font-size: 0.7rem;
+    font-size: 0.65rem;
     font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
     padding: 3px 8px;
     border-radius: 4px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    align-self: flex-start;
+    margin-bottom: 2px;
   }
 
-  .product-img {
-    width: 100%;
-    height: 180px;
-    object-fit: contain;
-    background: #f8fbfe;
-    padding: 16px;
-  }
-
-  .product-body {
-    padding: 16px;
-  }
-
-  .product-name {
-    font-size: 1rem;
+  h4 {
+    font-size: 0.95rem;
     font-weight: 600;
-    margin-bottom: 8px;
-    color: var(--dark);
+    color: var(--navy);
+    margin: 0;
+    line-height: 1.4;
   }
 
-  .product-desc {
-    font-size: 0.85rem;
-    color: var(--mid-gray);
-    margin-bottom: 16px;
+  p {
+    font-size: 0.82rem;
+    color: var(--text-mid);
     line-height: 1.5;
+    margin: 0;
+    flex: 1;
   }
 
-  .product-footer {
+  .card-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
+    gap: 10px;
+    margin-top: 4px;
+    flex-wrap: wrap;
   }
 
-  .product-price {
+  .price {
     font-size: 1.1rem;
     font-weight: 700;
-    color: var(--steel);
+    color: var(--navy);
   }
 
-  .product-btn {
-    display: inline-block;
+  .buy-btn {
     background: var(--orange);
     color: white;
     padding: 8px 14px;
@@ -124,8 +87,8 @@ const storeName = {
     transition: background 0.15s;
   }
 
-  .product-btn:hover {
-    background: var(--amber);
+  .buy-btn:hover {
+    background: #b85a18;
     text-decoration: none;
   }
 </style>

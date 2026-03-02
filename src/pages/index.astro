@@ -2,111 +2,302 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
-<BaseLayout 
+<BaseLayout
   title="Protect Your Home from Storms, Floods & Wildfires"
-  description="Learn how to prepare and protect your home from hurricanes, tornadoes, flooding, wildfires, and winter storms. Guides, checklists, and recommended products."
+  description="WeatherSafeHome helps homeowners prepare for hurricanes, flooding, wildfires, tornadoes, and winter storms. Expert guides, product reviews, and free checklists."
 >
 
-  <!-- ── Hero ── -->
+  <!-- Hero -->
   <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <p class="hero-eyebrow">Weather Preparedness for Homeowners</p>
-        <h1>Protect Your Home from Storms, Floods &amp; Wildfires</h1>
-        <p class="hero-sub">
-          Practical guides, checklists, and trusted product recommendations 
-          to help you prepare for any weather peril — before disaster strikes.
-        </p>
-        <div class="hero-ctas">
-          <a href="/articles" class="btn btn-primary">Browse All Guides</a>
-          <a href="/contact" class="btn btn-secondary">Get Free Checklist</a>
-        </div>
+    <div class="hero-img-wrap">
+      <img
+        src="https://images.unsplash.com/photo-1504608524841-42584120d26f?w=1600&q=80&fit=crop"
+        alt="Storm approaching a neighborhood"
+        class="hero-img"
+      />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow">Trusted Home Weather Protection Guides</p>
+      <h1>Is Your Home Ready<br/>for the Next Storm?</h1>
+      <p class="hero-sub">
+        Expert guides, honest product reviews, and free checklists to help you
+        protect your home from hurricanes, floods, wildfires, and more.
+      </p>
+      <div class="hero-ctas">
+        <a href="/free-checklists" class="btn btn-primary">Get Free Checklists</a>
+        <a href="#threats" class="btn btn-secondary">Explore by Threat</a>
       </div>
     </div>
   </section>
 
-  <!-- ── Peril categories ── -->
-  <section class="perils">
+  <!-- Stats bar -->
+  <div class="stats-bar">
+    <div class="container stats-row">
+      <div class="stat">
+        <strong>$1 → $6</strong>
+        <span>Average return on home mitigation investment</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <strong>40%</strong>
+        <span>Of businesses never reopen after a disaster</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <strong>72 hrs</strong>
+        <span>FEMA recommends self-sufficiency after a disaster</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <strong>30 days</strong>
+        <span>Flood insurance waiting period — don't wait</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Threats section -->
+  <section class="nav-section" id="threats">
     <div class="container">
-      <h2 class="section-title">What Are You Preparing For?</h2>
-      <p class="section-sub">Select a weather peril to find guides, checklists, and recommended products.</p>
-      <div class="peril-grid">
+      <div class="section-header">
+        <h2>Protect Against Every Threat</h2>
+        <p>Select a storm type to see risk guides, preparation checklists, and product recommendations.</p>
+      </div>
 
-        <a href="/hurricanes" class="peril-card hurricane">
-          <div class="peril-icon">🌀</div>
-          <h3>Hurricanes</h3>
-          <p>Roof protection, storm shutters, generators, and evacuation planning.</p>
-          <span class="peril-link">Explore guides →</span>
+      <div class="card-grid">
+
+        <a href="/hurricanes" class="nav-card">
+          <div class="nav-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1563089145-599997674d42?w=600&q=80&fit=crop" alt="Hurricane" />
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 8C24 8 32 16 32 24C32 28.4 29.6 32.4 24 34C18.4 32.4 16 28.4 16 24C16 16 24 8 24 8Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M12 20C16 18 20 20 24 20C28 20 32 18 36 20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <path d="M10 28C14 26 18 28 24 28C30 28 34 26 38 28" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="24" cy="24" r="3" fill="white"/>
+              </svg>
+            </div>
+          </div>
+          <div class="nav-card-body">
+            <h3>Hurricanes</h3>
+            <p>Wind, surge, flooding, and extended outages — everything you need before the season starts.</p>
+            <span class="nav-card-link">View hurricane guide →</span>
+          </div>
         </a>
 
-        <a href="/flooding" class="peril-card flood">
-          <div class="peril-icon">🌊</div>
-          <h3>Flooding</h3>
-          <p>Sump pumps, flood barriers, flood insurance, and basement waterproofing.</p>
-          <span class="peril-link">Explore guides →</span>
+        <a href="/flooding" class="nav-card">
+          <div class="nav-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1547683905-f686c993aae5?w=600&q=80&fit=crop" alt="Flooding" />
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 30C12 26 16 34 20 30C24 26 28 34 32 30C36 26 40 34 40 30" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M8 38C12 34 16 42 20 38C24 34 28 42 32 38C36 34 40 42 40 38" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M24 8V22M18 14L24 8L30 14" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="nav-card-body">
+            <h3>Flooding</h3>
+            <p>Flood zones, insurance gaps, sump pumps, and flood barriers — before the water rises.</p>
+            <span class="nav-card-link">View flooding guide →</span>
+          </div>
         </a>
 
-        <a href="/wildfires" class="peril-card wildfire">
-          <div class="peril-icon">🔥</div>
-          <h3>Wildfires</h3>
-          <p>Defensible space, ember-resistant vents, and evacuation go-bags.</p>
-          <span class="peril-link">Explore guides →</span>
+        <a href="/wildfires" class="nav-card">
+          <div class="nav-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=600&q=80&fit=crop" alt="Wildfire" />
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 40C24 40 12 32 12 22C12 16 16 12 20 10C18 14 20 18 24 20C22 16 24 10 30 8C28 14 32 16 34 22C36 28 30 36 24 40Z" stroke="white" stroke-width="2" stroke-linejoin="round" fill="rgba(255,255,255,0.15)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="nav-card-body">
+            <h3>Wildfires</h3>
+            <p>Defensible space, ember-resistant vents, fire-resistant roofing, and evacuation planning.</p>
+            <span class="nav-card-link">View wildfire guide →</span>
+          </div>
         </a>
 
-        <a href="/winter-storms" class="peril-card winter">
-          <div class="peril-icon">❄️</div>
-          <h3>Winter Storms</h3>
-          <p>Pipe insulation, heating backup, ice dams, and power outage prep.</p>
-          <span class="peril-link">Explore guides →</span>
+        <a href="/winter-storms" class="nav-card">
+          <div class="nav-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1511131341194-24e2eeeebb09?w=600&q=80&fit=crop" alt="Winter storm" />
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 8V40M8 24H40M13 13L35 35M35 13L13 35" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="24" cy="24" r="4" fill="white"/>
+              </svg>
+            </div>
+          </div>
+          <div class="nav-card-body">
+            <h3>Winter Storms</h3>
+            <p>Pipe freeze prevention, heating backup, ice dams, and power outage preparation.</p>
+            <span class="nav-card-link">View winter storm guide →</span>
+          </div>
         </a>
 
-        <a href="/tornadoes" class="peril-card tornado">
-          <div class="peril-icon">🌪️</div>
-          <h3>Tornadoes</h3>
-          <p>Safe rooms, storm shelters, early warning systems, and structural reinforcement.</p>
-          <span class="peril-link">Explore guides →</span>
-        </a>
-
-        <a href="/generators" class="peril-card generator">
-          <div class="peril-icon">⚡</div>
-          <h3>Generators</h3>
-          <p>Portable vs. standby, sizing guides, safety tips, and top-rated picks.</p>
-          <span class="peril-link">Explore guides →</span>
+        <a href="/tornadoes" class="nav-card">
+          <div class="nav-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&fit=crop" alt="Tornado" />
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 14H38" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M14 22H34" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M18 30H30" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M21 38H27" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="nav-card-body">
+            <h3>Tornadoes</h3>
+            <p>Safe rooms, shelter-in-place planning, and protecting your home's structure.</p>
+            <span class="nav-card-link">View tornado guide →</span>
+          </div>
         </a>
 
       </div>
     </div>
   </section>
 
-  <!-- ── Why prepare ── -->
-  <section class="why-strip">
-    <div class="container why-grid">
-      <div class="why-item">
-        <div class="why-number">$1 → $6</div>
-        <p>Every $1 spent on mitigation saves $6 in future storm losses, according to FEMA.</p>
+  <!-- Home Protection section -->
+  <section class="nav-section nav-section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Home Protection Products &amp; Guides</h2>
+        <p>Curated product reviews and buying guides for every category of home protection.</p>
       </div>
-      <div class="why-item">
-        <div class="why-number">40%</div>
-        <p>Of businesses never reopen after a major disaster. Homeowners face the same risk.</p>
-      </div>
-      <div class="why-item">
-        <div class="why-number">72 hrs</div>
-        <p>FEMA recommends being self-sufficient for at least 72 hours after any disaster.</p>
+
+      <div class="card-grid card-grid-3">
+
+        <a href="/generators" class="nav-card nav-card-sm">
+          <div class="nav-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80&fit=crop" alt="Generator" />
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon nav-card-icon-sm">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6L10 22H20L18 34L30 18H20L20 6Z" stroke="white" stroke-width="2" stroke-linejoin="round" fill="rgba(255,255,255,0.2)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="nav-card-body">
+            <h3>Generators</h3>
+            <p>Portable, standby, and battery backup — find the right power solution for your home.</p>
+            <span class="nav-card-link">View guide →</span>
+          </div>
+        </a>
+
+        <a href="/insurance" class="nav-card nav-card-sm">
+          <div class="nav-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=80&fit=crop" alt="Insurance" />
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon nav-card-icon-sm">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6L8 11V20C8 27 14 33 20 35C26 33 32 27 32 20V11L20 6Z" stroke="white" stroke-width="2" stroke-linejoin="round" fill="rgba(255,255,255,0.15)"/>
+                <path d="M14 20L18 24L26 16" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="nav-card-body">
+            <h3>Insurance</h3>
+            <p>What your policy actually covers — and the critical gaps you need to fill before a storm.</p>
+            <span class="nav-card-link">View guide →</span>
+          </div>
+        </a>
+
+        <a href="/emergency-kits" class="nav-card nav-card-sm">
+          <div class="nav-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&q=80&fit=crop" alt="Emergency kit" />
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon nav-card-icon-sm">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="14" width="24" height="18" rx="2" stroke="white" stroke-width="2"/>
+                <path d="M14 14V11C14 9.3 15.3 8 17 8H23C24.7 8 26 9.3 26 11V14" stroke="white" stroke-width="2"/>
+                <path d="M20 19V27M16 23H24" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="nav-card-body">
+            <h3>Emergency Kits</h3>
+            <p>72-hour kits, go-bags, and shelter-in-place supplies — what you actually need.</p>
+            <span class="nav-card-link">View guide →</span>
+          </div>
+        </a>
+
+        <a href="/flood-protection-products" class="nav-card nav-card-sm">
+          <div class="nav-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1504691342899-4d92b50853e1?w=600&q=80&fit=crop" alt="Flood protection" />
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon nav-card-icon-sm">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 26C11 22 14 30 17 26C20 22 23 30 26 26C29 22 32 30 32 26" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <rect x="10" y="12" width="20" height="12" rx="1" stroke="white" stroke-width="2" fill="rgba(255,255,255,0.1)"/>
+              </svg>
+            </div>
+          </div>
+          <div class="nav-card-body">
+            <h3>Flood Protection</h3>
+            <p>Sump pumps, flood barriers, door dams, and waterproofing products reviewed and ranked.</p>
+            <span class="nav-card-link">View guide →</span>
+          </div>
+        </a>
+
+        <a href="/safe-rooms" class="nav-card nav-card-sm">
+          <div class="nav-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80&fit=crop" alt="Safe room" />
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon nav-card-icon-sm">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="8" width="24" height="24" rx="2" stroke="white" stroke-width="2" fill="rgba(255,255,255,0.1)"/>
+                <circle cx="20" cy="20" r="4" stroke="white" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+          <div class="nav-card-body">
+            <h3>Safe Rooms</h3>
+            <p>FEMA-rated safe rooms and storm shelters for tornadoes and hurricanes.</p>
+            <span class="nav-card-link">View guide →</span>
+          </div>
+        </a>
+
+        <a href="/backup-power" class="nav-card nav-card-sm">
+          <div class="nav-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1548438294-1ad5d5f4f063?w=600&q=80&fit=crop" alt="Backup power" />
+            <div class="nav-card-overlay"></div>
+            <div class="nav-card-icon nav-card-icon-sm">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="12" width="20" height="18" rx="2" stroke="white" stroke-width="2" fill="rgba(255,255,255,0.1)"/>
+                <path d="M15 12V9M25 12V9" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                <path d="M20 17V23M17 20H23" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="nav-card-body">
+            <h3>Backup Power</h3>
+            <p>Battery banks, solar generators, and whole-home UPS systems compared.</p>
+            <span class="nav-card-link">View guide →</span>
+          </div>
+        </a>
+
       </div>
     </div>
   </section>
 
-  <!-- ── Email capture ── -->
-  <section class="email-capture">
+  <!-- Email capture -->
+  <section class="email-section">
     <div class="container email-inner">
-      <div>
+      <div class="email-text">
         <h2>Get the Free Storm Season Checklist</h2>
-        <p>150+ action items for hurricanes, flooding, wildfires, and winter storms — delivered free to your inbox.</p>
+        <p>5 checklists covering hurricanes, flooding, wildfires, winter storms, and tornadoes. One email, instant download.</p>
       </div>
-      <form class="email-form" name="newsletter" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="newsletter" />
+      <form class="email-form" name="homepage-checklist" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="homepage-checklist" />
         <input type="email" name="email" placeholder="your@email.com" required />
-        <button type="submit" class="btn btn-primary">Send Me the Checklist</button>
+        <button type="submit" class="btn btn-primary">Send Me the Checklists</button>
       </form>
     </div>
   </section>
@@ -114,178 +305,58 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 </BaseLayout>
 
 <style>
-  /* ── Hero ── */
-  .hero {
-    background: linear-gradient(135deg, var(--navy) 0%, var(--steel) 100%);
-    color: white;
-    padding: 80px 0;
-  }
+  .hero { position: relative; height: 580px; display: flex; align-items: center; overflow: hidden; }
+  .hero-img-wrap { position: absolute; inset: 0; z-index: 0; }
+  .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(13,35,56,0.92) 0%, rgba(13,35,56,0.7) 50%, rgba(13,35,56,0.3) 100%); }
+  .hero-content { position: relative; z-index: 1; max-width: 640px; color: white; }
+  .hero-eyebrow { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A8CEDF; margin-bottom: 16px; }
+  .hero-content h1 { color: white; margin-bottom: 20px; font-size: clamp(2rem, 4vw, 3rem); }
+  .hero-sub { font-size: 1.1rem; color: rgba(255,255,255,0.8); line-height: 1.7; margin-bottom: 32px; }
+  .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
 
-  .hero-inner {
-    max-width: 720px;
-  }
+  .stats-bar { background: var(--navy); border-bottom: 3px solid var(--orange); padding: 20px 0; }
+  .stats-row { display: flex; align-items: center; }
+  .stat { flex: 1; padding: 0 28px; }
+  .stat:first-child { padding-left: 0; }
+  .stat strong { display: block; font-size: 1.1rem; color: var(--orange); font-weight: 700; }
+  .stat span { font-size: 0.78rem; color: rgba(255,255,255,0.65); line-height: 1.4; }
+  .stat-div { width: 1px; height: 40px; background: rgba(255,255,255,0.12); flex-shrink: 0; }
 
-  .hero-eyebrow {
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--orange);
-    margin-bottom: 16px;
-  }
+  .nav-section { padding: 72px 0; }
+  .nav-section-alt { background: var(--off-white); }
+  .section-header { margin-bottom: 40px; }
+  .section-header h2 { color: var(--navy); margin-bottom: 8px; }
+  .section-header p { color: var(--text-mid); font-size: 1rem; }
 
-  .hero h1 {
-    color: white;
-    margin-bottom: 20px;
-  }
+  .card-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+  .card-grid-3 { grid-template-columns: repeat(3, 1fr); }
 
-  .hero-sub {
-    font-size: 1.15rem;
-    color: rgba(255,255,255,0.8);
-    margin-bottom: 32px;
-    max-width: 560px;
-  }
+  .nav-card { display: flex; flex-direction: column; border-radius: 10px; overflow: hidden; border: 1px solid var(--border); background: white; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; color: var(--text); }
+  .nav-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); text-decoration: none; }
 
-  .hero-ctas {
-    display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
-  }
+  .nav-card-img-wrap { position: relative; height: 160px; overflow: hidden; flex-shrink: 0; }
+  .nav-card-sm .nav-card-img-wrap { height: 130px; }
+  .nav-card-img-wrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+  .nav-card:hover .nav-card-img-wrap img { transform: scale(1.05); }
+  .nav-card-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,35,56,0.75) 0%, rgba(13,35,56,0.2) 100%); }
 
-  /* ── Perils ── */
-  .perils {
-    padding: 80px 0;
-    background: var(--off-white);
-  }
+  .nav-card-icon { position: absolute; top: 12px; left: 12px; width: 44px; height: 44px; background: rgba(13,35,56,0.6); border-radius: 8px; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); }
+  .nav-card-icon svg { width: 28px; height: 28px; }
+  .nav-card-icon-sm { width: 36px; height: 36px; top: 10px; left: 10px; }
+  .nav-card-icon-sm svg { width: 22px; height: 22px; }
 
-  .section-title {
-    text-align: center;
-    margin-bottom: 10px;
-  }
+  .nav-card-body { padding: 16px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+  .nav-card-body h3 { font-size: 1rem; color: var(--navy); margin: 0; }
+  .nav-card-sm .nav-card-body h3 { font-size: 0.95rem; }
+  .nav-card-body p { font-size: 0.82rem; color: var(--text-mid); line-height: 1.5; margin: 0; flex: 1; }
+  .nav-card-link { font-size: 0.8rem; font-weight: 600; color: var(--sky); margin-top: 4px; }
 
-  .section-sub {
-    text-align: center;
-    color: var(--mid-gray);
-    margin-bottom: 48px;
-  }
-
-  .peril-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-  }
-
-  .peril-card {
-    background: white;
-    border-radius: 12px;
-    padding: 28px;
-    text-decoration: none;
-    color: inherit;
-    border: 2px solid transparent;
-    transition: all 0.2s;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  }
-
-  .peril-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-    text-decoration: none;
-  }
-
-  .peril-card.hurricane:hover { border-color: #2E86C1; }
-  .peril-card.flood:hover     { border-color: #1F618D; }
-  .peril-card.wildfire:hover  { border-color: #E74C3C; }
-  .peril-card.winter:hover    { border-color: #85C1E9; }
-  .peril-card.tornado:hover   { border-color: #7D3C98; }
-  .peril-card.generator:hover { border-color: var(--orange); }
-
-  .peril-icon {
-    font-size: 2.4rem;
-    margin-bottom: 14px;
-  }
-
-  .peril-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-    color: var(--navy);
-  }
-
-  .peril-card p {
-    font-size: 0.88rem;
-    color: var(--mid-gray);
-    line-height: 1.5;
-    margin-bottom: 16px;
-  }
-
-  .peril-link {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--sky);
-  }
-
-  /* ── Why strip ── */
-  .why-strip {
-    background: var(--navy);
-    padding: 60px 0;
-  }
-
-  .why-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    text-align: center;
-  }
-
-  .why-item { color: rgba(255,255,255,0.8); }
-
-  .why-number {
-    font-size: 2.8rem;
-    font-weight: 800;
-    color: var(--orange);
-    margin-bottom: 12px;
-    line-height: 1;
-  }
-
-  .why-item p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-  }
-
-  /* ── Email capture ── */
-  .email-capture {
-    background: var(--pale-blue);
-    border-top: 3px solid var(--sky);
-    padding: 60px 0;
-  }
-
-  .email-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-
-  .email-inner h2 { margin-bottom: 10px; }
-  .email-inner p  { color: var(--mid-gray); }
-
-  .email-form {
-    display: flex;
-    gap: 10px;
-    flex-shrink: 0;
-  }
-
-  .email-form input {
-    padding: 12px 16px;
-    border: 2px solid var(--light-sky);
-    border-radius: 6px;
-    font-size: 0.95rem;
-    min-width: 260px;
-    outline: none;
-    font-family: var(--font);
-  }
-
-  .email-form input:focus {
-    border-color: var(--sky);
-  }
+  .email-section { background: var(--navy); padding: 60px 0; }
+  .email-inner { display: flex; align-items: center; gap: 48px; flex-wrap: wrap; }
+  .email-text { flex: 1; min-width: 280px; }
+  .email-text h2 { color: white; margin-bottom: 8px; font-size: 1.5rem; }
+  .email-text p { color: rgba(255,255,255,0.7); font-size: 0.9rem; }
+  .email-form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .email-form input { padding: 11px 16px; border-radius: 4px; border: none; font-size: 0.9rem; min-width: 260px; font-family: var(--font-sans); }
 </style>
