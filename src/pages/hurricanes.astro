@@ -1,0 +1,691 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import ProductCard from '../components/ProductCard.astro'
+---
+
+<BaseLayout
+  title="Hurricane Home Protection Guide"
+  description="Learn how to protect your home from hurricanes. Covers roof hardening, storm shutters, flood insurance, generators, and evacuation planning. Expert guides and product recommendations."
+>
+
+  <!-- ── Hero ── -->
+  <section class="threat-hero hurricane-hero">
+    <div class="container">
+      <div class="threat-hero-inner">
+        <p class="threat-eyebrow">🌀 Hurricane Preparedness</p>
+        <h1>How to Protect Your Home from Hurricanes</h1>
+        <p class="threat-sub">
+          Hurricanes don't give you much warning. The decisions that protect your home 
+          are made weeks before landfall — not hours before. Here's everything you need to know.
+        </p>
+        <div class="hero-ctas">
+          <a href="#checklist" class="btn btn-primary">Get the Free Checklist</a>
+          <a href="#products" class="btn btn-secondary">See Recommended Products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Quick stats bar ── -->
+  <div class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat">
+        <strong>June 1 – Nov 30</strong>
+        <span>Atlantic hurricane season</span>
+      </div>
+      <div class="stat">
+        <strong>74+ mph</strong>
+        <span>Minimum Category 1 wind speed</span>
+      </div>
+      <div class="stat">
+        <strong>Storm surge</strong>
+        <span>Leading cause of hurricane deaths</span>
+      </div>
+      <div class="stat">
+        <strong>30 days</strong>
+        <span>NFIP flood insurance waiting period</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Main content ── -->
+  <div class="container content-layout">
+
+    <!-- ── Left: Article content ── -->
+    <article class="article-body">
+
+      <h2>Understanding the Risks</h2>
+      <p>
+        A hurricane is a tropical storm with sustained winds of at least 74 mph. They bring 
+        a dangerous combination of high winds, heavy rainfall, and storm surge — the wall of 
+        ocean water pushed inland by the storm — that can overwhelm coastal and inland homes 
+        alike. Hurricane season peaks in August and September, but storms can form any time 
+        between June and November.
+      </p>
+
+      <div class="risk-cards">
+        <div class="risk-card">
+          <div class="risk-icon">🌊</div>
+          <h3>Storm Surge</h3>
+          <p>The leading cause of hurricane deaths. Can flood ground floors with several feet of water in minutes. Extends miles inland.</p>
+        </div>
+        <div class="risk-card">
+          <div class="risk-icon">💨</div>
+          <h3>Wind Damage</h3>
+          <p>Strips roofing, shatters windows, and collapses structures — even miles from the coast. Debris becomes lethal projectiles.</p>
+        </div>
+        <div class="risk-card">
+          <div class="risk-icon">⚡</div>
+          <h3>Power Outages</h3>
+          <p>Extended outages lasting days or weeks are the norm after a major storm. Sump pumps stop, food spoils, medical equipment fails.</p>
+        </div>
+        <div class="risk-card">
+          <div class="risk-icon">🍄</div>
+          <h3>Flooding & Mold</h3>
+          <p>Mold begins growing within 24–48 hours of water intrusion. A flooded home can be uninhabitable for months.</p>
+        </div>
+      </div>
+
+      <!-- ── Section 1: Backup Power ── -->
+      <h2 id="power">1. Backup Power Is Non-Negotiable</h2>
+      <p>
+        Power outages after hurricanes routinely last one to three weeks. Without power, your 
+        sump pump won't run, your food will spoil, your AC won't work in the August heat, and 
+        if anyone in your home depends on medical equipment — the stakes are even higher.
+      </p>
+      <p>
+        A generator is the single most impactful purchase most homeowners can make for hurricane 
+        preparedness. The key decisions are <strong>portable vs. standby</strong> and 
+        <strong>what size you actually need</strong>.
+      </p>
+
+      <div class="callout callout-tip">
+        <strong>⚠️ Critical timing:</strong> Generators sell out within hours of a named storm 
+        forming. Buy before hurricane season — not when a storm is in the forecast.
+      </div>
+
+      <h3>Portable Generators (Most Homeowners)</h3>
+      <p>
+        A 5,000–7,500 watt portable generator runs your refrigerator, window AC unit, fans, 
+        phone chargers, and lights. It requires manual setup and refueling every 8–12 hours, 
+        but costs a fraction of a standby unit. Budget $600–$1,500 for a quality portable.
+      </p>
+
+      <h3>Standby Generators (Whole-Home Solution)</h3>
+      <p>
+        A whole-home standby generator runs on natural gas or propane, starts automatically 
+        when power goes out, and can power your entire house indefinitely. They require 
+        professional installation and cost $5,000–$15,000 installed, but for homeowners in 
+        high-risk areas they're worth serious consideration.
+      </p>
+
+      <div class="callout callout-warning">
+        <strong>🚨 Safety:</strong> NEVER run a generator inside your home, garage, or carport. 
+        Carbon monoxide is colorless and odorless and kills within minutes. Position at least 
+        20 feet from any window or door.
+      </div>
+
+      <div class="product-section" id="products">
+        <h3>Recommended Generators</h3>
+        <div class="product-grid">
+          <ProductCard
+            name="Honda EU2200i Portable Inverter Generator"
+            asin="B077K3BKPV"
+            price="$1,099"
+            store="amazon"
+            badge="Editor's Pick"
+            desc="Whisper-quiet, fuel-efficient, and reliable. The gold standard for portable power. Runs 8+ hours on 1 gallon of fuel."
+          />
+          <ProductCard
+            name="Champion 7500-Watt Dual Fuel Generator"
+            asin="B07FDQJRBT"
+            price="$729"
+            store="amazon"
+            badge="Best Value"
+            desc="Runs on gasoline or propane. 7,500 watts handles refrigerator, AC, and essential circuits. Electric start included."
+          />
+          <ProductCard
+            name="EcoFlow DELTA Pro Portable Power Station"
+            asin="B09GXTD9KH"
+            price="$2,799"
+            store="amazon"
+            desc="No fuel, no fumes — safe to use indoors. 3,600Wh capacity. Expandable and charges via solar. Best for apartments or HOA communities."
+          />
+        </div>
+        <p class="product-note">→ See our complete <a href="/generators">Generator Buying Guide</a> for full reviews, sizing calculator, and installation tips.</p>
+      </div>
+
+      <!-- ── Section 2: Flood ── -->
+      <h2 id="flood">2. Know Your Flood Risk and Act on It</h2>
+      <p>
+        Even homes miles from the coast can flood during a hurricane. Storm surge pushes ocean 
+        water inland, heavy rainfall overwhelms drainage systems, and rivers rise well above 
+        normal levels. The first step is understanding your specific risk.
+      </p>
+
+      <div class="action-steps">
+        <div class="action-step">
+          <div class="step-num">1</div>
+          <div>
+            <strong>Look up your FEMA flood zone</strong>
+            <p>Go to <a href="https://msc.fema.gov" target="_blank" rel="noopener">msc.fema.gov</a> and enter your address. This tells you your official flood designation and your Base Flood Elevation.</p>
+          </div>
+        </div>
+        <div class="action-step">
+          <div class="step-num">2</div>
+          <div>
+            <strong>Buy flood insurance now — not when a storm forms</strong>
+            <p>Your homeowner's insurance policy does NOT cover flooding under any circumstances. NFIP flood insurance has a mandatory 30-day waiting period before it takes effect.</p>
+          </div>
+        </div>
+        <div class="action-step">
+          <div class="step-num">3</div>
+          <div>
+            <strong>Install flood protection at entry points</strong>
+            <p>Door dam flood shields and sandbags at all ground-level doors and windows can prevent significant water intrusion during a surge event.</p>
+          </div>
+        </div>
+        <div class="action-step">
+          <div class="step-num">4</div>
+          <div>
+            <strong>Test your sump pump and install a battery backup</strong>
+            <p>Your sump pump is useless without power — and floods cause power outages. A battery backup sump pump runs automatically when power fails.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-grid" style="margin-top: 24px;">
+        <ProductCard
+          name="Wayne ESP25 Battery Backup Sump Pump"
+          asin="B000BQOTIA"
+          price="$189"
+          store="amazon"
+          badge="Top Rated"
+          desc="Activates automatically when power fails or primary pump is overwhelmed. Pumps 2,300 gallons/hour. Standard 12V battery (not included)."
+        />
+        <ProductCard
+          name="FLOODGATE Door Flood Barrier"
+          asin="B08FKZSS7Q"
+          price="$129"
+          store="amazon"
+          desc="Reusable door flood shield. Deploys in minutes, fits standard door frames, holds back up to 18 inches of water. Far superior to sandbags."
+        />
+      </div>
+
+      <p class="product-note">→ See our full <a href="/flood-protection-products">Flood Protection Products Guide</a> for sump pumps, flood barriers, and waterproofing.</p>
+
+      <!-- ── Section 3: Windows & Shutters ── -->
+      <h2 id="windows">3. Secure Your Windows and Doors</h2>
+      <p>
+        Once wind breaches your home's envelope — through a window, door, or garage door — 
+        internal pressure builds rapidly and can lift your roof off. Impact-resistant windows 
+        and hurricane shutters are the most effective permanent solution. If you haven't 
+        installed those, you need a plan before hurricane season.
+      </p>
+
+      <div class="callout callout-info">
+        <strong>Shutter options compared:</strong><br/>
+        <strong>Accordion shutters</strong> — best option, fold away when not in use, deploy in seconds. Cost: $15–$25/sq ft installed.<br/>
+        <strong>Roll-down shutters</strong> — excellent, can be motorized. Cost: $20–$35/sq ft installed.<br/>
+        <strong>Panel shutters</strong> — good protection, must be stored and installed manually. Cost: $8–$15/sq ft.<br/>
+        <strong>Plywood</strong> — last resort only. Not rated, labor intensive, and provides poor protection.
+      </div>
+
+      <p>
+        The <strong>garage door is the most common structural failure point</strong> in a 
+        hurricane. If your garage door is not wind-load rated, a bracing kit ($50–$300) 
+        is one of the highest-ROI improvements you can make.
+      </p>
+
+      <!-- ── Section 4: Yard ── -->
+      <h2 id="yard">4. Prepare Your Yard</h2>
+      <p>
+        In 100 mph winds, anything that isn't anchored becomes a projectile. A typical 
+        backyard contains dozens of items that can shatter windows, damage roofs, or injure 
+        people if left outside during a storm.
+      </p>
+      <ul class="checklist-preview">
+        <li>Bring in all patio furniture, umbrellas, and cushions</li>
+        <li>Secure or store grills — even heavy ones can be moved by hurricane winds</li>
+        <li>Remove all decorative items, planters, and wind chimes</li>
+        <li>Move firewood stacks away from the house or inside</li>
+        <li>Trim dead branches before the season — don't wait until a storm is approaching</li>
+        <li>Know which trees on your property are most likely to fall toward the house</li>
+      </ul>
+
+      <!-- ── Section 5: Emergency Supplies ── -->
+      <h2 id="supplies">5. Build a Go-Bag and a Stay-Bag</h2>
+      <p>
+        Whether you shelter in place or evacuate, having 72 hours of supplies ready means 
+        you're not making decisions under pressure when a storm is approaching. Most 
+        evacuation failures happen because people weren't ready to leave quickly.
+      </p>
+
+      <div class="two-col">
+        <div class="col-box">
+          <h3>🏠 Stay-Bag (Shelter in Place)</h3>
+          <ul>
+            <li>2 weeks of water (1 gal/person/day)</li>
+            <li>2 weeks of non-perishable food</li>
+            <li>Battery-powered NOAA weather radio</li>
+            <li>Flashlights and extra batteries</li>
+            <li>First aid kit</li>
+            <li>30-day supply of medications</li>
+            <li>Manual can opener</li>
+            <li>Cash in small bills</li>
+          </ul>
+        </div>
+        <div class="col-box">
+          <h3>🚗 Go-Bag (Evacuation)</h3>
+          <ul>
+            <li>Critical documents in waterproof bag</li>
+            <li>3 days of clothing per person</li>
+            <li>Phone chargers and power bank</li>
+            <li>Medications (30-day supply)</li>
+            <li>Cash ($200–$500 minimum)</li>
+            <li>Water and snacks for the drive</li>
+            <li>Pet food, carriers, records</li>
+            <li>N95 masks</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="product-grid" style="margin-top: 24px;">
+        <ProductCard
+          name="Midland ER310 Emergency Crank Weather Radio"
+          asin="B00A4GE32E"
+          price="$59"
+          store="amazon"
+          badge="Essential"
+          desc="NOAA weather alerts, AM/FM, hand crank + solar charging. Works when cell networks and power are down. One of the most important items in any emergency kit."
+        />
+        <ProductCard
+          name="Anker 737 Power Bank (PowerCore 24K)"
+          asin="B09VPHVT2Z"
+          price="$89"
+          store="amazon"
+          desc="24,000mAh — charges an iPhone 6+ times. Fast charging, two USB-A and one USB-C port. Keep it charged year-round."
+        />
+      </div>
+
+      <p class="product-note">→ See our complete <a href="/emergency-kits">Emergency Kit Guide</a> for full recommendations and checklists.</p>
+
+      <!-- ── 72-hour timeline ── -->
+      <h2>The 72-Hour Pre-Storm Timeline</h2>
+      <p>When a hurricane watch is issued for your area, here's exactly what to do and when.</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker">72 hrs</div>
+          <div class="timeline-content">
+            <strong>Make your evacuation decision</strong>
+            <p>If you're in a mandatory evacuation zone, decide now. Waiting means gridlock. Fill your gas tank. Withdraw cash. Confirm your destination.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">48 hrs</div>
+          <div class="timeline-content">
+            <strong>Secure the exterior</strong>
+            <p>Install shutters or plywood. Bring all outdoor items inside. Trim any hanging branches. Charge all devices and power banks.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">24 hrs</div>
+          <div class="timeline-content">
+            <strong>Prepare the interior</strong>
+            <p>Move valuables to upper floors. Fill bathtub with water. Turn fridge to coldest setting. Unplug major appliances. Confirm go-bag is ready.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">Storm</div>
+          <div class="timeline-content">
+            <strong>Shelter safely</strong>
+            <p>Stay in an interior room on the lowest floor above flood level. Stay away from windows. Monitor NOAA radio.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker">After</div>
+          <div class="timeline-content">
+            <strong>Document before you repair</strong>
+            <p>Photograph ALL damage before touching anything. Call your insurance company immediately. Watch for downed power lines — assume all are live.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Checklist CTA ── -->
+      <div class="checklist-cta" id="checklist">
+        <div class="checklist-cta-inner">
+          <div class="checklist-icon">🌀</div>
+          <div>
+            <h2>Download the Free Hurricane Home Prep Checklist</h2>
+            <p>150+ action items organized by timeline — before the season, 72 hours out, day of, and after the storm. Enter your email and we'll send it instantly.</p>
+            <form class="inline-email-form" name="hurricane-checklist" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="hurricane-checklist" />
+              <input type="email" name="email" placeholder="your@email.com" required />
+              <button type="submit" class="btn btn-primary">Send Me the Checklist</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- ── Right: Sidebar ── -->
+    <aside class="sidebar">
+
+      <div class="sidebar-card">
+        <h3>Quick Links</h3>
+        <a href="#power">⚡ Backup Power</a>
+        <a href="#flood">🌊 Flood Protection</a>
+        <a href="#windows">🪟 Windows & Shutters</a>
+        <a href="#yard">🌳 Yard Prep</a>
+        <a href="#supplies">🎒 Emergency Supplies</a>
+        <a href="#checklist">✅ Free Checklist</a>
+      </div>
+
+      <div class="sidebar-card sidebar-alert">
+        <h3>⚠️ Season Reminder</h3>
+        <p>Hurricane season runs <strong>June 1 – November 30</strong>. Peak activity is August–September. Start preparing in April.</p>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Related Guides</h3>
+        <a href="/generators">Generator Buying Guide →</a>
+        <a href="/flood-protection-products">Flood Protection Products →</a>
+        <a href="/insurance">Hurricane Insurance Guide →</a>
+        <a href="/emergency-kits">Emergency Kit Guide →</a>
+        <a href="/backup-power">Backup Power Guide →</a>
+      </div>
+
+      <div class="sidebar-card">
+        <h3>Know Your Zone</h3>
+        <p>Find your hurricane evacuation zone before a storm forms — not after.</p>
+        <a href="https://www.ready.gov/hurricanes" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:12px; font-size:0.85rem; padding: 10px 16px;">
+          Check Your Zone →
+        </a>
+      </div>
+
+    </aside>
+
+  </div>
+
+</BaseLayout>
+
+<style>
+  .threat-hero {
+    background: linear-gradient(135deg, #0a1f35 0%, #1B4F72 60%, #2874A6 100%);
+    color: white;
+    padding: 80px 0;
+  }
+
+  .threat-hero-inner { max-width: 700px; }
+
+  .threat-eyebrow {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--light-sky);
+    margin-bottom: 16px;
+  }
+
+  .threat-hero h1 { color: white; margin-bottom: 20px; }
+
+  .threat-sub {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.82);
+    margin-bottom: 32px;
+    line-height: 1.7;
+  }
+
+  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+
+  /* Stats bar */
+  .stats-bar {
+    background: var(--navy);
+    padding: 20px 0;
+    border-bottom: 3px solid var(--orange);
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+  }
+
+  .stat strong {
+    display: block;
+    color: var(--orange);
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .stat span {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.78rem;
+  }
+
+  /* Content layout */
+  .content-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 48px;
+    padding-top: 56px;
+    padding-bottom: 80px;
+    align-items: start;
+  }
+
+  /* Article */
+  .article-body h2 {
+    margin-top: 48px;
+    margin-bottom: 16px;
+    color: var(--navy);
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--pale-blue);
+  }
+
+  .article-body h3 {
+    margin-top: 28px;
+    margin-bottom: 10px;
+    color: var(--steel);
+  }
+
+  .article-body p { margin-bottom: 16px; line-height: 1.75; color: #333; }
+
+  /* Risk cards */
+  .risk-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 28px 0;
+  }
+
+  .risk-card {
+    background: var(--pale-blue);
+    border-radius: 8px;
+    padding: 20px;
+    border-left: 4px solid var(--sky);
+  }
+
+  .risk-icon { font-size: 1.8rem; margin-bottom: 8px; }
+  .risk-card h3 { font-size: 1rem; margin-top: 0; color: var(--navy); }
+  .risk-card p { font-size: 0.85rem; margin-bottom: 0; color: var(--mid-gray); }
+
+  /* Callouts */
+  .callout {
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 24px 0;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .callout-tip     { background: #FEF9E7; border-left: 4px solid var(--amber); }
+  .callout-warning { background: #FDEDEC; border-left: 4px solid #E74C3C; }
+  .callout-info    { background: var(--pale-blue); border-left: 4px solid var(--sky); }
+
+  /* Action steps */
+  .action-steps { margin: 24px 0; display: flex; flex-direction: column; gap: 16px; }
+
+  .action-step {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .step-num {
+    background: var(--sky);
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+
+  .action-step strong { display: block; margin-bottom: 4px; color: var(--navy); }
+  .action-step p { margin-bottom: 0; font-size: 0.88rem; color: #444; }
+
+  /* Product sections */
+  .product-section { margin: 32px 0; }
+  .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin: 20px 0; }
+  .product-note { font-size: 0.88rem; color: var(--mid-gray); margin-top: 12px; }
+
+  /* Checklist */
+  .checklist-preview {
+    list-style: none;
+    margin: 16px 0 24px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .checklist-preview li {
+    padding: 10px 14px 10px 40px;
+    background: var(--off-white);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    position: relative;
+  }
+
+  .checklist-preview li::before {
+    content: "☐";
+    position: absolute;
+    left: 14px;
+    color: var(--sky);
+    font-size: 1rem;
+  }
+
+  /* Two column */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0; }
+
+  .col-box {
+    background: var(--off-white);
+    border-radius: 8px;
+    padding: 20px;
+    border-top: 3px solid var(--sky);
+  }
+
+  .col-box h3 { font-size: 1rem; margin-bottom: 12px; color: var(--navy); }
+  .col-box ul { list-style: none; padding: 0; }
+  .col-box li { font-size: 0.85rem; padding: 5px 0; border-bottom: 1px solid #e5e5e5; color: #444; }
+  .col-box li::before { content: "✓ "; color: var(--sky); font-weight: 700; }
+
+  /* Timeline */
+  .timeline { margin: 28px 0; display: flex; flex-direction: column; gap: 0; }
+
+  .timeline-item {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 24px;
+    position: relative;
+  }
+
+  .timeline-item:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    left: 44px;
+    top: 36px;
+    bottom: 0;
+    width: 2px;
+    background: var(--light-sky);
+  }
+
+  .timeline-marker {
+    background: var(--navy);
+    color: white;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 6px 8px;
+    border-radius: 6px;
+    text-align: center;
+    min-width: 52px;
+    height: fit-content;
+    flex-shrink: 0;
+  }
+
+  .timeline-content strong { display: block; margin-bottom: 4px; color: var(--navy); }
+  .timeline-content p { font-size: 0.87rem; margin-bottom: 0; color: #555; }
+
+  /* Checklist CTA */
+  .checklist-cta {
+    background: linear-gradient(135deg, var(--navy), var(--steel));
+    border-radius: 12px;
+    padding: 36px;
+    margin: 48px 0;
+    color: white;
+  }
+
+  .checklist-cta-inner { display: flex; gap: 24px; align-items: flex-start; }
+  .checklist-icon { font-size: 3rem; flex-shrink: 0; }
+  .checklist-cta h2 { color: white; font-size: 1.4rem; margin-bottom: 10px; margin-top: 0; border: none; padding: 0; }
+  .checklist-cta p { color: rgba(255,255,255,0.8); font-size: 0.9rem; margin-bottom: 20px; }
+
+  .inline-email-form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .inline-email-form input {
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: none;
+    font-size: 0.9rem;
+    min-width: 240px;
+    font-family: var(--font);
+  }
+
+  /* Sidebar */
+  .sidebar { position: sticky; top: 84px; display: flex; flex-direction: column; gap: 20px; }
+
+  .sidebar-card {
+    background: white;
+    border: 1px solid #e2eaf2;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .sidebar-card h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--mid-gray);
+    margin-bottom: 14px;
+  }
+
+  .sidebar-card a {
+    display: block;
+    font-size: 0.88rem;
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: var(--sky);
+  }
+
+  .sidebar-card a:last-child { border-bottom: none; }
+  .sidebar-card p { font-size: 0.85rem; color: #555; margin-bottom: 0; }
+  .sidebar-alert { border-top: 3px solid var(--orange); }
+  .sidebar-alert h3 { color: var(--orange); }
+</style>
