@@ -215,7 +215,14 @@ const currentPath = Astro.url.pathname
     z-index: 200;
   }
 
-  .nav-dropdown:hover .nav-dropdown-menu { display: block; }
+  .nav-dropdown:hover .nav-dropdown-menu {
+  display: block;
+}
+
+.nav-dropdown-menu {
+  padding-top: 8px;
+  margin-top: -8px;
+ }
 
   .nav-dropdown-menu a {
     display: block;

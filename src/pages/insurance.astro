@@ -1,0 +1,417 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+
+<BaseLayout
+  title="Home Insurance Guide for Natural Disasters"
+  description="What your homeowner's insurance actually covers — and what it doesn't. Flood, earthquake, wildfire, and wind coverage explained clearly."
+>
+
+  <!-- Hero -->
+  <section class="threat-hero">
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80&fit=crop" alt="Insurance documents" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-label">Home Protection · Insurance</div>
+      <h1>What Your Home Insurance Actually Covers</h1>
+      <p class="hero-sub">
+        Most homeowners discover coverage gaps after a disaster — not before.
+        Here's what standard policies cover, what they exclude, and how to fill the gaps
+        before you need to file a claim.
+      </p>
+      <div class="hero-actions">
+        <a href="#coverage" class="btn btn-primary">Understand Your Coverage</a>
+        <a href="#gaps" class="btn btn-secondary">Find Your Gaps</a>
+        <a href="#checklist" class="btn btn-text">Get the Free Checklist →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key facts -->
+  <div class="key-facts">
+    <div class="container facts-row">
+      <div class="fact">
+        <div class="fact-value">$0</div>
+        <div class="fact-label">Flood coverage in standard HO-3 policy</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">$0</div>
+        <div class="fact-label">Earthquake coverage in standard HO-3 policy</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">30 days</div>
+        <div class="fact-label">NFIP flood insurance waiting period</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">Review annually</div>
+        <div class="fact-label">Coverage limits erode as rebuild costs rise</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab strip -->
+  <nav class="section-tabs">
+    <div class="container tabs-row">
+      <a href="#coverage" class="tab">What's Covered</a>
+      <a href="#gaps" class="tab">Coverage Gaps</a>
+      <a href="#flood" class="tab">Flood Insurance</a>
+      <a href="#wind" class="tab">Wind & Hurricane</a>
+      <a href="#wildfire" class="tab">Wildfire</a>
+      <a href="#claim" class="tab">Filing a Claim</a>
+      <a href="#checklist" class="tab">Free Checklist</a>
+    </div>
+  </nav>
+
+  <div class="container page-layout">
+    <article class="article">
+
+      <p class="lead">
+        A standard homeowner's insurance policy (HO-3) covers a lot — but the exclusions
+        are where people get hurt. Flooding, earthquakes, and sometimes even wind damage
+        are explicitly excluded. Understanding your policy before a disaster is the most
+        important financial preparation you can make.
+      </p>
+
+      <div class="part-heading" id="coverage">
+        <div class="part-number">Part 1</div>
+        <h2 class="part-title">What a Standard Policy Covers</h2>
+      </div>
+
+      <div class="coverage-grid">
+        <div class="coverage-card coverage-yes">
+          <div class="coverage-badge">✓ Covered</div>
+          <h3>Fire & Smoke</h3>
+          <p>Wildfire damage is covered by standard HO-3 policies in most states — but some insurers are pulling out of high-risk fire areas entirely.</p>
+        </div>
+        <div class="coverage-card coverage-yes">
+          <div class="coverage-badge">✓ Covered</div>
+          <h3>Wind & Hail</h3>
+          <p>Generally covered, but coastal properties may have separate hurricane deductibles of 2–5% of insured value — not a flat dollar amount.</p>
+        </div>
+        <div class="coverage-card coverage-yes">
+          <div class="coverage-badge">✓ Covered</div>
+          <h3>Lightning</h3>
+          <p>Direct lightning strikes and resulting fire or electrical damage are covered. Surge damage to electronics may require additional coverage.</p>
+        </div>
+        <div class="coverage-card coverage-yes">
+          <div class="coverage-badge">✓ Covered</div>
+          <h3>Theft & Vandalism</h3>
+          <p>Personal property and structural damage from theft or vandalism is covered, subject to your deductible.</p>
+        </div>
+        <div class="coverage-card coverage-no">
+          <div class="coverage-badge coverage-badge-no">✗ Not Covered</div>
+          <h3>Flooding</h3>
+          <p>Explicitly excluded from every standard homeowner's policy. Requires separate NFIP or private flood insurance with a 30-day waiting period.</p>
+        </div>
+        <div class="coverage-card coverage-no">
+          <div class="coverage-badge coverage-badge-no">✗ Not Covered</div>
+          <h3>Earthquakes</h3>
+          <p>Excluded from standard policies. Requires a separate earthquake policy or endorsement. Critical in California, Pacific Northwest, and New Madrid zone.</p>
+        </div>
+        <div class="coverage-card coverage-maybe">
+          <div class="coverage-badge coverage-badge-maybe">~ Check Your Policy</div>
+          <h3>Sewer Backup</h3>
+          <p>Usually excluded but available as an inexpensive rider. Sewer backup during heavy rain is one of the most common and overlooked claims.</p>
+        </div>
+        <div class="coverage-card coverage-maybe">
+          <div class="coverage-badge coverage-badge-maybe">~ Check Your Policy</div>
+          <h3>Hurricane Wind vs. Surge</h3>
+          <p>Wind damage from a hurricane is covered. Storm surge (flooding) is not. The split between the two causes frequent disputes after major storms.</p>
+        </div>
+      </div>
+
+      <div class="part-heading" id="gaps">
+        <div class="part-number">Part 2</div>
+        <h2 class="part-title">Finding and Filling Your Gaps</h2>
+      </div>
+
+      <div class="section-block" id="flood">
+        <h2>1. Flood Insurance</h2>
+        <p>Flooding is the most common and costly natural disaster in the US — and it is explicitly excluded from every standard homeowner's policy. If your home floods without separate flood insurance, you pay for everything out of pocket.</p>
+
+        <h3>NFIP (National Flood Insurance Program)</h3>
+        <p>Backed by FEMA, NFIP is the most common source of flood insurance. Available to any homeowner in a participating community regardless of flood zone. Maximum coverage is $250,000 for the structure and $100,000 for contents.</p>
+
+        <h3>Private Flood Insurance</h3>
+        <p>Private insurers offer flood coverage with higher limits, broader coverage, and sometimes lower premiums than NFIP. Worth comparing — especially for high-value homes that exceed NFIP limits.</p>
+
+        <div class="callout callout-red">
+          <strong>The 30-day rule is absolute.</strong> NFIP flood insurance has a mandatory 30-day waiting period. You cannot buy it when a storm is approaching. Buy it today.
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div>
+              <strong>Check your flood zone</strong>
+              <p>Visit <a href="https://msc.fema.gov" target="_blank" rel="noopener">msc.fema.gov</a>. Your zone determines your risk level — but 40% of claims come from outside high-risk zones.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div>
+              <strong>Get an elevation certificate</strong>
+              <p>A licensed surveyor can provide an elevation certificate showing your home's elevation relative to the base flood elevation. Can significantly reduce your NFIP premium.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div>
+              <strong>Compare NFIP and private quotes</strong>
+              <p>Contact your current insurer and at least two private flood insurers. Neptune, Palomar, and Wright Flood offer competitive private policies.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div>
+              <strong>Buy now</strong>
+              <p>Don't wait for storm season. The 30-day waiting period means you need to buy months before you might need it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block" id="wind">
+        <h2>2. Wind & Hurricane Coverage</h2>
+        <p>Standard homeowner's policies cover wind damage — but the details matter enormously in coastal areas.</p>
+
+        <h3>Hurricane Deductibles</h3>
+        <p>Most coastal policies have a separate hurricane deductible expressed as a percentage of your home's insured value — typically 2–5%. On a $400,000 home, a 5% hurricane deductible means you pay the first $20,000 out of pocket before insurance kicks in.</p>
+
+        <h3>Wind Pool Policies</h3>
+        <p>In high-risk coastal areas, private insurers may refuse to cover wind damage. State-run wind pools (like Florida Citizens or Texas Windstorm) provide coverage of last resort — but often at higher premiums and with lower coverage limits.</p>
+
+        <div class="callout">
+          <strong>Know your hurricane deductible now.</strong> Call your insurer and ask specifically: "What is my hurricane deductible, and how is it calculated?" The answer may surprise you.
+        </div>
+      </div>
+
+      <div class="section-block" id="wildfire">
+        <h2>3. Wildfire Coverage</h2>
+        <p>Wildfire damage is covered by standard homeowner's policies — but the market is changing rapidly in high-risk areas.</p>
+
+        <h3>Non-Renewal Crisis</h3>
+        <p>Major insurers including State Farm, Allstate, and Farmers have stopped writing new policies or non-renewed existing policies in high-risk California ZIP codes and other fire-prone areas. If you're in a high-risk area, verify your current coverage is still active.</p>
+
+        <h3>FAIR Plans</h3>
+        <p>If you can't get private coverage, your state's FAIR Plan (Fair Access to Insurance Requirements) provides basic fire coverage as a last resort. Coverage is limited and expensive — but it's something.</p>
+
+        <div class="callout">
+          <strong>Check your policy annually.</strong> If you're in a wildfire-prone area, verify your coverage hasn't been non-renewed at each renewal date. Don't assume your existing coverage continues automatically.
+        </div>
+      </div>
+
+      <div class="section-block" id="claim">
+        <h2>4. Filing a Claim — What to Do</h2>
+        <p>The actions you take in the first hours after a disaster significantly affect your claim outcome.</p>
+
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-tag">First</div>
+            <div class="tl-body"><strong>Document everything before touching anything.</strong> Photograph and video all damage from multiple angles. This is your most important evidence.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-tag">Hour 1</div>
+            <div class="tl-body"><strong>Call your insurer immediately.</strong> Most policies require "prompt" notification. Don't wait days — call the same day if possible.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-tag">Temp</div>
+            <div class="tl-body"><strong>Make temporary repairs to prevent further damage.</strong> Cover broken windows, tarp damaged roofs. Keep all receipts — these costs are usually reimbursable.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-tag">List</div>
+            <div class="tl-body"><strong>Create a detailed inventory of damaged items.</strong> Model numbers, purchase dates, and estimated values. A home inventory created before the disaster makes this dramatically easier.</div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-tag">Adjuster</div>
+            <div class="tl-body"><strong>You can hire a public adjuster.</strong> If your claim is large or disputed, a public adjuster works on your behalf (for a percentage of the settlement) and often increases payouts significantly.</div>
+          </div>
+        </div>
+
+        <div class="callout callout-blue">
+          <strong>Home inventory tip:</strong> Walk through your home on video once a year, narrating what you own in each room. Store the video in cloud storage. This single 20-minute task saves enormous time and money after a loss.
+        </div>
+      </div>
+
+      <!-- Checklist CTA -->
+      <div class="checklist-cta" id="checklist">
+        <h2>Free Insurance Coverage Checklist</h2>
+        <p>Review your current coverage, identify gaps, and know exactly what questions to ask your insurer — all in one checklist.</p>
+        <form class="cta-form" name="insurance-checklist" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="insurance-checklist" />
+          <input type="email" name="email" placeholder="your@email.com" required />
+          <button type="submit" class="btn btn-primary">Send Me the Checklist</button>
+        </form>
+      </div>
+
+    </article>
+
+    <aside class="sidebar">
+      <div class="sb-card">
+        <h4>On This Page</h4>
+        <a href="#coverage">What's Covered</a>
+        <a href="#gaps">Coverage Gaps</a>
+        <a href="#flood">Flood Insurance</a>
+        <a href="#wind">Wind & Hurricane</a>
+        <a href="#wildfire">Wildfire</a>
+        <a href="#claim">Filing a Claim</a>
+        <a href="#checklist">Free Checklist</a>
+      </div>
+
+      <div class="sb-card sb-alert">
+        <h4>30-Day Rule</h4>
+        <p>Flood insurance has a mandatory <strong>30-day waiting period</strong>. Buy it today — not when a storm is forecast.</p>
+      </div>
+
+      <h4 class="sb-section-label">Related Guides</h4>
+
+      <a href="/flooding" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1547683905-f686c993aae5?w=300&q=80&fit=crop" alt="Flood guide" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Flood Guide →</div>
+      </a>
+
+      <a href="/hurricanes" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1563089145-599997674d42?w=300&q=80&fit=crop" alt="Hurricane guide" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Hurricane Guide →</div>
+      </a>
+
+      <a href="/wildfires" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=300&q=80&fit=crop" alt="Wildfire guide" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Wildfire Guide →</div>
+      </a>
+
+      <div class="sb-card sb-cta">
+        <h4>Find Your Flood Zone</h4>
+        <p>Check your official flood risk designation before buying insurance.</p>
+        <a href="https://msc.fema.gov" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:14px; font-size:0.85rem; width:100%; text-align:center; display:block;">
+          FEMA Flood Map →
+        </a>
+      </div>
+    </aside>
+
+  </div>
+
+</BaseLayout>
+
+<script>
+  const sections = ['coverage','gaps','flood','wind','wildfire','claim','checklist']
+  const tabs = document.querySelectorAll('.section-tabs .tab')
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tabs.forEach(t => t.classList.remove('active'))
+        const activeTab = document.querySelector(`.tab[href="#${entry.target.id}"]`)
+        if (activeTab) activeTab.classList.add('active')
+      }
+    })
+  }, { rootMargin: '-20% 0px -70% 0px' })
+  sections.forEach(id => { const el = document.getElementById(id); if (el) observer.observe(el) })
+</script>
+
+<style>
+  .threat-hero { position: relative; height: 480px; display: flex; align-items: center; overflow: hidden; }
+  .hero-img-wrap { position: absolute; inset: 0; z-index: 0; }
+  .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(13,35,56,0.92) 0%, rgba(13,35,56,0.65) 60%, rgba(13,35,56,0.3) 100%); }
+  .hero-content { position: relative; z-index: 1; max-width: 640px; color: white; }
+  .hero-label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A8CEDF; margin-bottom: 16px; }
+  .hero-content h1 { color: white; margin-bottom: 20px; }
+  .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.8); line-height: 1.7; margin-bottom: 32px; max-width: 560px; }
+  .hero-actions { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+  .btn-text { color: rgba(255,255,255,0.75); font-size: 0.9rem; font-weight: 500; text-decoration: none; transition: color 0.15s; }
+  .btn-text:hover { color: white; text-decoration: none; }
+
+  .key-facts { background: var(--off-white); border-bottom: 1px solid var(--border); padding: 24px 0; }
+  .facts-row { display: flex; align-items: center; }
+  .fact { flex: 1; padding: 0 32px; }
+  .fact:first-child { padding-left: 0; }
+  .fact-value { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
+  .fact-label { font-size: 0.78rem; color: var(--text-light); }
+  .fact-divider { width: 2px; height: 36px; background: var(--border); flex-shrink: 0; }
+
+  .section-tabs { background: white; border-bottom: 2px solid var(--border); position: sticky; top: 68px; z-index: 90; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .tabs-row { display: flex; overflow-x: auto; scrollbar-width: none; }
+  .tabs-row::-webkit-scrollbar { display: none; }
+  .tab { font-size: 0.82rem; font-weight: 500; color: var(--text-mid); padding: 14px 20px; white-space: nowrap; text-decoration: none; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all 0.15s; border-right: 1.5px solid var(--border); }
+  .tab:last-child { border-right: none; }
+  .tab:hover { color: var(--sky); background: var(--sky-light); text-decoration: none; }
+  .tab.active { color: var(--sky); border-bottom-color: var(--sky); font-weight: 600; background: var(--sky-light); }
+
+  .page-layout { display: grid; grid-template-columns: 1fr 280px; gap: 56px; padding-top: 48px; padding-bottom: 96px; align-items: start; }
+  .lead { font-size: 1.05rem; line-height: 1.8; color: var(--text-mid); margin-bottom: 32px; }
+  .article p { color: #333; line-height: 1.75; margin-bottom: 16px; }
+  .article h3 { margin-top: 24px; margin-bottom: 10px; color: var(--navy); }
+
+  .part-heading { display: flex; align-items: center; gap: 16px; margin: 48px 0 24px; padding-bottom: 16px; border-bottom: 2px solid var(--navy); scroll-margin-top: 140px; }
+  .part-number { background: var(--navy); color: white; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 4px; white-space: nowrap; }
+  .part-title { font-size: 1.4rem; color: var(--navy); margin: 0; }
+
+  .section-block { margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--border); scroll-margin-top: 140px; }
+  .section-block h2 { color: var(--navy); margin-bottom: 20px; font-size: 1.4rem; }
+
+  .coverage-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 24px 0; }
+  .coverage-card { border-radius: 8px; padding: 20px 16px; border: 1px solid var(--border); position: relative; padding-top: 32px; }
+  .coverage-yes { background: #F0FAF0; border-color: #4CAF50; }
+  .coverage-no { background: #FDF0EF; border-color: #C0392B; }
+  .coverage-maybe { background: var(--sky-light); border-color: var(--sky); }
+  .coverage-badge { position: absolute; top: -10px; left: 12px; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 3px 8px; border-radius: 4px; background: #4CAF50; color: white; white-space: nowrap; }
+  .coverage-badge-no { background: #C0392B; }
+  .coverage-badge-maybe { background: var(--sky); }
+  .coverage-card h3 { font-size: 0.9rem; color: var(--navy); margin: 0 0 8px; }
+  .coverage-card p { font-size: 0.8rem; color: var(--text-mid); line-height: 1.5; margin: 0; }
+
+  .steps { display: flex; flex-direction: column; gap: 16px; margin: 24px 0; }
+  .step { display: flex; gap: 16px; align-items: flex-start; }
+  .step-num { background: var(--sky); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px; }
+  .step strong { display: block; margin-bottom: 3px; color: var(--navy); }
+  .step p { margin: 0; font-size: 0.88rem; color: var(--text-mid); }
+
+  .callout { background: var(--orange-bg); border-left: 3px solid var(--orange); border-radius: 0 6px 6px 0; padding: 14px 18px; margin: 24px 0; font-size: 0.9rem; line-height: 1.6; color: #5a3010; }
+  .callout-red { background: #FDF0EF; border-color: #C0392B; color: #5a1010; }
+  .callout-blue { background: var(--sky-light); border-color: var(--sky); color: var(--navy); }
+
+  .timeline { margin: 24px 0; }
+  .tl-item { display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--border); }
+  .tl-item:last-child { border-bottom: none; }
+  .tl-tag { background: var(--navy); color: white; font-size: 0.72rem; font-weight: 700; padding: 5px 10px; border-radius: 4px; white-space: nowrap; height: fit-content; min-width: 52px; text-align: center; flex-shrink: 0; }
+  .tl-body { font-size: 0.9rem; color: var(--text-mid); line-height: 1.6; }
+  .tl-body strong { color: var(--text); display: block; margin-bottom: 4px; }
+
+  .checklist-cta { margin-top: 56px; padding: 40px; background: var(--sky-light); border: 1px solid #B8D8EE; border-radius: 8px; border-left: 4px solid var(--sky); scroll-margin-top: 140px; }
+  .checklist-cta h2 { font-size: 1.3rem; margin-bottom: 10px; }
+  .checklist-cta p { font-size: 0.9rem; color: var(--text-mid); margin-bottom: 20px; }
+  .cta-form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .cta-form input { padding: 10px 14px; border: 1.5px solid var(--border); border-radius: 4px; font-size: 0.9rem; min-width: 240px; font-family: var(--font-sans); }
+
+  .sidebar { position: sticky; top: 120px; display: flex; flex-direction: column; gap: 16px; }
+  .sb-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+  .sb-card h4 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); margin-bottom: 14px; font-weight: 600; }
+  .sb-card a { display: block; font-size: 0.85rem; padding: 7px 0; border-bottom: 1px solid #f0f4f7; color: var(--sky); }
+  .sb-card a:last-child { border-bottom: none; }
+  .sb-card p { font-size: 0.85rem; color: var(--text-mid); line-height: 1.5; }
+  .sb-alert { border-top: 3px solid var(--orange); }
+  .sb-alert h4 { color: var(--orange); }
+  .sb-cta { background: var(--off-white); }
+  .sb-section-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); font-weight: 600; padding: 0 4px; }
+  .sb-visual-card { display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
+  .sb-visual-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); text-decoration: none; }
+  .sb-visual-img { position: relative; height: 90px; overflow: hidden; }
+  .sb-visual-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+  .sb-visual-card:hover .sb-visual-img img { transform: scale(1.05); }
+  .sb-visual-overlay { position: absolute; inset: 0; background: rgba(13,35,56,0.45); }
+  .sb-visual-label { background: var(--navy); color: white; font-size: 0.82rem; font-weight: 600; padding: 10px 14px; }
+</style>

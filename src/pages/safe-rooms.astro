@@ -1,0 +1,504 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import ProductCard from '../components/ProductCard.astro'
+---
+
+<BaseLayout
+  title="Safe Rooms & Storm Shelters — Complete Buying Guide"
+  description="Everything you need to know about safe rooms and storm shelters. Covers FEMA ratings, above-ground vs underground, costs, installation, and top products."
+>
+
+  <!-- Hero -->
+  <section class="threat-hero">
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1600&q=80&fit=crop" alt="Storm shelter" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-label">Home Protection · Safe Rooms</div>
+      <h1>Safe Rooms & Storm Shelters — What You Need to Know</h1>
+      <p class="hero-sub">
+        A FEMA-rated safe room is the only guaranteed protection from an EF5 tornado.
+        Here's how they work, what they cost, and how to choose the right one for your home.
+      </p>
+      <div class="hero-actions">
+        <a href="#types" class="btn btn-primary">Compare Options</a>
+        <a href="#cost" class="btn btn-secondary">Understand the Costs</a>
+        <a href="#products" class="btn btn-text">See Top Products →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key facts -->
+  <div class="key-facts">
+    <div class="container facts-row">
+      <div class="fact">
+        <div class="fact-value">250 mph</div>
+        <div class="fact-label">Wind rating for FEMA-compliant safe rooms</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">$3,000+</div>
+        <div class="fact-label">Starting cost for a basic storm shelter</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">FEMA grants</div>
+        <div class="fact-label">May cover up to 75% of installation cost</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">ICC 500</div>
+        <div class="fact-label">Standard to look for when buying</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab strip -->
+  <nav class="section-tabs">
+    <div class="container tabs-row">
+      <a href="#why" class="tab">Why a Safe Room</a>
+      <a href="#types" class="tab">Types & Comparison</a>
+      <a href="#cost" class="tab">Costs & Grants</a>
+      <a href="#installation" class="tab">Installation</a>
+      <a href="#products" class="tab">Top Products</a>
+      <a href="#interim" class="tab">Interim Options</a>
+      <a href="#checklist" class="tab">Free Guide</a>
+    </div>
+  </nav>
+
+  <div class="container page-layout">
+    <article class="article">
+
+      <p class="lead">
+        No standard home construction can withstand an EF4 or EF5 tornado. A FEMA-rated
+        safe room or storm shelter is the only structure that can. If you live in tornado-prone
+        areas — or anywhere severe weather is a threat — this guide will help you understand
+        your options and make the right choice.
+      </p>
+
+      <div class="part-heading" id="why">
+        <div class="part-number">Part 1</div>
+        <h2 class="part-title">Why a Safe Room</h2>
+      </div>
+
+      <div class="risk-grid">
+        <div class="risk-item">
+          <div class="risk-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 14H38M14 22H34M18 30H30M21 38H27" stroke="#1B3A52" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>EF5 Protection</h3>
+          <p>FEMA-rated safe rooms are engineered to withstand 250 mph winds and debris impact — the worst tornadoes produce.</p>
+        </div>
+        <div class="risk-item">
+          <div class="risk-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="14" stroke="#1B3A52" stroke-width="2" fill="#EBF4FB"/>
+              <path d="M24 14V24L30 30" stroke="#2E7CB8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>13-Minute Warning</h3>
+          <p>Average tornado warning lead time is just 13 minutes. A safe room on your property means you never have to drive to find shelter.</p>
+        </div>
+        <div class="risk-item">
+          <div class="risk-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 6L8 11V20C8 27 14 33 20 35C26 33 32 27 32 20V11L20 6Z" stroke="#1B3A52" stroke-width="2" fill="#EBF4FB"/>
+              <path d="M14 20L18 24L26 16" stroke="#2E7CB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Debris Impact Rated</h3>
+          <p>Tested to withstand a 15-pound 2x4 traveling at 100 mph — the standard debris projectile in tornado testing.</p>
+        </div>
+        <div class="risk-item">
+          <div class="risk-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="16" width="28" height="22" rx="2" stroke="#1B3A52" stroke-width="2" fill="#EBF4FB"/>
+              <path d="M18 16V12C18 10 20 8 24 8C28 8 30 10 30 12V16" stroke="#1B3A52" stroke-width="2"/>
+              <circle cx="24" cy="28" r="3" stroke="#2E7CB8" stroke-width="2"/>
+              <path d="M24 31V34" stroke="#2E7CB8" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Always Ready</h3>
+          <p>An on-property safe room is available in under 60 seconds. No driving, no traffic, no hoping a community shelter has room.</p>
+        </div>
+      </div>
+
+      <div class="part-heading" id="options">
+        <div class="part-number">Part 2</div>
+        <h2 class="part-title">Choosing the Right Safe Room</h2>
+      </div>
+
+      <div class="section-block" id="types">
+        <h2>1. Types of Safe Rooms</h2>
+
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Protection Level</th>
+              <th>Cost Installed</th>
+              <th>Best For</th>
+              <th>Drawbacks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row-highlight">
+              <td><strong>Underground — In-Garage</strong></td>
+              <td>⭐⭐⭐⭐⭐</td>
+              <td>$4,000–$8,000</td>
+              <td>Best all-around protection</td>
+              <td>May flood in high water table areas</td>
+            </tr>
+            <tr>
+              <td><strong>Underground — Backyard</strong></td>
+              <td>⭐⭐⭐⭐⭐</td>
+              <td>$3,000–$6,000</td>
+              <td>Homes without garage</td>
+              <td>Must travel outside to reach it</td>
+            </tr>
+            <tr>
+              <td><strong>Above-Ground — Steel</strong></td>
+              <td>⭐⭐⭐⭐⭐</td>
+              <td>$4,000–$9,000</td>
+              <td>High water table areas</td>
+              <td>Takes up indoor space</td>
+            </tr>
+            <tr>
+              <td><strong>Above-Ground — Concrete</strong></td>
+              <td>⭐⭐⭐⭐⭐</td>
+              <td>$6,000–$12,000</td>
+              <td>Permanent whole-room solution</td>
+              <td>Highest cost, requires construction</td>
+            </tr>
+            <tr>
+              <td><strong>Modular / Prefab</strong></td>
+              <td>⭐⭐⭐⭐</td>
+              <td>$3,500–$7,000</td>
+              <td>Renters, easier installation</td>
+              <td>Must be properly anchored</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Underground vs. Above-Ground</h3>
+        <p>Underground shelters provide the best protection and the most psychological comfort — you're below grade, away from flying debris. The main limitation is water table — in areas with high groundwater, an underground shelter may flood during the same storm event you're sheltering from.</p>
+
+        <p>Above-ground FEMA-rated steel safe rooms provide equivalent protection to underground shelters without flood risk. They're installed inside your home — typically in a garage, closet, or utility room — and are the right choice for coastal or flood-prone areas.</p>
+
+        <div class="callout callout-blue">
+          <strong>Look for ICC 500 certification.</strong> The International Code Council's ICC 500 standard is the benchmark for safe room construction. Any safe room or shelter you purchase should meet ICC 500 and ideally carry FEMA 320 or FEMA 361 compliance.
+        </div>
+      </div>
+
+      <div class="section-block" id="cost">
+        <h2>2. Costs & FEMA Grants</h2>
+        <p>Safe rooms range from $3,000 for a basic underground fiberglass shelter to $12,000+ for a poured concrete above-ground room. Installation typically adds $1,000–$3,000 depending on location and site conditions.</p>
+
+        <h3>FEMA Hazard Mitigation Grants</h3>
+        <p>The Hazard Mitigation Grant Program (HMGP) provides funding for safe room installation following a presidentially declared disaster. Grants can cover up to 75% of the total project cost. Availability varies by state and disaster declaration status.</p>
+
+        <h3>State Programs</h3>
+        <p>Several states — including Oklahoma, Alabama, and Texas — have run their own safe room rebate programs. Check with your state emergency management agency for current availability. Programs open and close based on funding.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div>
+              <strong>Check current FEMA grant availability</strong>
+              <p>Visit <a href="https://www.fema.gov/safe-rooms" target="_blank" rel="noopener">fema.gov/safe-rooms</a> and your state emergency management agency website for current programs.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div>
+              <strong>Get 3 installation quotes</strong>
+              <p>Installation costs vary significantly. Get at least three quotes from certified installers before committing. Ask specifically about site preparation costs.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div>
+              <strong>Verify ICC 500 compliance</strong>
+              <p>Ask for documentation that the shelter meets ICC 500 standards. Any reputable manufacturer will provide this readily.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div>
+              <strong>Check homeowner's insurance discount</strong>
+              <p>Many insurers offer premium discounts for homes with FEMA-rated safe rooms. Call your insurer before installation to document the discount.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block" id="installation">
+        <h2>3. Installation Considerations</h2>
+
+        <h3>Underground In-Garage</h3>
+        <p>The most popular option. A vertical hatch is cut into the garage floor, a fiberglass or steel shelter is lowered in, and concrete is poured around it. Installation takes 1–2 days. The shelter sits below your garage floor with only the hatch visible — no loss of interior space.</p>
+
+        <h3>Above-Ground Steel Room</h3>
+        <p>Installed in a garage corner, closet, or utility space. Steel panels are anchored to the concrete slab — the anchor points are critical and must meet manufacturer specifications. Requires 35–50 square feet of floor space for a 4–6 person unit.</p>
+
+        <div class="callout callout-red">
+          <strong>Never install a safe room on a wood floor.</strong> Safe rooms must be anchored to a concrete slab. A wood subfloor cannot provide the lateral resistance needed for wind loading. If your home has a crawl space, an underground backyard shelter is likely your best option.
+        </div>
+
+        <h3>Finding Installers</h3>
+        <p>Use the manufacturer's dealer locator or the National Storm Shelter Association (NSSA) directory at <a href="https://www.nssa.cc" target="_blank" rel="noopener">nssa.cc</a> to find certified installers in your area. Always verify their certification and ask for references from recent installations.</p>
+      </div>
+
+      <div class="section-block" id="products">
+        <h2>4. Safe Room Products</h2>
+        <p>These are FEMA-rated and ICC 500-compliant options available for purchase. All require professional installation — prices shown are for the unit only, not including installation.</p>
+
+        <div class="product-row product-row-2">
+          <ProductCard
+            name="Survive-a-Storm Above-Ground Safe Room (4-Person)"
+            asin="B07GBKFYQM"
+            price="$4,495"
+            store="amazon"
+            badge="FEMA Rated"
+            desc="FEMA 320/361 compliant steel safe room for 4 people. Installs in garage or existing room. Withstands EF5 winds and debris impact. Includes door, ventilation, and anchor hardware."
+          />
+          <ProductCard
+            name="FamilySAFE Underground Shelter (6-Person)"
+            asin="B07GBKFYQM"
+            price="$3,695"
+            store="amazon"
+            badge="Best Underground"
+            desc="Fiberglass underground shelter for 6 people. Installs in garage floor or backyard. Includes bench seating, ventilation, and emergency escape release."
+          />
+        </div>
+
+        <div class="product-row product-row-2" style="margin-top: 16px;">
+          <ProductCard
+            name="Tornado Alley Armor Above-Ground Shelter"
+            asin="B07GBKFYQM"
+            price="$5,200"
+            store="amazon"
+            desc="12-gauge steel construction, ICC 500 certified. 6-person capacity. Tested to 250 mph debris impact. Installs in garage corner in 4–6 hours."
+          />
+          <ProductCard
+            name="Southwest Shelter Systems Underground Pod"
+            asin="B07GBKFYQM"
+            price="$2,995"
+            store="amazon"
+            badge="Budget Option"
+            desc="Entry-level underground fiberglass shelter for 4 people. Meets FEMA 320 guidelines. Good option for budget-conscious buyers in lower-risk areas."
+          />
+        </div>
+      </div>
+
+      <div class="section-block" id="interim">
+        <h2>5. Interim Protection Options</h2>
+        <p>If a safe room isn't in your immediate budget, these products provide meaningful — though not equivalent — protection while you save for a permanent solution.</p>
+
+        <div class="product-row">
+          <ProductCard
+            name="Survive-a-Storm Saferoom Bed Shelter"
+            asin="B07GBKFYQM"
+            price="$599"
+            store="amazon"
+            badge="Best Interim"
+            desc="Steel cage fits over a standard bed. Protects against debris and structural collapse. Not FEMA-rated but provides significant protection vs. no shelter. Good for nighttime tornado risk."
+          />
+          <ProductCard
+            name="Personal Tornado Pod (1-Person)"
+            asin="B07GBKFYQM"
+            price="$349"
+            store="amazon"
+            desc="Foam-lined steel pod for one person. Anchors to floor. Designed for apartments and mobile homes where a full safe room isn't possible."
+          />
+          <ProductCard
+            name="Tornado Resistant Helmet & Vest Kit"
+            asin="B07GBKFYQM"
+            price="$89"
+            store="amazon"
+            desc="Hard hat, safety glasses, and padded vest. Basic debris protection when sheltering in an interior room. Recommended by some emergency managers for renters."
+          />
+        </div>
+
+        <div class="callout">
+          <strong>Interim options have real limits.</strong> None of these products provide the protection of a FEMA-rated safe room. They reduce risk — they don't eliminate it. Treat them as a bridge to a permanent solution, not a replacement.
+        </div>
+      </div>
+
+      <div class="checklist-cta" id="checklist">
+        <h2>Free Safe Room Planning Guide</h2>
+        <p>Type comparison, grant application checklist, installer questions, and a cost worksheet — everything you need to make the right decision.</p>
+        <form class="cta-form" name="saferoom-guide" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="saferoom-guide" />
+          <input type="email" name="email" placeholder="your@email.com" required />
+          <button type="submit" class="btn btn-primary">Send Me the Guide</button>
+        </form>
+      </div>
+
+    </article>
+
+    <aside class="sidebar">
+      <div class="sb-card">
+        <h4>On This Page</h4>
+        <a href="#why">Why a Safe Room</a>
+        <a href="#types">Types & Comparison</a>
+        <a href="#cost">Costs & Grants</a>
+        <a href="#installation">Installation</a>
+        <a href="#products">Top Products</a>
+        <a href="#interim">Interim Options</a>
+        <a href="#checklist">Free Guide</a>
+      </div>
+
+      <div class="sb-card sb-alert">
+        <h4>FEMA Grants Available</h4>
+        <p>Grants can cover up to <strong>75% of installation cost</strong>. Check availability before you buy.</p>
+      </div>
+
+      <h4 class="sb-section-label">Related Guides</h4>
+
+      <a href="/tornadoes" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80&fit=crop" alt="Tornado guide" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Tornado Guide →</div>
+      </a>
+
+      <a href="/insurance" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=300&q=80&fit=crop" alt="Insurance guide" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Insurance Guide →</div>
+      </a>
+
+      <a href="/emergency-kits" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=300&q=80&fit=crop" alt="Emergency kits" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Emergency Kits →</div>
+      </a>
+
+      <div class="sb-card sb-cta">
+        <h4>FEMA Safe Room Info</h4>
+        <p>Learn about FEMA standards and find grant programs in your state.</p>
+        <a href="https://www.fema.gov/safe-rooms" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:14px; font-size:0.85rem; width:100%; text-align:center; display:block;">
+          FEMA Safe Rooms →
+        </a>
+      </div>
+    </aside>
+
+  </div>
+
+</BaseLayout>
+
+<script>
+  const sections = ['why','types','cost','installation','products','interim','checklist']
+  const tabs = document.querySelectorAll('.section-tabs .tab')
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tabs.forEach(t => t.classList.remove('active'))
+        const activeTab = document.querySelector(`.tab[href="#${entry.target.id}"]`)
+        if (activeTab) activeTab.classList.add('active')
+      }
+    })
+  }, { rootMargin: '-20% 0px -70% 0px' })
+  sections.forEach(id => { const el = document.getElementById(id); if (el) observer.observe(el) })
+</script>
+
+<style>
+  .threat-hero { position: relative; height: 480px; display: flex; align-items: center; overflow: hidden; }
+  .hero-img-wrap { position: absolute; inset: 0; z-index: 0; }
+  .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(13,35,56,0.92) 0%, rgba(13,35,56,0.65) 60%, rgba(13,35,56,0.3) 100%); }
+  .hero-content { position: relative; z-index: 1; max-width: 640px; color: white; }
+  .hero-label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A8CEDF; margin-bottom: 16px; }
+  .hero-content h1 { color: white; margin-bottom: 20px; }
+  .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.8); line-height: 1.7; margin-bottom: 32px; max-width: 560px; }
+  .hero-actions { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+  .btn-text { color: rgba(255,255,255,0.75); font-size: 0.9rem; font-weight: 500; text-decoration: none; transition: color 0.15s; }
+  .btn-text:hover { color: white; text-decoration: none; }
+
+  .key-facts { background: var(--off-white); border-bottom: 1px solid var(--border); padding: 24px 0; }
+  .facts-row { display: flex; align-items: center; }
+  .fact { flex: 1; padding: 0 32px; }
+  .fact:first-child { padding-left: 0; }
+  .fact-value { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
+  .fact-label { font-size: 0.78rem; color: var(--text-light); }
+  .fact-divider { width: 2px; height: 36px; background: var(--border); flex-shrink: 0; }
+
+  .section-tabs { background: white; border-bottom: 2px solid var(--border); position: sticky; top: 68px; z-index: 90; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .tabs-row { display: flex; overflow-x: auto; scrollbar-width: none; }
+  .tabs-row::-webkit-scrollbar { display: none; }
+  .tab { font-size: 0.82rem; font-weight: 500; color: var(--text-mid); padding: 14px 20px; white-space: nowrap; text-decoration: none; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all 0.15s; border-right: 1.5px solid var(--border); }
+  .tab:last-child { border-right: none; }
+  .tab:hover { color: var(--sky); background: var(--sky-light); text-decoration: none; }
+  .tab.active { color: var(--sky); border-bottom-color: var(--sky); font-weight: 600; background: var(--sky-light); }
+
+  .page-layout { display: grid; grid-template-columns: 1fr 280px; gap: 56px; padding-top: 48px; padding-bottom: 96px; align-items: start; }
+  .lead { font-size: 1.05rem; line-height: 1.8; color: var(--text-mid); margin-bottom: 32px; }
+  .article p { color: #333; line-height: 1.75; margin-bottom: 16px; }
+  .article h3 { margin-top: 24px; margin-bottom: 10px; color: var(--navy); }
+
+  .part-heading { display: flex; align-items: center; gap: 16px; margin: 48px 0 24px; padding-bottom: 16px; border-bottom: 2px solid var(--navy); scroll-margin-top: 140px; }
+  .part-number { background: var(--navy); color: white; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 4px; white-space: nowrap; }
+  .part-title { font-size: 1.4rem; color: var(--navy); margin: 0; }
+
+  .section-block { margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--border); scroll-margin-top: 140px; }
+  .section-block h2 { color: var(--navy); margin-bottom: 20px; font-size: 1.4rem; }
+
+  .risk-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 24px 0 0; }
+  .risk-item { background: var(--off-white); border: 1px solid var(--border); border-radius: 8px; padding: 24px 16px; text-align: center; }
+  .risk-icon-wrap { width: 56px; height: 56px; margin: 0 auto 14px; }
+  .risk-icon-wrap svg { width: 100%; height: 100%; }
+  .risk-item h3 { font-size: 0.95rem; margin: 0 0 8px; color: var(--navy); }
+  .risk-item p { font-size: 0.82rem; color: var(--text-mid); line-height: 1.5; margin: 0; }
+
+  .compare-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.88rem; }
+  .compare-table th { background: var(--navy); color: white; padding: 10px 14px; text-align: left; font-weight: 600; }
+  .compare-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  .compare-table tr:hover td { background: var(--sky-light); }
+  .row-highlight td { background: var(--sky-light); }
+
+  .callout { background: var(--orange-bg); border-left: 3px solid var(--orange); border-radius: 0 6px 6px 0; padding: 14px 18px; margin: 24px 0; font-size: 0.9rem; line-height: 1.6; color: #5a3010; }
+  .callout-red { background: #FDF0EF; border-color: #C0392B; color: #5a1010; }
+  .callout-blue { background: var(--sky-light); border-color: var(--sky); color: var(--navy); }
+
+  .steps { display: flex; flex-direction: column; gap: 16px; margin: 24px 0; }
+  .step { display: flex; gap: 16px; align-items: flex-start; }
+  .step-num { background: var(--sky); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px; }
+  .step strong { display: block; margin-bottom: 3px; color: var(--navy); }
+  .step p { margin: 0; font-size: 0.88rem; color: var(--text-mid); }
+
+  .product-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; }
+  .product-row-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .checklist-cta { margin-top: 56px; padding: 40px; background: var(--sky-light); border: 1px solid #B8D8EE; border-radius: 8px; border-left: 4px solid var(--sky); scroll-margin-top: 140px; }
+  .checklist-cta h2 { font-size: 1.3rem; margin-bottom: 10px; }
+  .checklist-cta p { font-size: 0.9rem; color: var(--text-mid); margin-bottom: 20px; }
+  .cta-form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .cta-form input { padding: 10px 14px; border: 1.5px solid var(--border); border-radius: 4px; font-size: 0.9rem; min-width: 240px; font-family: var(--font-sans); }
+
+  .sidebar { position: sticky; top: 120px; display: flex; flex-direction: column; gap: 16px; }
+  .sb-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+  .sb-card h4 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); margin-bottom: 14px; font-weight: 600; }
+  .sb-card a { display: block; font-size: 0.85rem; padding: 7px 0; border-bottom: 1px solid #f0f4f7; color: var(--sky); }
+  .sb-card a:last-child { border-bottom: none; }
+  .sb-card p { font-size: 0.85rem; color: var(--text-mid); line-height: 1.5; }
+  .sb-alert { border-top: 3px solid var(--orange); }
+  .sb-alert h4 { color: var(--orange); }
+  .sb-cta { background: var(--off-white); }
+  .sb-section-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); font-weight: 600; padding: 0 4px; }
+  .sb-visual-card { display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
+  .sb-visual-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); text-decoration: none; }
+  .sb-visual-img { position: relative; height: 90px; overflow: hidden; }
+  .sb-visual-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+  .sb-visual-card:hover .sb-visual-img img { transform: scale(1.05); }
+  .sb-visual-overlay { position: absolute; inset: 0; background: rgba(13,35,56,0.45); }
+  .sb-visual-label { background: var(--navy); color: white; font-size: 0.82rem; font-weight: 600; padding: 10px 14px; }
+</style>

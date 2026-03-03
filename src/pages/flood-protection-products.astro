@@ -1,0 +1,505 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import ProductCard from '../components/ProductCard.astro'
+---
+
+<BaseLayout
+  title="Flood Protection Products — Barriers, Pumps & More"
+  description="The best flood protection products for homeowners. Covers flood barriers, sump pumps, backup systems, water alarms, and moisture protection."
+>
+
+  <!-- Hero -->
+  <section class="threat-hero">
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1504691342899-4d92b50853e1?w=1600&q=80&fit=crop" alt="Flooded street" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-label">Home Protection · Flood Products</div>
+      <h1>The Best Flood Protection Products for Your Home</h1>
+      <p class="hero-sub">
+        From door barriers to battery backup sump pumps, these are the products that
+        make a measurable difference when water rises. Here's what works and what doesn't.
+      </p>
+      <div class="hero-actions">
+        <a href="#picks" class="btn btn-primary">See Top Picks</a>
+        <a href="#checklist" class="btn btn-secondary">Get the Free Checklist</a>
+        <a href="#barriers" class="btn btn-text">Shop by Category →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key facts -->
+  <div class="key-facts">
+    <div class="container facts-row">
+      <div class="fact">
+        <div class="fact-value">1 inch</div>
+        <div class="fact-label">Of water can cause $25,000 in damage</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">Buy early</div>
+        <div class="fact-label">Barriers sell out before major storms</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">Backup pump</div>
+        <div class="fact-label">Essential — power fails when you need it most</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">Test annually</div>
+        <div class="fact-label">Test your sump pump before storm season</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab strip -->
+  <nav class="section-tabs">
+    <div class="container tabs-row">
+      <a href="#barriers" class="tab">Flood Barriers</a>
+      <a href="#sump" class="tab">Sump Pumps</a>
+      <a href="#backup" class="tab">Backup Systems</a>
+      <a href="#alarms" class="tab">Water Alarms</a>
+      <a href="#moisture" class="tab">Moisture Control</a>
+      <a href="#storage" class="tab">Water Storage</a>
+      <a href="#checklist" class="tab">Free Checklist</a>
+    </div>
+  </nav>
+
+  <div class="container page-layout">
+    <article class="article">
+
+      <p class="lead">
+        Flood protection isn't one product — it's a layered system. The best approach
+        combines physical barriers at entry points, a reliable sump pump with battery
+        backup, water detection alarms, and moisture control inside your home. Here's
+        what we recommend at each layer.
+      </p>
+
+      <!-- Part 1 -->
+      <div class="part-heading" id="picks">
+        <div class="part-number">Part 1</div>
+        <h2 class="part-title">How to Layer Your Flood Protection</h2>
+      </div>
+
+      <div class="risk-grid">
+        <div class="risk-item">
+          <div class="risk-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="28" width="32" height="8" rx="1" stroke="#1B3A52" stroke-width="2" fill="#EBF4FB"/>
+              <path d="M12 28V20M36 28V20" stroke="#1B3A52" stroke-width="2" stroke-linecap="round"/>
+              <path d="M8 36C12 32 16 40 20 36C24 32 28 40 32 36C36 32 40 40 40 36" stroke="#2E7CB8" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Layer 1: Barriers</h3>
+          <p>Physical barriers at doors, windows, and garage entries stop water before it enters your home.</p>
+        </div>
+        <div class="risk-item">
+          <div class="risk-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="28" r="10" stroke="#2E7CB8" stroke-width="2" fill="#EBF4FB"/>
+              <path d="M24 18V12M18 20L14 16M30 20L34 16" stroke="#1B3A52" stroke-width="2" stroke-linecap="round"/>
+              <path d="M20 28C20 26 22 24 24 24C26 24 28 26 28 28" stroke="#2E7CB8" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Layer 2: Sump Pump</h3>
+          <p>Your primary defense against groundwater. Removes water that does enter your basement before it causes damage.</p>
+        </div>
+        <div class="risk-item">
+          <div class="risk-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="14" y="12" width="20" height="28" rx="2" stroke="#1B3A52" stroke-width="2" fill="#EBF4FB"/>
+              <path d="M20 12V8H28V12" stroke="#1B3A52" stroke-width="2"/>
+              <path d="M20 24H28M20 28H24" stroke="#2E7CB8" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M22 34L24 36L26 34" stroke="#D4691E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Layer 3: Backup Power</h3>
+          <p>Battery backup ensures your sump pump keeps running when power fails — exactly when you need it most.</p>
+        </div>
+        <div class="risk-item">
+          <div class="risk-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8C24 8 14 18 14 28C14 34 18.5 39 24 40C29.5 39 34 34 34 28C34 18 24 8 24 8Z" stroke="#1B3A52" stroke-width="2" fill="#EBF4FB"/>
+              <path d="M38 14L42 10M38 10L42 14" stroke="#D4691E" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="40" cy="12" r="4" stroke="#D4691E" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Layer 4: Detection</h3>
+          <p>Water alarms alert you the moment moisture appears — giving you time to act before damage compounds.</p>
+        </div>
+      </div>
+
+      <!-- Part 2 -->
+      <div class="part-heading" id="products-start">
+        <div class="part-number">Part 2</div>
+        <h2 class="part-title">Products by Category</h2>
+      </div>
+
+      <div class="section-block" id="barriers">
+        <h2>1. Flood Barriers</h2>
+        <p>Flood barriers physically block water from entering through doors, garage entries, and low windows. They work best for slow-rising flood events — not fast-moving flash floods. The key is having them ready before a storm, not shopping for them when water is already rising.</p>
+
+        <div class="callout">
+          <strong>Buy before storm season.</strong> Flood barriers sell out within 24 hours of a major storm forecast. Order now and store them near your entry points.
+        </div>
+
+        <div class="product-row">
+          <ProductCard
+            name="FLOODGATE Door Flood Barrier"
+            asin="B08FKZSS7Q"
+            price="$129"
+            store="amazon"
+            badge="Top Pick"
+            desc="Reusable aluminum barrier fits standard door frames. Deploys in minutes, holds back up to 18 inches of water. Best for single doors."
+          />
+          <ProductCard
+            name="Flood Bag Water Activated Barrier (10-Pack)"
+            asin="B07GBKFYQM"
+            price="$49"
+            store="amazon"
+            badge="Best Value"
+            desc="Absorbs water to self-activate into a flood barrier. No setup required — place around entry points. Reusable after drying."
+          />
+          <ProductCard
+            name="PS DOORS Heavy Duty Flood Barrier"
+            asin="B07GBKFYQM"
+            price="$189"
+            store="amazon"
+            desc="Heavy-duty barrier for wider openings including garage doors. Holds back up to 24 inches. Commercial-grade aluminum construction."
+          />
+        </div>
+
+        <div class="product-row" style="margin-top: 16px;">
+          <ProductCard
+            name="Drainseal Magnetic Drain Cover"
+            asin="B07GBKFYQM"
+            price="$39"
+            store="amazon"
+            desc="Seals floor drains to prevent sewage backflow during flood events. Magnetic seal holds under pressure. One of the most overlooked flood products."
+          />
+          <ProductCard
+            name="Sandbag Alternative — Quick Dam"
+            asin="B001B28LNY"
+            price="$29"
+            store="amazon"
+            desc="Water-activated flood barrier that expands to 3.5 inches high. Lighter and easier to store than sandbags. No sand, no mess."
+          />
+          <ProductCard
+            name="Garage Door Flood Shield"
+            asin="B07GBKFYQM"
+            price="$249"
+            store="amazon"
+            desc="Aluminum flood barrier system designed specifically for garage doors up to 16 feet wide. Most garage door flood losses are preventable with this."
+          />
+        </div>
+      </div>
+
+      <div class="section-block" id="sump">
+        <h2>2. Sump Pumps</h2>
+        <p>A sump pump is the most important flood protection product for homes with basements. If you don't have one, install one before storm season. If you have one, test it now — pour a bucket of water into the pit and confirm it activates immediately.</p>
+
+        <div class="product-row">
+          <ProductCard
+            name="Wayne CDU800 1/2 HP Submersible Sump Pump"
+            asin="B000BPGAH0"
+            price="$179"
+            store="amazon"
+            badge="Best Primary"
+            desc="Cast iron and stainless steel construction. Pumps 4,600 gallons/hour. Easy installation, handles solids up to 3/4 inch. 10-year warranty."
+          />
+          <ProductCard
+            name="Zoeller M53 Mighty-Mate Submersible"
+            asin="B00004RG1U"
+            price="$199"
+            store="amazon"
+            badge="Pro Grade"
+            desc="The pump plumbers install in their own homes. Cast iron construction, handles solids up to 1/2 inch. Quieter than most at this price."
+          />
+          <ProductCard
+            name="Superior Pump 92341 1/3 HP Submersible"
+            asin="B07GBKFYQM"
+            price="$99"
+            store="amazon"
+            badge="Budget Pick"
+            desc="Reliable 1/3 HP pump for average basements. Thermoplastic construction, 2,400 gallons/hour. Good entry-level option for low-risk areas."
+          />
+        </div>
+      </div>
+
+      <div class="section-block" id="backup">
+        <h2>3. Battery Backup Sump Pumps</h2>
+        <p>This is non-negotiable. Your primary sump pump runs on electricity. Flooding and power outages happen simultaneously. A battery backup activates automatically the moment your primary pump loses power — no action required from you.</p>
+
+        <div class="callout callout-red">
+          <strong>Don't skip this.</strong> The most common flood story we hear: "My sump pump was working fine — but the power went out." A $150 battery backup prevents a $25,000 flood claim.
+        </div>
+
+        <div class="product-row product-row-2">
+          <ProductCard
+            name="Wayne ESP25 Battery Backup Sump Pump"
+            asin="B000BQOTIA"
+            price="$189"
+            store="amazon"
+            badge="Top Rated"
+            desc="The most popular battery backup sump pump. Activates automatically when power fails. Pumps 2,300 gallons/hour on battery. Works alongside your existing pump."
+          />
+          <ProductCard
+            name="Basement Watchdog Big Combo Sump Pump"
+            asin="B07GBKFYQM"
+            price="$289"
+            store="amazon"
+            badge="All-in-One"
+            desc="Primary pump + battery backup in one unit. 4,400 GPH primary, 2,200 GPH battery backup. Best if you're replacing your primary pump anyway."
+          />
+        </div>
+      </div>
+
+      <div class="section-block" id="alarms">
+        <h2>4. Water Alarms & Detection</h2>
+        <p>A water alarm costs $15 and can save you tens of thousands in damage by alerting you the moment moisture appears — before it becomes a flood. Place them near water heaters, under sinks, behind washing machines, and in your basement.</p>
+
+        <div class="product-row">
+          <ProductCard
+            name="Govee Water Sensor Alarm (3-Pack)"
+            asin="B07GBKFYQM"
+            price="$29"
+            store="amazon"
+            badge="Best Value"
+            desc="110dB alarm activates on contact with water. App notification via WiFi. 3-pack covers your highest-risk areas. Easy placement, no installation."
+          />
+          <ProductCard
+            name="Honeywell RWD21 Water Defense Sensor"
+            asin="B07GBKFYQM"
+            price="$39"
+            store="amazon"
+            desc="Professional-grade water sensor with 85dB alarm and remote notification. Works with Honeywell home security systems. Long battery life."
+          />
+          <ProductCard
+            name="Moen Flo Smart Water Shutoff"
+            asin="B07GBKFYQM"
+            price="$499"
+            store="amazon"
+            badge="Premium"
+            desc="Automatically shuts off your home's water supply when a leak is detected. Monitors flow rate, pressure, and temperature 24/7. Best for vacation homes."
+          />
+        </div>
+      </div>
+
+      <div class="section-block" id="moisture">
+        <h2>5. Moisture Control & Waterproofing</h2>
+        <p>Even small amounts of moisture intrusion lead to mold within 24–48 hours. These products address chronic moisture issues before they become flood events.</p>
+
+        <div class="product-row">
+          <ProductCard
+            name="hOmeLabs 4,500 Sq Ft Dehumidifier"
+            asin="B074D9BF63"
+            price="$239"
+            store="amazon"
+            badge="Top Rated"
+            desc="Removes 50 pints of moisture per day. Continuous drain option. Essential for basements in humid climates — run it year-round, not just after floods."
+          />
+          <ProductCard
+            name="DRYLOK Extreme Masonry Waterproofer"
+            asin="B07GBKFYQM"
+            price="$49"
+            store="amazon"
+            desc="Paint-on waterproof sealer for basement walls and floors. Withstands up to 15 PSI water pressure. Apply before water intrusion begins, not after."
+          />
+          <ProductCard
+            name="EZRain Floor Drain Plug"
+            asin="B07GBKFYQM"
+            price="$25"
+            store="amazon"
+            desc="Inflatable plug seals floor drains against sewage backflow. Insert deflated, inflate to seal. Inexpensive protection against a very unpleasant problem."
+          />
+        </div>
+      </div>
+
+      <div class="section-block" id="storage">
+        <h2>6. Emergency Water Storage</h2>
+        <p>Flooding often contaminates municipal water supplies. Having clean water stored means you're not dependent on tap water during and after a flood event.</p>
+
+        <div class="product-row product-row-2">
+          <ProductCard
+            name="WaterBOB Emergency Bathtub Storage"
+            asin="B003BKB0CI"
+            price="$35"
+            store="amazon"
+            badge="Smart Buy"
+            desc="Fills your bathtub to store 100 gallons in a clean bladder. One-time use but perfect for pre-storm prep. Keeps water clean for 16 weeks."
+          />
+          <ProductCard
+            name="LifeStraw Personal Water Filter"
+            asin="B006QF3TW4"
+            price="$19"
+            store="amazon"
+            badge="Essential"
+            desc="Filters 99.9999% of bacteria from any water source. One per person in every go-bag. Works in flood water, streams, and questionable tap water."
+          />
+        </div>
+      </div>
+
+      <!-- Checklist CTA -->
+      <div class="checklist-cta" id="checklist">
+        <h2>Free Flood Protection Checklist</h2>
+        <p>Product installation checklist, pre-storm prep steps, and post-flood recovery guide — all in one download.</p>
+        <form class="cta-form" name="flood-products-checklist" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="flood-products-checklist" />
+          <input type="email" name="email" placeholder="your@email.com" required />
+          <button type="submit" class="btn btn-primary">Send Me the Checklist</button>
+        </form>
+      </div>
+
+    </article>
+
+    <aside class="sidebar">
+      <div class="sb-card">
+        <h4>On This Page</h4>
+        <a href="#barriers">Flood Barriers</a>
+        <a href="#sump">Sump Pumps</a>
+        <a href="#backup">Battery Backup</a>
+        <a href="#alarms">Water Alarms</a>
+        <a href="#moisture">Moisture Control</a>
+        <a href="#storage">Water Storage</a>
+        <a href="#checklist">Free Checklist</a>
+      </div>
+
+      <div class="sb-card sb-alert">
+        <h4>Buy Before the Storm</h4>
+        <p>Flood barriers and sump pumps sell out when storms are forecast. Stock up now — not when water is rising.</p>
+      </div>
+
+      <h4 class="sb-section-label">Related Guides</h4>
+
+      <a href="/flooding" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1547683905-f686c993aae5?w=300&q=80&fit=crop" alt="Flood guide" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Flood Guide →</div>
+      </a>
+
+      <a href="/insurance" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=300&q=80&fit=crop" alt="Insurance guide" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Insurance Guide →</div>
+      </a>
+
+      <a href="/generators" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=300&q=80&fit=crop" alt="Generator guide" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Generator Guide →</div>
+      </a>
+
+      <div class="sb-card sb-cta">
+        <h4>Find Your Flood Zone</h4>
+        <p>Know your official flood risk before buying protection products.</p>
+        <a href="https://msc.fema.gov" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:14px; font-size:0.85rem; width:100%; text-align:center; display:block;">
+          FEMA Flood Map →
+        </a>
+      </div>
+    </aside>
+
+  </div>
+
+</BaseLayout>
+
+<script>
+  const sections = ['barriers','sump','backup','alarms','moisture','storage','checklist']
+  const tabs = document.querySelectorAll('.section-tabs .tab')
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tabs.forEach(t => t.classList.remove('active'))
+        const activeTab = document.querySelector(`.tab[href="#${entry.target.id}"]`)
+        if (activeTab) activeTab.classList.add('active')
+      }
+    })
+  }, { rootMargin: '-20% 0px -70% 0px' })
+  sections.forEach(id => { const el = document.getElementById(id); if (el) observer.observe(el) })
+</script>
+
+<style>
+  .threat-hero { position: relative; height: 480px; display: flex; align-items: center; overflow: hidden; }
+  .hero-img-wrap { position: absolute; inset: 0; z-index: 0; }
+  .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(13,35,56,0.92) 0%, rgba(13,35,56,0.65) 60%, rgba(13,35,56,0.3) 100%); }
+  .hero-content { position: relative; z-index: 1; max-width: 640px; color: white; }
+  .hero-label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A8CEDF; margin-bottom: 16px; }
+  .hero-content h1 { color: white; margin-bottom: 20px; }
+  .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.8); line-height: 1.7; margin-bottom: 32px; max-width: 560px; }
+  .hero-actions { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+  .btn-text { color: rgba(255,255,255,0.75); font-size: 0.9rem; font-weight: 500; text-decoration: none; transition: color 0.15s; }
+  .btn-text:hover { color: white; text-decoration: none; }
+
+  .key-facts { background: var(--off-white); border-bottom: 1px solid var(--border); padding: 24px 0; }
+  .facts-row { display: flex; align-items: center; }
+  .fact { flex: 1; padding: 0 32px; }
+  .fact:first-child { padding-left: 0; }
+  .fact-value { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
+  .fact-label { font-size: 0.78rem; color: var(--text-light); }
+  .fact-divider { width: 2px; height: 36px; background: var(--border); flex-shrink: 0; }
+
+  .section-tabs { background: white; border-bottom: 2px solid var(--border); position: sticky; top: 68px; z-index: 90; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .tabs-row { display: flex; overflow-x: auto; scrollbar-width: none; }
+  .tabs-row::-webkit-scrollbar { display: none; }
+  .tab { font-size: 0.82rem; font-weight: 500; color: var(--text-mid); padding: 14px 20px; white-space: nowrap; text-decoration: none; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all 0.15s; border-right: 1.5px solid var(--border); }
+  .tab:last-child { border-right: none; }
+  .tab:hover { color: var(--sky); background: var(--sky-light); text-decoration: none; }
+  .tab.active { color: var(--sky); border-bottom-color: var(--sky); font-weight: 600; background: var(--sky-light); }
+
+  .page-layout { display: grid; grid-template-columns: 1fr 280px; gap: 56px; padding-top: 48px; padding-bottom: 96px; align-items: start; }
+  .lead { font-size: 1.05rem; line-height: 1.8; color: var(--text-mid); margin-bottom: 32px; }
+  .article p { color: #333; line-height: 1.75; margin-bottom: 16px; }
+  .article h3 { margin-top: 24px; margin-bottom: 10px; color: var(--navy); }
+
+  .part-heading { display: flex; align-items: center; gap: 16px; margin: 48px 0 24px; padding-bottom: 16px; border-bottom: 2px solid var(--navy); scroll-margin-top: 140px; }
+  .part-number { background: var(--navy); color: white; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 4px; white-space: nowrap; }
+  .part-title { font-size: 1.4rem; color: var(--navy); margin: 0; }
+
+  .section-block { margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--border); scroll-margin-top: 140px; }
+  .section-block h2 { color: var(--navy); margin-bottom: 20px; font-size: 1.4rem; }
+
+  .risk-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 24px 0 0; }
+  .risk-item { background: var(--off-white); border: 1px solid var(--border); border-radius: 8px; padding: 24px 16px; text-align: center; }
+  .risk-icon-wrap { width: 56px; height: 56px; margin: 0 auto 14px; }
+  .risk-icon-wrap svg { width: 100%; height: 100%; }
+  .risk-item h3 { font-size: 0.95rem; margin: 0 0 8px; color: var(--navy); }
+  .risk-item p { font-size: 0.82rem; color: var(--text-mid); line-height: 1.5; margin: 0; }
+
+  .callout { background: var(--orange-bg); border-left: 3px solid var(--orange); border-radius: 0 6px 6px 0; padding: 14px 18px; margin: 24px 0; font-size: 0.9rem; line-height: 1.6; color: #5a3010; }
+  .callout-red { background: #FDF0EF; border-color: #C0392B; color: #5a1010; }
+
+  .product-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; }
+  .product-row-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .checklist-cta { margin-top: 56px; padding: 40px; background: var(--sky-light); border: 1px solid #B8D8EE; border-radius: 8px; border-left: 4px solid var(--sky); scroll-margin-top: 140px; }
+  .checklist-cta h2 { font-size: 1.3rem; margin-bottom: 10px; }
+  .checklist-cta p { font-size: 0.9rem; color: var(--text-mid); margin-bottom: 20px; }
+  .cta-form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .cta-form input { padding: 10px 14px; border: 1.5px solid var(--border); border-radius: 4px; font-size: 0.9rem; min-width: 240px; font-family: var(--font-sans); }
+
+  .sidebar { position: sticky; top: 120px; display: flex; flex-direction: column; gap: 16px; }
+  .sb-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+  .sb-card h4 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); margin-bottom: 14px; font-weight: 600; }
+  .sb-card a { display: block; font-size: 0.85rem; padding: 7px 0; border-bottom: 1px solid #f0f4f7; color: var(--sky); }
+  .sb-card a:last-child { border-bottom: none; }
+  .sb-card p { font-size: 0.85rem; color: var(--text-mid); line-height: 1.5; }
+  .sb-alert { border-top: 3px solid var(--orange); }
+  .sb-alert h4 { color: var(--orange); }
+  .sb-cta { background: var(--off-white); }
+  .sb-section-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); font-weight: 600; padding: 0 4px; }
+  .sb-visual-card { display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
+  .sb-visual-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); text-decoration: none; }
+  .sb-visual-img { position: relative; height: 90px; overflow: hidden; }
+  .sb-visual-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+  .sb-visual-card:hover .sb-visual-img img { transform: scale(1.05); }
+  .sb-visual-overlay { position: absolute; inset: 0; background: rgba(13,35,56,0.45); }
+  .sb-visual-label { background: var(--navy); color: white; font-size: 0.82rem; font-weight: 600; padding: 10px 14px; }
+</style>
