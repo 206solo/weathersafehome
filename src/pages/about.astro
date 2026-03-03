@@ -1,0 +1,139 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+
+<BaseLayout
+  title="About WeatherSafeHome"
+  description="WeatherSafeHome helps homeowners prepare for natural disasters with honest, practical guides and trusted product recommendations."
+>
+
+  <section class="threat-hero">
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600&q=80&fit=crop" alt="Home" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-label">About Us</div>
+      <h1>We Help Homeowners Prepare Before Disaster Strikes</h1>
+      <p class="hero-sub">
+        WeatherSafeHome was built on a simple idea: the decisions that protect your home
+        are made weeks and months before a storm — not when one is in the forecast.
+      </p>
+    </div>
+  </section>
+
+  <div class="container about-layout">
+
+    <div class="about-main">
+
+      <div class="mission-block">
+        <h2>Our Mission</h2>
+        <p>Every year, billions of dollars in home damage is preventable. Homeowners lose their homes not because the storms were too powerful, but because they didn't have flood insurance, didn't have a generator, didn't know their evacuation zone, or didn't act early enough.</p>
+        <p>WeatherSafeHome exists to close that gap. We research every topic thoroughly, recommend only products we'd put in our own homes, and write for people who are serious about protecting what they've built.</p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">🎯</div>
+          <h3>Practical Over Perfect</h3>
+          <p>We focus on the 20% of actions that provide 80% of protection. A good generator bought today beats a perfect system planned for someday.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🔍</div>
+          <h3>Honest Recommendations</h3>
+          <p>We use affiliate links to support this site, but our recommendations are never influenced by commissions. We recommend what works — full stop.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">📋</div>
+          <h3>FEMA-Informed</h3>
+          <p>Our content is grounded in FEMA guidelines, NOAA data, and peer-reviewed research. We cite our sources and update our guides when standards change.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🏠</div>
+          <h3>Built for Homeowners</h3>
+          <p>Not emergency managers, not survivalists — homeowners. People with real homes, real budgets, and real families who want straightforward guidance.</p>
+        </div>
+      </div>
+
+      <div class="mission-block">
+        <h2>How We Make Money</h2>
+        <p>WeatherSafeHome earns a small commission when you purchase products through our affiliate links — at no additional cost to you. This is how we keep the site free and the guides coming.</p>
+        <p>We only recommend products we've researched thoroughly. Our editorial decisions are made independently of our affiliate relationships. If a product isn't right for most homeowners, we say so — even if it pays a higher commission.</p>
+      </div>
+
+      <div class="mission-block">
+        <h2>A Note on Preparedness</h2>
+        <p>Preparedness isn't about fear — it's about confidence. When you know your flood zone, have your generator ready, and have a plan, you make better decisions under pressure. You don't panic-buy plywood at the last minute. You don't ignore an evacuation order because leaving feels like overreacting.</p>
+        <p>That's what we're building toward: a site that gives every homeowner the information and tools to face whatever comes with clarity and confidence.</p>
+      </div>
+
+    </div>
+
+    <aside class="about-sidebar">
+
+      <div class="sb-card">
+        <h4>Quick Links</h4>
+        <a href="/hurricanes">Hurricane Guide</a>
+        <a href="/flooding">Flood Guide</a>
+        <a href="/wildfires">Wildfire Guide</a>
+        <a href="/tornadoes">Tornado Guide</a>
+        <a href="/winter-storms">Winter Storm Guide</a>
+        <a href="/generators">Generator Guide</a>
+        <a href="/free-checklists">Free Checklists</a>
+      </div>
+
+      <div class="sb-card sb-alert">
+        <h4>Get the Free Library</h4>
+        <p>All five threat checklists plus our product guides — free in one email.</p>
+        <form name="about-library" method="POST" data-netlify="true" style="margin-top: 14px;">
+          <input type="hidden" name="form-name" value="about-library" />
+          <input type="email" name="email" placeholder="your@email.com" required style="width:100%; padding: 9px 12px; border: 1.5px solid var(--border); border-radius: 4px; font-size:0.85rem; font-family: var(--font-sans); margin-bottom: 10px; box-sizing: border-box;" />
+          <button type="submit" class="btn btn-primary" style="width:100%; font-size:0.85rem;">Get the Free Library</button>
+        </form>
+      </div>
+
+      <div class="sb-card">
+        <h4>Contact</h4>
+        <p style="font-size:0.85rem; color:var(--text-mid);">Questions, corrections, or partnership inquiries:</p>
+        <a href="mailto:hello@weathersafehome.org" style="font-size:0.85rem; color:var(--sky); display:block; margin-top:8px;">hello@weathersafehome.org</a>
+      </div>
+
+    </aside>
+
+  </div>
+
+</BaseLayout>
+
+<style>
+  .threat-hero { position: relative; height: 380px; display: flex; align-items: center; overflow: hidden; }
+  .hero-img-wrap { position: absolute; inset: 0; z-index: 0; }
+  .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(13,35,56,0.92) 0%, rgba(13,35,56,0.65) 60%, rgba(13,35,56,0.3) 100%); }
+  .hero-content { position: relative; z-index: 1; max-width: 640px; color: white; }
+  .hero-label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A8CEDF; margin-bottom: 16px; }
+  .hero-content h1 { color: white; margin-bottom: 20px; }
+  .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.8); line-height: 1.7; max-width: 560px; }
+
+  .about-layout { display: grid; grid-template-columns: 1fr 280px; gap: 56px; padding: 56px 0 96px; align-items: start; }
+
+  .mission-block { margin-bottom: 48px; padding-bottom: 48px; border-bottom: 1px solid var(--border); }
+  .mission-block:last-child { border-bottom: none; }
+  .mission-block h2 { font-size: 1.3rem; color: var(--navy); margin-bottom: 16px; }
+  .mission-block p { color: #333; line-height: 1.8; margin-bottom: 14px; }
+  .mission-block p:last-child { margin-bottom: 0; }
+
+  .values-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-bottom: 48px; padding-bottom: 48px; border-bottom: 1px solid var(--border); }
+  .value-card { background: var(--off-white); border: 1px solid var(--border); border-radius: 8px; padding: 24px; }
+  .value-icon { font-size: 1.5rem; margin-bottom: 12px; }
+  .value-card h3 { font-size: 0.95rem; color: var(--navy); margin: 0 0 8px; }
+  .value-card p { font-size: 0.85rem; color: var(--text-mid); line-height: 1.6; margin: 0; }
+
+  .about-sidebar { position: sticky; top: 100px; display: flex; flex-direction: column; gap: 16px; }
+  .sb-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+  .sb-card h4 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); margin-bottom: 14px; font-weight: 600; }
+  .sb-card a { display: block; font-size: 0.85rem; padding: 7px 0; border-bottom: 1px solid #f0f4f7; color: var(--sky); text-decoration: none; }
+  .sb-card a:last-child { border-bottom: none; }
+  .sb-card p { font-size: 0.85rem; color: var(--text-mid); line-height: 1.5; margin: 0; }
+  .sb-alert { border-top: 3px solid var(--orange); }
+  .sb-alert h4 { color: var(--orange); }
+</style>

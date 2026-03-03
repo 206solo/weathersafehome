@@ -1,0 +1,184 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+
+<BaseLayout
+  title="Free Home Emergency Checklists"
+  description="Free downloadable checklists for hurricane, flood, wildfire, tornado, and winter storm preparedness. Built for homeowners who want to be ready."
+>
+
+  <section class="threat-hero">
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=1600&q=80&fit=crop" alt="Checklist and planning" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-label">Free Resources</div>
+      <h1>Free Home Emergency Checklists</h1>
+      <p class="hero-sub">
+        Every checklist we offer — free, no strings attached. Enter your email once
+        and we'll send you the full library.
+      </p>
+    </div>
+  </section>
+
+  <div class="container checklists-layout">
+
+    <div class="intro">
+      <p class="lead">These checklists are built for homeowners — not generic FEMA printouts. Each one is organized by timeline, prioritized by impact, and written in plain language. Download the ones you need or get the full library at once.</p>
+    </div>
+
+    <div class="checklist-grid">
+
+      <div class="cl-card">
+        <div class="cl-icon">🌀</div>
+        <div class="cl-body">
+          <h3>Hurricane Home Prep Checklist</h3>
+          <p>150+ action items organized by timeline — before the season, 72 hours out, day of, and after the storm. Covers generators, shutters, flood insurance, and evacuation.</p>
+          <ul class="cl-includes">
+            <li>Generator sizing and buying guide</li>
+            <li>72-hour pre-storm timeline</li>
+            <li>Evacuation decision framework</li>
+            <li>Post-storm documentation checklist</li>
+          </ul>
+          <form name="hurricane-checklist" method="POST" data-netlify="true" class="cl-form">
+            <input type="hidden" name="form-name" value="hurricane-checklist" />
+            <input type="email" name="email" placeholder="your@email.com" required />
+            <button type="submit" class="btn btn-primary">Get This Checklist</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="cl-card">
+        <div class="cl-icon">🌊</div>
+        <div class="cl-body">
+          <h3>Flood Preparedness Checklist</h3>
+          <p>Insurance steps, barrier installation, sump pump maintenance, and a complete post-flood recovery guide. Includes the 30-day insurance reminder.</p>
+          <ul class="cl-includes">
+            <li>Flood zone lookup instructions</li>
+            <li>Insurance coverage gap finder</li>
+            <li>Sump pump maintenance schedule</li>
+            <li>Post-flood recovery timeline</li>
+          </ul>
+          <form name="flood-checklist" method="POST" data-netlify="true" class="cl-form">
+            <input type="hidden" name="form-name" value="flood-checklist" />
+            <input type="email" name="email" placeholder="your@email.com" required />
+            <button type="submit" class="btn btn-primary">Get This Checklist</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="cl-card">
+        <div class="cl-icon">🔥</div>
+        <div class="cl-body">
+          <h3>Wildfire Home Protection Checklist</h3>
+          <p>Defensible space tasks by zone, home hardening checklist, go-bag packing list, and evacuation planning guide. Built for fire season preparation.</p>
+          <ul class="cl-includes">
+            <li>Zone 1 and Zone 2 defensible space tasks</li>
+            <li>Home hardening priority list</li>
+            <li>Go-bag packing list</li>
+            <li>Evacuation trigger worksheet</li>
+          </ul>
+          <form name="wildfire-checklist" method="POST" data-netlify="true" class="cl-form">
+            <input type="hidden" name="form-name" value="wildfire-checklist" />
+            <input type="email" name="email" placeholder="your@email.com" required />
+            <button type="submit" class="btn btn-primary">Get This Checklist</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="cl-card">
+        <div class="cl-icon">🌪️</div>
+        <div class="cl-body">
+          <h3>Tornado Preparedness Checklist</h3>
+          <p>Shelter planning, alert system setup, mobile home safety guide, and post-tornado recovery steps. Includes the 60-second shelter drill framework.</p>
+          <ul class="cl-includes">
+            <li>Shelter location planning worksheet</li>
+            <li>Alert system setup guide</li>
+            <li>Safe room buying checklist</li>
+            <li>Post-tornado insurance steps</li>
+          </ul>
+          <form name="tornado-checklist" method="POST" data-netlify="true" class="cl-form">
+            <input type="hidden" name="form-name" value="tornado-checklist" />
+            <input type="email" name="email" placeholder="your@email.com" required />
+            <button type="submit" class="btn btn-primary">Get This Checklist</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="cl-card">
+        <div class="cl-icon">❄️</div>
+        <div class="cl-body">
+          <h3>Winter Storm Preparedness Checklist</h3>
+          <p>Pipe winterization, furnace maintenance, ice dam prevention, and emergency supply list. Organized by pre-season, pre-storm, and post-storm.</p>
+          <ul class="cl-includes">
+            <li>Pipe insulation priority list</li>
+            <li>Furnace maintenance checklist</li>
+            <li>Ice dam prevention steps</li>
+            <li>72-hour supply list</li>
+          </ul>
+          <form name="winter-checklist" method="POST" data-netlify="true" class="cl-form">
+            <input type="hidden" name="form-name" value="winter-checklist" />
+            <input type="email" name="email" placeholder="your@email.com" required />
+            <button type="submit" class="btn btn-primary">Get This Checklist</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="cl-card cl-card-featured">
+        <div class="cl-featured-badge">Full Library</div>
+        <div class="cl-icon">📦</div>
+        <div class="cl-body">
+          <h3>Complete Emergency Preparedness Library</h3>
+          <p>All five checklists plus our generator buying guide, insurance coverage worksheet, and emergency kit master list — delivered in one email.</p>
+          <ul class="cl-includes">
+            <li>All 5 threat checklists</li>
+            <li>Generator sizing worksheet</li>
+            <li>Insurance coverage gap finder</li>
+            <li>Emergency kit master list</li>
+            <li>Home inventory guide</li>
+          </ul>
+          <form name="full-library" method="POST" data-netlify="true" class="cl-form">
+            <input type="hidden" name="form-name" value="full-library" />
+            <input type="email" name="email" placeholder="your@email.com" required />
+            <button type="submit" class="btn btn-primary">Get the Full Library</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</BaseLayout>
+
+<style>
+  .threat-hero { position: relative; height: 380px; display: flex; align-items: center; overflow: hidden; }
+  .hero-img-wrap { position: absolute; inset: 0; z-index: 0; }
+  .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(13,35,56,0.92) 0%, rgba(13,35,56,0.65) 60%, rgba(13,35,56,0.3) 100%); }
+  .hero-content { position: relative; z-index: 1; max-width: 640px; color: white; }
+  .hero-label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A8CEDF; margin-bottom: 16px; }
+  .hero-content h1 { color: white; margin-bottom: 20px; }
+  .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.8); line-height: 1.7; max-width: 560px; }
+
+  .checklists-layout { padding: 56px 0 96px; }
+  .lead { font-size: 1.05rem; line-height: 1.8; color: var(--text-mid); margin-bottom: 48px; max-width: 680px; }
+
+  .checklist-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+
+  .cl-card { background: white; border: 1px solid var(--border); border-radius: 10px; padding: 32px; display: flex; gap: 20px; position: relative; }
+  .cl-card-featured { background: var(--sky-light); border-color: var(--sky); border-width: 2px; grid-column: span 2; flex-direction: row; }
+  .cl-featured-badge { position: absolute; top: -12px; left: 24px; background: var(--sky); color: white; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 12px; border-radius: 4px; }
+
+  .cl-icon { font-size: 2rem; flex-shrink: 0; line-height: 1; margin-top: 4px; }
+  .cl-body { flex: 1; }
+  .cl-body h3 { font-size: 1.1rem; color: var(--navy); margin: 0 0 10px; }
+  .cl-body p { font-size: 0.88rem; color: var(--text-mid); line-height: 1.6; margin-bottom: 16px; }
+
+  .cl-includes { list-style: none; padding: 0; margin: 0 0 20px; display: flex; flex-direction: column; gap: 5px; }
+  .cl-includes li { font-size: 0.82rem; color: var(--text-mid); padding-left: 16px; position: relative; }
+  .cl-includes li::before { content: "✓"; position: absolute; left: 0; color: var(--sky); font-weight: 700; }
+
+  .cl-form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .cl-form input { padding: 9px 14px; border: 1.5px solid var(--border); border-radius: 4px; font-size: 0.88rem; min-width: 200px; font-family: var(--font-sans); }
+</style>
