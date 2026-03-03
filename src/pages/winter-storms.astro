@@ -1,0 +1,536 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import ProductCard from '../components/ProductCard.astro'
+---
+
+<BaseLayout
+  title="Winter Storm Home Protection Guide"
+  description="How to protect your home from winter storms. Covers pipe freeze prevention, heating backup, ice dams, power outages, and emergency preparedness."
+>
+
+  <!-- Hero -->
+  <section class="threat-hero">
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1511131341194-24e2eeeebb09?w=1600&q=80&fit=crop" alt="House in winter storm" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-label">Winter Storm Preparedness</div>
+      <h1>How to Protect Your Home from Winter Storms</h1>
+      <p class="hero-sub">
+        Frozen pipes, ice dams, heating failures, and extended power outages — winter storms
+        cause billions in home damage every year. Most of it is preventable.
+      </p>
+      <div class="hero-actions">
+        <a href="#protect" class="btn btn-primary">Protect Your Home</a>
+        <a href="#checklist" class="btn btn-secondary">Get the Free Checklist</a>
+        <a href="#products" class="btn btn-text">View Recommended Products →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key facts -->
+  <div class="key-facts">
+    <div class="container facts-row">
+      <div class="fact">
+        <div class="fact-value">$5,000+</div>
+        <div class="fact-label">Average cost of a frozen pipe claim</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">20°F</div>
+        <div class="fact-label">Temperature when pipes begin to freeze</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">Ice dams</div>
+        <div class="fact-label">Leading cause of winter roof damage</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">72 hrs</div>
+        <div class="fact-label">Prepare to be self-sufficient after a storm</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab strip -->
+  <nav class="section-tabs">
+    <div class="container tabs-row">
+      <a href="#risks" class="tab">Winter Risks</a>
+      <a href="#pipes" class="tab">Frozen Pipes</a>
+      <a href="#heating" class="tab">Heating Backup</a>
+      <a href="#icedams" class="tab">Ice Dams</a>
+      <a href="#power" class="tab">Power Outages</a>
+      <a href="#supplies" class="tab">Emergency Supplies</a>
+      <a href="#checklist" class="tab">Free Checklist</a>
+    </div>
+  </nav>
+
+  <div class="container page-layout">
+    <article class="article">
+
+      <p class="lead">
+        Winter storms are deceptive — they look beautiful and feel manageable until your
+        pipes burst, your heat fails, or you're without power for four days in subfreezing
+        temperatures. The time to prepare is before the first freeze, not during it.
+      </p>
+
+      <!-- Part 1 -->
+      <div class="part-heading" id="risks">
+        <div class="part-number">Part 1</div>
+        <h2 class="part-title">Understanding Winter Storm Risk</h2>
+      </div>
+
+      <div class="risk-grid">
+        <div class="risk-item">
+          <div class="risk-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8V40M8 24H40M13 13L35 35M35 13L13 35" stroke="#2E7CB8" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="4" fill="#2E7CB8"/>
+              <circle cx="24" cy="8" r="2" fill="#2E7CB8"/>
+              <circle cx="24" cy="40" r="2" fill="#2E7CB8"/>
+              <circle cx="8" cy="24" r="2" fill="#2E7CB8"/>
+              <circle cx="40" cy="24" r="2" fill="#2E7CB8"/>
+            </svg>
+          </div>
+          <h3>Frozen Pipes</h3>
+          <p>Pipes freeze when temperatures drop below 20°F. A burst pipe releases hundreds of gallons per hour, causing catastrophic damage.</p>
+        </div>
+        <div class="risk-item">
+          <div class="risk-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 28L24 12L38 28" stroke="#1B3A52" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M14 28H34V36H14V28Z" stroke="#1B3A52" stroke-width="2" fill="#EBF4FB"/>
+              <path d="M10 32C14 30 18 34 22 32C26 30 30 34 34 32C36 30 38 32 38 32" stroke="#2E7CB8" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Ice Dams</h3>
+          <p>Ice builds at roof edges, forcing water under shingles. Can cause thousands in ceiling and wall damage without visible exterior signs.</p>
+        </div>
+        <div class="risk-item">
+          <div class="risk-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="20" width="28" height="18" rx="2" stroke="#1B3A52" stroke-width="2" fill="#EBF4FB"/>
+              <path d="M16 20V16C16 12.7 19.6 10 24 10C28.4 10 32 12.7 32 16V20" stroke="#1B3A52" stroke-width="2" stroke-linecap="round"/>
+              <path d="M38 14L42 10M38 10L42 14" stroke="#D4691E" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="40" cy="12" r="4" stroke="#D4691E" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Power Outages</h3>
+          <p>Winter storms are the leading cause of power outages. Without heat, pipes freeze and homes become uninhabitable within hours.</p>
+        </div>
+        <div class="risk-item">
+          <div class="risk-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8C16 12 12 20 12 28C12 34 17 40 24 40C31 40 36 34 36 28C36 20 32 12 24 8Z" stroke="#1B3A52" stroke-width="2" fill="#EBF4FB"/>
+              <path d="M20 28C20 26 22 24 24 24C26 24 28 26 28 28" stroke="#2E7CB8" stroke-width="2" stroke-linecap="round"/>
+              <path d="M24 24V18" stroke="#2E7CB8" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Heating Failure</h3>
+          <p>Furnaces fail from overload, gas line issues, or lack of maintenance. A heating failure in a blizzard is a life-safety emergency.</p>
+        </div>
+      </div>
+
+      <!-- Part 2 -->
+      <div class="part-heading" id="protect">
+        <div class="part-number">Part 2</div>
+        <h2 class="part-title">Protecting Your Home</h2>
+      </div>
+
+      <div class="section-block" id="pipes">
+        <h2>1. Frozen Pipe Prevention</h2>
+        <p>Frozen pipes are the most common and costly winter home emergency. The good news: they're almost entirely preventable with the right preparation.</p>
+
+        <h3>Most Vulnerable Pipes</h3>
+        <ul class="action-list">
+          <li>Pipes in unheated spaces — garages, crawl spaces, attics, and exterior walls</li>
+          <li>Pipes near exterior walls with little insulation</li>
+          <li>Outdoor hose bibs and irrigation systems</li>
+          <li>Swimming pool supply lines</li>
+        </ul>
+
+        <h3>Prevention Steps</h3>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div>
+              <strong>Insulate vulnerable pipes</strong>
+              <p>Foam pipe insulation costs under $1 per foot and installs in minutes. Focus on pipes in unheated spaces and exterior walls.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div>
+              <strong>Disconnect and drain outdoor hoses</strong>
+              <p>Before the first freeze, disconnect all garden hoses and shut off outdoor water supply valves. Open the outdoor faucet to drain remaining water.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div>
+              <strong>Keep heat at 55°F minimum</strong>
+              <p>Even if you're away, never let your home drop below 55°F. The heating cost is far less than a burst pipe claim.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div>
+              <strong>Open cabinet doors during extreme cold</strong>
+              <p>Under sinks on exterior walls, open cabinet doors to allow warm air to reach pipes during extreme cold snaps.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-red">
+          <strong>If a pipe freezes:</strong> Never use an open flame to thaw. Use a hair dryer, heating pad, or warm towels. Know where your main water shutoff is — if a pipe bursts, you have seconds to act.
+        </div>
+
+        <div class="product-block" id="products">
+          <div class="product-block-header">
+            <h3>Pipe Protection Products</h3>
+          </div>
+          <div class="product-row product-row-2">
+            <ProductCard
+              name="Frost King Foam Pipe Insulation"
+              asin="B000BPIJ56"
+              price="$12"
+              store="amazon"
+              badge="Essential"
+              desc="Self-sealing foam insulation for pipes up to 1 inch diameter. Installs in seconds, prevents freezing in unheated spaces. Buy extra."
+            />
+            <ProductCard
+              name="Heat-Line Freeze Protection Cable"
+              asin="B07GBKFYQM"
+              price="$49"
+              store="amazon"
+              desc="Self-regulating heat cable wraps around pipes and activates automatically when temperatures drop. For extreme cold or chronic problem pipes."
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block" id="heating">
+        <h2>2. Heating Backup</h2>
+        <p>Your primary heating system failing during a blizzard is a life-safety emergency, not just a comfort issue. A backup heat source can keep your family safe and prevent pipe damage while you wait for repairs.</p>
+
+        <div class="callout callout-red">
+          <strong>Carbon monoxide warning:</strong> Never use propane heaters, gas ranges, or grills indoors for heating. CO poisoning kills within minutes. Only use indoor-rated heating appliances indoors.
+        </div>
+
+        <div class="product-block">
+          <div class="product-block-header">
+            <h3>Backup Heating Options</h3>
+          </div>
+          <div class="product-row">
+            <ProductCard
+              name="Mr. Heater Buddy Indoor Propane Heater"
+              asin="B002G51BZU"
+              price="$89"
+              store="amazon"
+              badge="Top Pick"
+              desc="The most popular indoor-safe propane heater. Heats up to 225 sq ft, has automatic low-oxygen shutoff. Safe for indoor use with ventilation."
+            />
+            <ProductCard
+              name="Vornado MVH Vortex Heater"
+              asin="B00JKKVNUM"
+              price="$59"
+              store="amazon"
+              badge="Electric Pick"
+              desc="Best electric space heater for whole-room heating. Auto tip-over shutoff, cool-touch exterior, works great for keeping one room warm."
+            />
+            <ProductCard
+              name="DuraHeat Kerosene Heater"
+              asin="B07GBKFYQM"
+              price="$149"
+              store="amazon"
+              desc="23,000 BTU kerosene heater warms large spaces without electricity. Good for garages and large rooms during extended outages."
+            />
+          </div>
+        </div>
+
+        <h3>Furnace Maintenance</h3>
+        <p>The best backup is a furnace that doesn't fail. Schedule annual furnace maintenance before winter — replace filters, check the heat exchanger, and test the igniter. A $150 tune-up prevents a $3,000 emergency call.</p>
+      </div>
+
+      <div class="section-block" id="icedams">
+        <h2>3. Ice Dam Prevention</h2>
+        <p>Ice dams form when heat escapes through your roof, melts snow, and that water refreezes at the cold eaves. The resulting ice forces water under shingles and into your home.</p>
+
+        <h3>Long-Term Prevention</h3>
+        <p>The root cause of ice dams is heat loss through the roof. Proper attic insulation (R-38 to R-60 depending on your climate) and ventilation are the permanent fix. A well-insulated attic stays cold, snow melts uniformly, and ice dams don't form.</p>
+
+        <h3>Immediate Steps</h3>
+        <ul class="action-list">
+          <li>Use a roof rake to remove snow within 4 feet of the eave after heavy snowfall</li>
+          <li>Never use a metal tool or sharp object to chip ice — you'll damage the shingles</li>
+          <li>Apply calcium chloride ice melt in a sock across the dam to create drainage channels</li>
+          <li>Call a professional if water is actively leaking into your home</li>
+        </ul>
+
+        <div class="product-block">
+          <div class="product-block-header">
+            <h3>Ice Dam Products</h3>
+          </div>
+          <div class="product-row product-row-2">
+            <ProductCard
+              name="Avalanche! Original Roof Snow Removal Tool"
+              asin="B000BVEPIM"
+              price="$69"
+              store="amazon"
+              badge="Top Rated"
+              desc="21-foot wheeled roof rake removes snow safely from the ground. Lightweight aluminum, no ladder required. Most popular roof snow tool."
+            />
+            <ProductCard
+              name="RoofMelt Ice Dam Tablets"
+              asin="B001DZRF0I"
+              price="$29"
+              store="amazon"
+              desc="Calcium chloride tablets that melt through ice dams to create drainage channels. Toss on roof — no ladder needed."
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block" id="power">
+        <h2>4. Power Outage Preparation</h2>
+        <p>Winter power outages are uniquely dangerous because cold temperatures make your home uninhabitable within hours. A generator keeps your heat running — see our full <a href="/generators">generator buying guide</a> for recommendations.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div>
+              <strong>Know your heating system's power needs</strong>
+              <p>Gas furnaces still need electricity to run the blower. A 5,000W generator handles most gas furnaces plus essential circuits.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div>
+              <strong>Have a warm room plan</strong>
+              <p>If your heat fails, designate one interior room as the warm room. Close doors, use a safe space heater, and everyone sleeps there.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div>
+              <strong>Know your shutoff locations</strong>
+              <p>If pipes freeze and burst, you need to shut off water immediately. Know where your main water shutoff, gas shutoff, and electrical panel are.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block" id="supplies">
+        <h2>5. Emergency Supplies</h2>
+        <ul class="action-list">
+          <li>72-hour supply of food and water (water pipes may freeze)</li>
+          <li>Flashlights and extra batteries or a hand-crank lantern</li>
+          <li>Battery-powered or hand-crank weather radio</li>
+          <li>Extra blankets, sleeping bags, and warm clothing</li>
+          <li>First aid kit with a 30-day supply of medications</li>
+          <li>Portable phone charger (keep it charged year-round)</li>
+          <li>Sand or kitty litter for traction on icy walkways</li>
+          <li>Ice scraper and snow brush for your car</li>
+        </ul>
+
+        <div class="product-block">
+          <div class="product-block-header">
+            <h3>Winter Emergency Essentials</h3>
+          </div>
+          <div class="product-row product-row-2">
+            <ProductCard
+              name="Midland ER310 Emergency Crank Weather Radio"
+              asin="B00A4GE32E"
+              price="$59"
+              store="amazon"
+              badge="Essential"
+              desc="NOAA weather alerts, hand crank + solar charging. Works when cell networks and power are both down. Critical for winter storm monitoring."
+            />
+            <ProductCard
+              name="Coleman 1-Burner Propane Stove"
+              asin="B00004RA6N"
+              price="$49"
+              store="amazon"
+              desc="Cook hot meals during an extended power outage. Use outdoors or in a well-ventilated space only. Runs on standard 1lb propane cylinders."
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Checklist CTA -->
+      <div class="checklist-cta" id="checklist">
+        <h2>Free Winter Storm Preparedness Checklist</h2>
+        <p>Pipe winterization, heating system checks, emergency supply list, and a pre-storm action plan — all in one download.</p>
+        <form class="cta-form" name="winter-checklist" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="winter-checklist" />
+          <input type="email" name="email" placeholder="your@email.com" required />
+          <button type="submit" class="btn btn-primary">Send Me the Checklist</button>
+        </form>
+      </div>
+
+    </article>
+
+    <aside class="sidebar">
+      <div class="sb-card">
+        <h4>On This Page</h4>
+        <a href="#risks">Winter Risks</a>
+        <a href="#pipes">Frozen Pipes</a>
+        <a href="#heating">Heating Backup</a>
+        <a href="#icedams">Ice Dams</a>
+        <a href="#power">Power Outages</a>
+        <a href="#supplies">Emergency Supplies</a>
+        <a href="#checklist">Free Checklist</a>
+      </div>
+
+      <div class="sb-card sb-alert">
+        <h4>Act Before First Freeze</h4>
+        <p>Pipe insulation, furnace tune-ups, and generator prep should all be done <strong>before</strong> the first cold snap — not during it.</p>
+      </div>
+
+      <h4 class="sb-section-label">Related Guides</h4>
+
+      <a href="/generators" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=300&q=80&fit=crop" alt="Generator guide" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Generator Guide →</div>
+      </a>
+
+      <a href="/emergency-kits" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=300&q=80&fit=crop" alt="Emergency kits" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Emergency Kits →</div>
+      </a>
+
+      <a href="/backup-power" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1548438294-1ad5d5f4f063?w=300&q=80&fit=crop" alt="Backup power" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Backup Power Guide →</div>
+      </a>
+
+      <div class="sb-card sb-cta">
+        <h4>Winter Weather Alerts</h4>
+        <p>Sign up for NOAA weather alerts for your area before storm season.</p>
+        <a href="https://www.weather.gov" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:14px; font-size:0.85rem; width:100%; text-align:center; display:block;">
+          NOAA Weather Service →
+        </a>
+      </div>
+    </aside>
+
+  </div>
+
+</BaseLayout>
+
+<script>
+  const sections = ['risks','pipes','heating','icedams','power','supplies','checklist']
+  const tabs = document.querySelectorAll('.section-tabs .tab')
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tabs.forEach(t => t.classList.remove('active'))
+        const activeTab = document.querySelector(`.tab[href="#${entry.target.id}"]`)
+        if (activeTab) activeTab.classList.add('active')
+      }
+    })
+  }, { rootMargin: '-20% 0px -70% 0px' })
+  sections.forEach(id => { const el = document.getElementById(id); if (el) observer.observe(el) })
+</script>
+
+<style>
+  .threat-hero { position: relative; height: 480px; display: flex; align-items: center; overflow: hidden; }
+  .hero-img-wrap { position: absolute; inset: 0; z-index: 0; }
+  .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(13,35,56,0.92) 0%, rgba(13,35,56,0.65) 60%, rgba(13,35,56,0.3) 100%); }
+  .hero-content { position: relative; z-index: 1; max-width: 640px; color: white; }
+  .hero-label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A8CEDF; margin-bottom: 16px; }
+  .hero-content h1 { color: white; margin-bottom: 20px; }
+  .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.8); line-height: 1.7; margin-bottom: 32px; max-width: 560px; }
+  .hero-actions { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+  .btn-text { color: rgba(255,255,255,0.75); font-size: 0.9rem; font-weight: 500; text-decoration: none; transition: color 0.15s; }
+  .btn-text:hover { color: white; text-decoration: none; }
+
+  .key-facts { background: var(--off-white); border-bottom: 1px solid var(--border); padding: 24px 0; }
+  .facts-row { display: flex; align-items: center; }
+  .fact { flex: 1; padding: 0 32px; }
+  .fact:first-child { padding-left: 0; }
+  .fact-value { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
+  .fact-label { font-size: 0.78rem; color: var(--text-light); }
+  .fact-divider { width: 2px; height: 36px; background: var(--border); flex-shrink: 0; }
+
+  .section-tabs { background: white; border-bottom: 2px solid var(--border); position: sticky; top: 68px; z-index: 90; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .tabs-row { display: flex; overflow-x: auto; scrollbar-width: none; }
+  .tabs-row::-webkit-scrollbar { display: none; }
+  .tab { font-size: 0.82rem; font-weight: 500; color: var(--text-mid); padding: 14px 20px; white-space: nowrap; text-decoration: none; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all 0.15s; border-right: 1.5px solid var(--border); }
+  .tab:last-child { border-right: none; }
+  .tab:hover { color: var(--sky); background: var(--sky-light); text-decoration: none; }
+  .tab.active { color: var(--sky); border-bottom-color: var(--sky); font-weight: 600; background: var(--sky-light); }
+
+  .page-layout { display: grid; grid-template-columns: 1fr 280px; gap: 56px; padding-top: 48px; padding-bottom: 96px; align-items: start; }
+  .lead { font-size: 1.05rem; line-height: 1.8; color: var(--text-mid); margin-bottom: 32px; }
+  .article p { color: #333; line-height: 1.75; margin-bottom: 16px; }
+  .article h3 { margin-top: 24px; margin-bottom: 10px; color: var(--navy); }
+
+  .part-heading { display: flex; align-items: center; gap: 16px; margin: 48px 0 24px; padding-bottom: 16px; border-bottom: 2px solid var(--navy); scroll-margin-top: 140px; }
+  .part-number { background: var(--navy); color: white; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 4px; white-space: nowrap; }
+  .part-title { font-size: 1.4rem; color: var(--navy); margin: 0; }
+
+  .section-block { margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--border); scroll-margin-top: 140px; }
+  .section-block h2 { color: var(--navy); margin-bottom: 20px; font-size: 1.4rem; }
+
+  .risk-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 24px 0 0; }
+  .risk-item { background: var(--off-white); border: 1px solid var(--border); border-radius: 8px; padding: 24px 16px; text-align: center; }
+  .risk-icon-wrap { width: 56px; height: 56px; margin: 0 auto 14px; }
+  .risk-icon-wrap svg { width: 100%; height: 100%; }
+  .risk-item h3 { font-size: 0.95rem; margin: 0 0 8px; color: var(--navy); }
+  .risk-item p { font-size: 0.82rem; color: var(--text-mid); line-height: 1.5; margin: 0; }
+
+  .steps { display: flex; flex-direction: column; gap: 16px; margin: 24px 0; }
+  .step { display: flex; gap: 16px; align-items: flex-start; }
+  .step-num { background: var(--sky); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px; }
+  .step strong { display: block; margin-bottom: 3px; color: var(--navy); }
+  .step p { margin: 0; font-size: 0.88rem; color: var(--text-mid); }
+
+  .callout { background: var(--orange-bg); border-left: 3px solid var(--orange); border-radius: 0 6px 6px 0; padding: 14px 18px; margin: 24px 0; font-size: 0.9rem; line-height: 1.6; color: #5a3010; }
+  .callout-red { background: #FDF0EF; border-color: #C0392B; color: #5a1010; }
+
+  .product-block { background: var(--off-white); border: 1px solid var(--border); border-radius: 8px; padding: 24px; margin-top: 28px; }
+  .product-block-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 20px; }
+  .product-block-header h3 { margin: 0; }
+  .product-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; }
+  .product-row-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .action-list { list-style: none; padding: 0; margin: 20px 0; display: flex; flex-direction: column; gap: 8px; }
+  .action-list li { padding: 10px 14px 10px 38px; background: var(--off-white); border: 1px solid var(--border); border-radius: 5px; font-size: 0.9rem; position: relative; }
+  .action-list li::before { content: "☐"; position: absolute; left: 12px; color: var(--sky); }
+
+  .checklist-cta { margin-top: 56px; padding: 40px; background: var(--sky-light); border: 1px solid #B8D8EE; border-radius: 8px; border-left: 4px solid var(--sky); scroll-margin-top: 140px; }
+  .checklist-cta h2 { font-size: 1.3rem; margin-bottom: 10px; }
+  .checklist-cta p { font-size: 0.9rem; color: var(--text-mid); margin-bottom: 20px; }
+  .cta-form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .cta-form input { padding: 10px 14px; border: 1.5px solid var(--border); border-radius: 4px; font-size: 0.9rem; min-width: 240px; font-family: var(--font-sans); }
+
+  .sidebar { position: sticky; top: 120px; display: flex; flex-direction: column; gap: 16px; }
+  .sb-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+  .sb-card h4 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); margin-bottom: 14px; font-weight: 600; }
+  .sb-card a { display: block; font-size: 0.85rem; padding: 7px 0; border-bottom: 1px solid #f0f4f7; color: var(--sky); }
+  .sb-card a:last-child { border-bottom: none; }
+  .sb-card p { font-size: 0.85rem; color: var(--text-mid); line-height: 1.5; }
+  .sb-alert { border-top: 3px solid var(--orange); }
+  .sb-alert h4 { color: var(--orange); }
+  .sb-cta { background: var(--off-white); }
+  .sb-section-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); font-weight: 600; padding: 0 4px; }
+  .sb-visual-card { display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
+  .sb-visual-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); text-decoration: none; }
+  .sb-visual-img { position: relative; height: 90px; overflow: hidden; }
+  .sb-visual-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+  .sb-visual-card:hover .sb-visual-img img { transform: scale(1.05); }
+  .sb-visual-overlay { position: absolute; inset: 0; background: rgba(13,35,56,0.45); }
+  .sb-visual-label { background: var(--navy); color: white; font-size: 0.82rem; font-weight: 600; padding: 10px 14px; }
+</style>

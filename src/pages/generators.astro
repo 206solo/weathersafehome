@@ -1,0 +1,594 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import ProductCard from '../components/ProductCard.astro'
+---
+
+<BaseLayout
+  title="Best Generators for Home Use — Buying Guide & Reviews"
+  description="Find the right generator for your home. We compare portable, inverter, dual-fuel, and standby generators by wattage, fuel type, and price. Updated reviews and top picks."
+>
+
+  <!-- Hero -->
+  <section class="threat-hero">
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1600&q=80&fit=crop" alt="Home generator" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-label">Home Protection · Generators</div>
+      <h1>Find the Right Generator for Your Home</h1>
+      <p class="hero-sub">
+        Power outages after storms can last days or weeks. The right generator keeps your
+        sump pump running, your food cold, and your family safe. Here's how to choose.
+      </p>
+      <div class="hero-actions">
+        <a href="#picks" class="btn btn-primary">See Top Picks</a>
+        <a href="#sizing" class="btn btn-secondary">What Size Do I Need?</a>
+        <a href="#types" class="btn btn-text">Compare Generator Types →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key facts -->
+  <div class="key-facts">
+    <div class="container facts-row">
+      <div class="fact">
+        <div class="fact-value">$600–$1,500</div>
+        <div class="fact-label">Typical portable generator cost</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">5,000–7,500W</div>
+        <div class="fact-label">Right size for most homes</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">20 feet</div>
+        <div class="fact-label">Minimum distance from home (CO safety)</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">Buy early</div>
+        <div class="fact-label">Generators sell out when storms form</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab strip -->
+  <nav class="section-tabs">
+    <div class="container tabs-row">
+      <a href="#types" class="tab">Generator Types</a>
+      <a href="#sizing" class="tab">Sizing Guide</a>
+      <a href="#picks" class="tab">Top Picks</a>
+      <a href="#portable" class="tab">Portable</a>
+      <a href="#inverter" class="tab">Inverter</a>
+      <a href="#dualfuel" class="tab">Dual Fuel</a>
+      <a href="#standby" class="tab">Standby</a>
+      <a href="#safety" class="tab">Safety</a>
+    </div>
+  </nav>
+
+  <!-- Main layout -->
+  <div class="container page-layout">
+
+    <article class="article">
+
+      <p class="lead">
+        Choosing the wrong generator is expensive and frustrating. Too small and it won't
+        run what you need. Too large and you're wasting money and fuel. This guide helps
+        you find exactly what your home requires — and avoid the most common mistakes.
+      </p>
+
+      <!-- Part 1 -->
+      <div class="part-heading" id="types">
+        <div class="part-number">Part 1</div>
+        <h2 class="part-title">Understanding Generator Types</h2>
+      </div>
+
+      <div class="type-grid">
+        <div class="type-card">
+          <div class="type-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="16" width="32" height="20" rx="2" stroke="#1B3A52" stroke-width="2" fill="#EBF4FB"/>
+              <path d="M16 16V12M32 16V12" stroke="#1B3A52" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="18" cy="26" r="4" stroke="#2E7CB8" stroke-width="1.5"/>
+              <circle cx="30" cy="26" r="4" stroke="#2E7CB8" stroke-width="1.5"/>
+              <path d="M12 36L36 36" stroke="#D4691E" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Portable</h3>
+          <div class="type-range">$400–$1,200</div>
+          <p>The most common choice. Runs on gasoline, requires manual setup and refueling. Good for powering essential circuits.</p>
+          <div class="type-best">Best for: Budget-conscious buyers, occasional use</div>
+        </div>
+
+        <div class="type-card type-card-featured">
+          <div class="type-badge">Most Popular</div>
+          <div class="type-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="16" width="32" height="20" rx="2" stroke="#1B3A52" stroke-width="2" fill="#EBF4FB"/>
+              <path d="M20 22L24 26L28 18" stroke="#2E7CB8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 36L36 36" stroke="#D4691E" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="38" cy="14" r="5" fill="#D4691E" opacity="0.2" stroke="#D4691E" stroke-width="1.5"/>
+              <path d="M36 14H40M38 12V16" stroke="#D4691E" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Inverter</h3>
+          <div class="type-range">$700–$2,000</div>
+          <p>Produces clean, stable power safe for electronics. Quieter, more fuel-efficient, and lighter than conventional portables.</p>
+          <div class="type-best">Best for: Sensitive electronics, quiet neighborhoods, RV use</div>
+        </div>
+
+        <div class="type-card">
+          <div class="type-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="16" width="32" height="20" rx="2" stroke="#1B3A52" stroke-width="2" fill="#EBF4FB"/>
+              <path d="M20 24H28M24 20V28" stroke="#2E7CB8" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12 36L36 36" stroke="#D4691E" stroke-width="2" stroke-linecap="round"/>
+              <path d="M10 14C10 14 14 10 18 14M30 14C30 14 34 10 38 14" stroke="#1B3A52" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Dual Fuel</h3>
+          <div class="type-range">$600–$1,500</div>
+          <p>Runs on gasoline OR propane. Propane stores indefinitely — huge advantage when gas stations run out after a storm.</p>
+          <div class="type-best">Best for: Hurricane-prone areas, long outages</div>
+        </div>
+
+        <div class="type-card">
+          <div class="type-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="12" width="36" height="28" rx="2" stroke="#1B3A52" stroke-width="2" fill="#EBF4FB"/>
+              <path d="M14 12V8M34 12V8" stroke="#1B3A52" stroke-width="2" stroke-linecap="round"/>
+              <rect x="14" y="20" width="20" height="12" rx="1" stroke="#2E7CB8" stroke-width="1.5"/>
+              <path d="M20 26H28M24 22V30" stroke="#2E7CB8" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Standby</h3>
+          <div class="type-range">$5,000–$15,000 installed</div>
+          <p>Permanently installed, starts automatically within seconds of a power outage. Runs on natural gas or propane indefinitely.</p>
+          <div class="type-best">Best for: Whole-home coverage, medical equipment, frequent outages</div>
+        </div>
+      </div>
+
+      <!-- Part 2 -->
+      <div class="part-heading" id="sizing">
+        <div class="part-number">Part 2</div>
+        <h2 class="part-title">What Size Generator Do You Need?</h2>
+      </div>
+
+      <p>Generator size is measured in watts. You need to add up the wattage of everything you want to run simultaneously. Here's a practical guide:</p>
+
+      <table class="compare-table">
+        <thead>
+          <tr><th>Appliance</th><th>Running Watts</th><th>Starting Watts</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Refrigerator</td><td>150–400W</td><td>800–1,200W</td></tr>
+          <tr><td>Window AC (10,000 BTU)</td><td>1,200W</td><td>3,600W</td></tr>
+          <tr><td>Sump pump (1/2 HP)</td><td>800W</td><td>2,000W</td></tr>
+          <tr><td>Well pump (1/2 HP)</td><td>1,000W</td><td>2,100W</td></tr>
+          <tr><td>Lights (10 x LED)</td><td>100W</td><td>100W</td></tr>
+          <tr><td>Phone/laptop chargers</td><td>200W</td><td>200W</td></tr>
+          <tr><td>CPAP machine</td><td>30–60W</td><td>30–60W</td></tr>
+          <tr class="row-highlight"><td><strong>Typical essential load</strong></td><td><strong>~3,500W</strong></td><td><strong>~7,000W</strong></td></tr>
+        </tbody>
+      </table>
+
+      <div class="sizing-cards">
+        <div class="sizing-card">
+          <div class="sizing-watt">3,500–5,000W</div>
+          <h3>Essential Only</h3>
+          <p>Refrigerator, lights, phone charging, and a fan. No AC. Minimal comfort but keeps food safe and devices charged.</p>
+        </div>
+        <div class="sizing-card sizing-card-rec">
+          <div class="sizing-badge">Recommended</div>
+          <div class="sizing-watt">5,000–7,500W</div>
+          <h3>Comfortable Living</h3>
+          <p>Everything above plus a window AC unit and sump pump. Handles most homes' essential needs during an extended outage.</p>
+        </div>
+        <div class="sizing-card">
+          <div class="sizing-watt">10,000W+</div>
+          <h3>Whole Home</h3>
+          <p>Central AC, electric range, and everything else. Usually requires a transfer switch and professional installation.</p>
+        </div>
+      </div>
+
+      <div class="callout">
+        <strong>Starting vs. running watts:</strong> Motors (AC units, pumps) require 2–3x their running wattage to start. Always size your generator based on the highest starting watt load you'll run, not just the running watts.
+      </div>
+
+      <!-- Part 3: Top Picks -->
+      <div class="part-heading" id="picks">
+        <div class="part-number">Part 3</div>
+        <h2 class="part-title">Our Top Generator Picks</h2>
+      </div>
+
+      <p>These are the generators we recommend most based on reliability, value, and real-world performance during extended outages.</p>
+
+      <!-- Portable -->
+      <div class="section-block" id="portable">
+        <h2>Best Portable Generators</h2>
+        <p>Portable generators are the right choice for most homeowners. They're affordable, easy to store, and provide enough power to keep essentials running during an outage.</p>
+        <div class="product-row">
+          <ProductCard
+            name="WEN 56200i 2000W Inverter Generator"
+            asin="B07GBKFYQM"
+            price="$399"
+            store="amazon"
+            badge="Budget Pick"
+            desc="Quiet, lightweight, and fuel-efficient. Great for essential charging and small appliances. Ideal for apartments or as a backup to a larger unit."
+          />
+          <ProductCard
+            name="Champion 3500W Portable Generator"
+            asin="B07GBKFYQM"
+            price="$489"
+            store="amazon"
+            badge="Best Value"
+            desc="Reliable workhorse at a fair price. Handles refrigerator, sump pump, and lights simultaneously. Easy electric start."
+          />
+          <ProductCard
+            name="Generac GP6500 6,500W Generator"
+            asin="B01IRQMIDI"
+            price="$849"
+            store="amazon"
+            desc="6,500 running watts handles most home essentials including a window AC. PowerRush technology provides extra starting power."
+          />
+        </div>
+      </div>
+
+      <!-- Inverter -->
+      <div class="section-block" id="inverter">
+        <h2>Best Inverter Generators</h2>
+        <p>Inverter generators produce clean, stable power — safe for phones, laptops, and medical equipment. They're quieter and more fuel-efficient than conventional portables.</p>
+        <div class="product-row">
+          <ProductCard
+            name="Honda EU2200i 2,200W Inverter"
+            asin="B077K3BKPV"
+            price="$1,099"
+            store="amazon"
+            badge="Editor's Pick"
+            desc="The gold standard. Incredibly quiet (48–57 dB), runs 8+ hours on 1 gallon. Honda reliability means it starts every time. Worth every penny."
+          />
+          <ProductCard
+            name="Yamaha EF2200iS 2,200W Inverter"
+            asin="B07GBKFYQM"
+            price="$999"
+            store="amazon"
+            desc="Honda's closest competitor. Equally quiet and reliable. Smart Throttle automatically adjusts engine speed to match load — extends run time significantly."
+          />
+          <ProductCard
+            name="WEN 56200i Super Quiet 2000W"
+            asin="B07GBKFYQM"
+            price="$449"
+            store="amazon"
+            badge="Budget Inverter"
+            desc="Best budget inverter generator. Clean power for electronics at half the price of Honda. Runs 6 hours on 1 gallon at 50% load."
+          />
+        </div>
+      </div>
+
+      <!-- Dual Fuel -->
+      <div class="section-block" id="dualfuel">
+        <h2>Best Dual Fuel Generators</h2>
+        <p>Dual fuel generators run on gasoline OR propane. In a hurricane, when gas stations are closed or have hour-long lines, propane from your grill tank keeps you running.</p>
+
+        <div class="callout">
+          <strong>Propane advantage:</strong> Propane stores indefinitely with no fuel stabilizer needed. Stock up before hurricane season and you're always ready.
+        </div>
+
+        <div class="product-row">
+          <ProductCard
+            name="Champion 7,500W Dual Fuel Generator"
+            asin="B07FDQJRBT"
+            price="$729"
+            store="amazon"
+            badge="Top Pick"
+            desc="The best all-around dual fuel generator. 7,500W on gas, 6,750W on propane. Electric start, low-oil shutoff, runs 8 hrs at 50% load."
+          />
+          <ProductCard
+            name="DuroMax XP5500EH Dual Fuel"
+            asin="B07GBKFYQM"
+            price="$579"
+            store="amazon"
+            badge="Best Value"
+            desc="5,500W at a great price. Quieter than most at this wattage. EPA and CARB compliant — ships to all 50 states."
+          />
+          <ProductCard
+            name="Westinghouse WGen9500DF Dual Fuel"
+            asin="B07GBKFYQM"
+            price="$1,099"
+            store="amazon"
+            desc="9,500W peak power handles central AC and whole-home essentials. Remote start key fob included. Best for larger homes."
+          />
+        </div>
+      </div>
+
+      <!-- Standby -->
+      <div class="section-block" id="standby">
+        <h2>Standby Generators</h2>
+        <p>
+          A standby generator is a permanent installation connected to your home's electrical
+          panel and natural gas or propane line. It detects a power outage and starts
+          automatically — usually within 10–30 seconds — without any action from you.
+        </p>
+        <p>
+          Standby generators are the right choice if you have medical equipment, a home
+          office, or live in an area with frequent or extended outages. They require
+          licensed electrical and gas installation and typically cost $5,000–$15,000 all-in.
+        </p>
+
+        <div class="callout callout-blue">
+          <strong>Generac dominates this category.</strong> They manufacture roughly 70% of standby home generators sold in the US. Kohler and Briggs & Stratton are also strong options. Get 3 quotes from licensed installers — installation cost varies significantly by location.
+        </div>
+
+        <div class="product-row product-row-2">
+          <ProductCard
+            name="Generac 7043 22kW Air-Cooled Standby Generator"
+            asin="B01N9DNOVT"
+            price="$4,299"
+            store="amazon"
+            badge="Best Standby"
+            desc="22kW powers a large home completely. WiFi monitoring via Generac Mobile Link app. Runs on natural gas or LP. Professional installation required."
+          />
+          <ProductCard
+            name="Generac 7172 11kW Air-Cooled Standby Generator"
+            asin="B07GBKFYQM"
+            price="$2,699"
+            store="amazon"
+            desc="Right-sized for most homes up to 2,500 sq ft. Quieter than larger units. Includes automatic transfer switch. Most popular residential standby."
+          />
+        </div>
+
+        <div class="installer-note">
+          <h3>Finding a Qualified Installer</h3>
+          <p>Standby generator installation requires a licensed electrician and gas plumber. Use Generac's dealer locator or HomeAdvisor to find certified installers in your area. Always get at least three quotes — installation costs range from $1,500 to $5,000+ depending on your panel setup and gas line distance.</p>
+          <a href="https://www.generac.com/for-homeowners/generac-dealers" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:16px; display:inline-block;">Find a Generac Dealer →</a>
+        </div>
+      </div>
+
+      <!-- Safety -->
+      <div class="section-block" id="safety">
+        <h2>Generator Safety</h2>
+
+        <div class="callout callout-red">
+          <strong>Carbon monoxide kills.</strong> Generators produce CO — a colorless, odorless gas that kills within minutes at high concentrations. Every year people die from running generators indoors. This is non-negotiable.
+        </div>
+
+        <ul class="action-list">
+          <li>Never run a generator inside your home, garage, basement, or carport — even with the door open</li>
+          <li>Position at least 20 feet from any window, door, or vent</li>
+          <li>Install battery-operated CO detectors on every level of your home</li>
+          <li>Point the exhaust away from your home and neighbors</li>
+          <li>Never refuel while running — let it cool for 15 minutes first</li>
+          <li>Use a transfer switch or interlock kit — never backfeed into your panel</li>
+          <li>Store fuel safely in approved containers, away from the generator</li>
+        </ul>
+
+        <div class="product-row product-row-2" style="margin-top:24px;">
+          <ProductCard
+            name="Kidde Nighthawk CO Detector"
+            asin="B00002N67S"
+            price="$34"
+            store="amazon"
+            badge="Essential"
+            desc="Install one on every level of your home when running a generator. Battery backup means it works even during a power outage."
+          />
+          <ProductCard
+            name="Reliance Controls 31410CRK Transfer Switch Kit"
+            asin="B000E1HNZS"
+            price="$89"
+            store="amazon"
+            desc="Safe, code-compliant way to connect your generator to your home's circuits. Much safer than extension cords for whole-home use."
+          />
+        </div>
+      </div>
+
+      <!-- Checklist CTA -->
+      <div class="checklist-cta" id="checklist">
+        <h2>Free Generator Buying Checklist</h2>
+        <p>Calculate your wattage needs, compare fuel types, and know exactly what to ask an installer. Enter your email and we'll send it right away.</p>
+        <form class="cta-form" name="generator-checklist" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="generator-checklist" />
+          <input type="email" name="email" placeholder="your@email.com" required />
+          <button type="submit" class="btn btn-primary">Send Me the Checklist</button>
+        </form>
+      </div>
+
+    </article>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+      <div class="sb-card">
+        <h4>On This Page</h4>
+        <a href="#types">Generator Types</a>
+        <a href="#sizing">Sizing Guide</a>
+        <a href="#picks">Top Picks</a>
+        <a href="#portable">Portable</a>
+        <a href="#inverter">Inverter</a>
+        <a href="#dualfuel">Dual Fuel</a>
+        <a href="#standby">Standby</a>
+        <a href="#safety">Safety</a>
+      </div>
+
+      <div class="sb-card sb-alert">
+        <h4>Buy Before the Storm</h4>
+        <p>Generators sell out within hours of a named storm. Stock up before hurricane season — not when a storm is forecast.</p>
+      </div>
+
+      <h4 class="sb-section-label">Related Guides</h4>
+
+      <a href="/hurricanes" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1563089145-599997674d42?w=300&q=80&fit=crop" alt="Hurricane guide" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Hurricane Guide →</div>
+      </a>
+
+      <a href="/backup-power" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1548438294-1ad5d5f4f063?w=300&q=80&fit=crop" alt="Backup power" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Backup Power Guide →</div>
+      </a>
+
+      <a href="/emergency-kits" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=300&q=80&fit=crop" alt="Emergency kits" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Emergency Kits →</div>
+      </a>
+
+      <div class="sb-card">
+        <h4>Quick Size Guide</h4>
+        <p style="font-size:0.82rem; color:var(--text-mid); margin-bottom:10px;">Add up what you need to run:</p>
+        <div class="quick-calc">
+          <div class="calc-row"><span>Refrigerator</span><span>400W</span></div>
+          <div class="calc-row"><span>Window AC</span><span>1,200W</span></div>
+          <div class="calc-row"><span>Sump pump</span><span>800W</span></div>
+          <div class="calc-row"><span>Lights + devices</span><span>300W</span></div>
+          <div class="calc-row calc-total"><span>Typical total</span><span>~5,500W</span></div>
+        </div>
+      </div>
+
+    </aside>
+
+  </div>
+
+</BaseLayout>
+
+<script>
+  const sections = ['types','sizing','picks','portable','inverter','dualfuel','standby','safety']
+  const tabs = document.querySelectorAll('.section-tabs .tab')
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tabs.forEach(t => t.classList.remove('active'))
+        const activeTab = document.querySelector(`.tab[href="#${entry.target.id}"]`)
+        if (activeTab) activeTab.classList.add('active')
+      }
+    })
+  }, { rootMargin: '-20% 0px -70% 0px' })
+
+  sections.forEach(id => {
+    const el = document.getElementById(id)
+    if (el) observer.observe(el)
+  })
+</script>
+
+<style>
+  .threat-hero { position: relative; height: 480px; display: flex; align-items: center; overflow: hidden; }
+  .hero-img-wrap { position: absolute; inset: 0; z-index: 0; }
+  .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(13,35,56,0.92) 0%, rgba(13,35,56,0.65) 60%, rgba(13,35,56,0.3) 100%); }
+  .hero-content { position: relative; z-index: 1; max-width: 640px; color: white; }
+  .hero-label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A8CEDF; margin-bottom: 16px; }
+  .hero-content h1 { color: white; margin-bottom: 20px; }
+  .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.8); line-height: 1.7; margin-bottom: 32px; max-width: 560px; }
+  .hero-actions { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+  .btn-text { color: rgba(255,255,255,0.75); font-size: 0.9rem; font-weight: 500; text-decoration: none; transition: color 0.15s; }
+  .btn-text:hover { color: white; text-decoration: none; }
+
+  .key-facts { background: var(--off-white); border-bottom: 1px solid var(--border); padding: 24px 0; }
+  .facts-row { display: flex; align-items: center; }
+  .fact { flex: 1; padding: 0 32px; }
+  .fact:first-child { padding-left: 0; }
+  .fact-value { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
+  .fact-label { font-size: 0.78rem; color: var(--text-light); }
+  .fact-divider { width: 2px; height: 36px; background: var(--border); flex-shrink: 0; }
+
+  .section-tabs { background: white; border-bottom: 2px solid var(--border); position: sticky; top: 68px; z-index: 90; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .tabs-row { display: flex; overflow-x: auto; scrollbar-width: none; }
+  .tabs-row::-webkit-scrollbar { display: none; }
+  .tab { font-size: 0.82rem; font-weight: 500; color: var(--text-mid); padding: 14px 20px; white-space: nowrap; text-decoration: none; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all 0.15s; border-right: 1.5px solid var(--border); }
+  .tab:last-child { border-right: none; }
+  .tab:hover { color: var(--sky); background: var(--sky-light); text-decoration: none; }
+  .tab.active { color: var(--sky); border-bottom-color: var(--sky); font-weight: 600; background: var(--sky-light); }
+
+  .page-layout { display: grid; grid-template-columns: 1fr 280px; gap: 56px; padding-top: 48px; padding-bottom: 96px; align-items: start; }
+
+  .lead { font-size: 1.05rem; line-height: 1.8; color: var(--text-mid); margin-bottom: 32px; }
+  .article p { color: #333; line-height: 1.75; margin-bottom: 16px; }
+  .article h3 { margin-top: 24px; margin-bottom: 10px; color: var(--navy); }
+
+  .part-heading { display: flex; align-items: center; gap: 16px; margin: 48px 0 24px; padding-bottom: 16px; border-bottom: 2px solid var(--navy); scroll-margin-top: 140px; }
+  .part-number { background: var(--navy); color: white; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 4px; white-space: nowrap; }
+  .part-title { font-size: 1.4rem; color: var(--navy); margin: 0; }
+
+  .section-block { margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--border); scroll-margin-top: 140px; }
+  .section-block h2 { color: var(--navy); margin-bottom: 20px; font-size: 1.4rem; }
+
+  /* Type cards */
+  .type-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 24px 0; }
+  .type-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 20px 16px; position: relative; }
+  .type-card-featured { border: 2px solid var(--sky); }
+  .type-badge { position: absolute; top: -10px; left: 16px; background: var(--sky); color: white; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 3px 8px; border-radius: 4px; }
+  .type-icon { width: 48px; height: 48px; margin-bottom: 12px; }
+  .type-icon svg { width: 100%; height: 100%; }
+  .type-card h3 { font-size: 1rem; color: var(--navy); margin: 0 0 4px; }
+  .type-range { font-size: 0.8rem; font-weight: 600; color: var(--orange); margin-bottom: 10px; }
+  .type-card p { font-size: 0.82rem; color: var(--text-mid); line-height: 1.5; margin: 0 0 10px; }
+  .type-best { font-size: 0.75rem; color: var(--sky); font-weight: 500; }
+
+  /* Sizing cards */
+  .sizing-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0; }
+  .sizing-card { background: var(--off-white); border: 1px solid var(--border); border-radius: 8px; padding: 20px; position: relative; }
+  .sizing-card-rec { background: var(--sky-light); border-color: var(--sky); }
+  .sizing-badge { position: absolute; top: -10px; left: 16px; background: var(--sky); color: white; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 3px 8px; border-radius: 4px; }
+  .sizing-watt { font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+  .sizing-card h3 { font-size: 0.95rem; color: var(--navy); margin: 0 0 8px; }
+  .sizing-card p { font-size: 0.82rem; color: var(--text-mid); line-height: 1.5; margin: 0; }
+
+  .compare-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.88rem; }
+  .compare-table th { background: var(--navy); color: white; padding: 10px 14px; text-align: left; font-weight: 600; }
+  .compare-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  .compare-table tr:hover td { background: var(--sky-light); }
+  .row-highlight td { background: var(--sky-light); font-weight: 600; }
+
+  .callout { background: var(--orange-bg); border-left: 3px solid var(--orange); border-radius: 0 6px 6px 0; padding: 14px 18px; margin: 24px 0; font-size: 0.9rem; line-height: 1.6; color: #5a3010; }
+  .callout-red { background: #FDF0EF; border-color: #C0392B; color: #5a1010; }
+  .callout-blue { background: var(--sky-light); border-color: var(--sky); color: var(--navy); }
+
+  .product-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; }
+  .product-row-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .installer-note { background: var(--off-white); border: 1px solid var(--border); border-radius: 8px; padding: 24px; margin-top: 24px; }
+  .installer-note h3 { color: var(--navy); margin: 0 0 10px; }
+  .installer-note p { font-size: 0.9rem; color: var(--text-mid); margin: 0; }
+
+  .action-list { list-style: none; padding: 0; margin: 20px 0; display: flex; flex-direction: column; gap: 8px; }
+  .action-list li { padding: 10px 14px 10px 38px; background: var(--off-white); border: 1px solid var(--border); border-radius: 5px; font-size: 0.9rem; position: relative; }
+  .action-list li::before { content: "⚠"; position: absolute; left: 12px; color: #C0392B; }
+
+  .checklist-cta { margin-top: 56px; padding: 40px; background: var(--sky-light); border: 1px solid #B8D8EE; border-radius: 8px; border-left: 4px solid var(--sky); scroll-margin-top: 140px; }
+  .checklist-cta h2 { font-size: 1.3rem; margin-bottom: 10px; }
+  .checklist-cta p { font-size: 0.9rem; color: var(--text-mid); margin-bottom: 20px; }
+  .cta-form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .cta-form input { padding: 10px 14px; border: 1.5px solid var(--border); border-radius: 4px; font-size: 0.9rem; min-width: 240px; font-family: var(--font-sans); }
+
+  .sidebar { position: sticky; top: 120px; display: flex; flex-direction: column; gap: 16px; }
+  .sb-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+  .sb-card h4 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); margin-bottom: 14px; font-weight: 600; }
+  .sb-card a { display: block; font-size: 0.85rem; padding: 7px 0; border-bottom: 1px solid #f0f4f7; color: var(--sky); }
+  .sb-card a:last-child { border-bottom: none; }
+  .sb-card p { font-size: 0.85rem; color: var(--text-mid); line-height: 1.5; }
+  .sb-alert { border-top: 3px solid var(--orange); }
+  .sb-alert h4 { color: var(--orange); }
+  .sb-section-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); font-weight: 600; padding: 0 4px; }
+
+  .sb-visual-card { display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
+  .sb-visual-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); text-decoration: none; }
+  .sb-visual-img { position: relative; height: 90px; overflow: hidden; }
+  .sb-visual-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+  .sb-visual-card:hover .sb-visual-img img { transform: scale(1.05); }
+  .sb-visual-overlay { position: absolute; inset: 0; background: rgba(13,35,56,0.45); }
+  .sb-visual-label { background: var(--navy); color: white; font-size: 0.82rem; font-weight: 600; padding: 10px 14px; }
+
+  .quick-calc { display: flex; flex-direction: column; gap: 6px; }
+  .calc-row { display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-mid); padding: 4px 0; border-bottom: 1px solid #f0f4f7; }
+  .calc-total { font-weight: 700; color: var(--navy); border-bottom: none; padding-top: 8px; }
+</style>

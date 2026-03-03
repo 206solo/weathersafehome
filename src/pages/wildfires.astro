@@ -1,0 +1,459 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+import ProductCard from '../components/ProductCard.astro'
+---
+
+<BaseLayout
+  title="Wildfire Home Protection Guide"
+  description="How to protect your home from wildfires. Covers defensible space, ember-resistant vents, fire-resistant roofing, and evacuation planning."
+>
+
+  <!-- Hero -->
+  <section class="threat-hero">
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1542401886-65d6c61db217?w=1600&q=80&fit=crop" alt="Wildfire approaching homes" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-label">Wildfire Preparedness</div>
+      <h1>How to Protect Your Home from Wildfires</h1>
+      <p class="hero-sub">
+        85% of homes lost in wildfires are destroyed by embers — not the fire itself.
+        The right preparation can mean the difference between a home that survives and one that doesn't.
+      </p>
+      <div class="hero-actions">
+        <a href="#protect" class="btn btn-primary">Protect Your Home</a>
+        <a href="#checklist" class="btn btn-secondary">Get the Free Checklist</a>
+        <a href="#products" class="btn btn-text">View Recommended Products →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key facts -->
+  <div class="key-facts">
+    <div class="container facts-row">
+      <div class="fact">
+        <div class="fact-value">85%</div>
+        <div class="fact-label">Of homes lost to embers, not direct flame</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">100 ft</div>
+        <div class="fact-label">Recommended defensible space around home</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">Go early</div>
+        <div class="fact-label">Evacuate before mandatory order — not after</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">Class A</div>
+        <div class="fact-label">Minimum roof rating for fire-prone areas</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab strip -->
+  <nav class="section-tabs">
+    <div class="container tabs-row">
+      <a href="#risks" class="tab">Wildfire Risks</a>
+      <a href="#defensible" class="tab">Defensible Space</a>
+      <a href="#home" class="tab">Home Hardening</a>
+      <a href="#evacuation" class="tab">Evacuation Planning</a>
+      <a href="#air" class="tab">Air Quality</a>
+      <a href="#checklist" class="tab">Free Checklist</a>
+    </div>
+  </nav>
+
+  <div class="container page-layout">
+    <article class="article">
+
+      <p class="lead">
+        Wildfires are becoming more frequent, more intense, and reaching communities that
+        have never faced this threat before. Whether you're in a designated fire zone or not,
+        understanding how wildfires spread — and how homes ignite — is the first step to protection.
+      </p>
+
+      <!-- Part 1 -->
+      <div class="part-heading" id="risks">
+        <div class="part-number">Part 1</div>
+        <h2 class="part-title">Understanding Wildfire Risk</h2>
+      </div>
+
+      <div class="risk-grid">
+        <div class="risk-item">
+          <div class="risk-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 40C24 40 12 32 12 22C12 16 16 12 20 10C18 14 20 18 24 20C22 16 24 10 30 8C28 14 32 16 34 22C36 28 30 36 24 40Z" stroke="#D4691E" stroke-width="2" stroke-linejoin="round" fill="rgba(212,105,30,0.1)"/>
+              <path d="M20 30C20 28 22 26 24 26C22 24 21 22 22 20C24 22 26 24 26 28C27 30 25 32 24 32C23 32 21 31 20 30Z" fill="#D4691E" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>Ember Cast</h3>
+          <p>Burning embers travel up to a mile ahead of the fire line, landing on roofs, in gutters, and through vents.</p>
+        </div>
+        <div class="risk-item">
+          <div class="risk-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 20C10 18 14 22 18 20C22 18 26 22 30 20C34 18 38 22 42 20" stroke="#D4691E" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M6 28C10 26 14 30 18 28C22 26 26 30 30 28C34 26 38 30 42 28" stroke="#D4691E" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="24" cy="12" r="5" stroke="#1B3A52" stroke-width="2"/>
+              <path d="M24 7V4M24 20V17M19 12H16M32 12H29" stroke="#1B3A52" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Wind-Driven Fire</h3>
+          <p>Strong winds accelerate fire spread dramatically. A fire can move faster than a person can run in high winds.</p>
+        </div>
+        <div class="risk-item">
+          <div class="risk-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="20" width="28" height="18" rx="2" stroke="#1B3A52" stroke-width="2" fill="#EBF4FB"/>
+              <path d="M16 20V14L24 8L32 14V20" stroke="#1B3A52" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M20 28C20 26 22 24 24 24C26 24 28 26 28 28V38H20V28Z" stroke="#D4691E" stroke-width="1.5" fill="rgba(212,105,30,0.1)"/>
+            </svg>
+          </div>
+          <h3>Structure Ignition</h3>
+          <p>Homes ignite from embers entering through vents, gutters full of debris, and combustible materials touching the structure.</p>
+        </div>
+        <div class="risk-item">
+          <div class="risk-icon-wrap">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 38L24 10L38 38H10Z" stroke="#D4691E" stroke-width="2" stroke-linejoin="round" fill="rgba(212,105,30,0.1)"/>
+              <path d="M24 22V30" stroke="#D4691E" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="24" cy="34" r="1.5" fill="#D4691E"/>
+            </svg>
+          </div>
+          <h3>Rapid Spread</h3>
+          <p>Under the right conditions, wildfires can double in size every minute. Early evacuation is always safer than waiting.</p>
+        </div>
+      </div>
+
+      <!-- Part 2 -->
+      <div class="part-heading" id="protect">
+        <div class="part-number">Part 2</div>
+        <h2 class="part-title">Protecting Your Home</h2>
+      </div>
+
+      <div class="section-block" id="defensible">
+        <h2>1. Defensible Space</h2>
+        <p>Defensible space is the buffer between your home and the vegetation that could fuel a wildfire. It's the single most effective thing you can do to protect your home — and it costs nothing but time.</p>
+
+        <div class="zone-grid">
+          <div class="zone-card zone-1">
+            <div class="zone-label">Zone 1 · 0–30 feet</div>
+            <h3>Lean, Clean & Green</h3>
+            <ul class="zone-list">
+              <li>Remove all dead plants, grass, and leaves</li>
+              <li>Keep grass mowed to 4 inches or less</li>
+              <li>Remove branches within 10 feet of chimney</li>
+              <li>Move woodpiles outside this zone</li>
+              <li>Space plants so fire can't easily travel between them</li>
+            </ul>
+          </div>
+          <div class="zone-card zone-2">
+            <div class="zone-label">Zone 2 · 30–100 feet</div>
+            <h3>Reduce Fuel</h3>
+            <ul class="zone-list">
+              <li>Cut or remove shrubs in irregular patterns</li>
+              <li>Create spacing between trees — 10 feet minimum</li>
+              <li>Remove dead wood, branches, and debris</li>
+              <li>Trim tree branches up 6–10 feet from ground</li>
+              <li>Mow grass regularly during dry season</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block" id="home">
+        <h2>2. Home Hardening</h2>
+        <p>Home hardening means making your structure itself more resistant to ignition. Most wildfire home losses are preventable with the right materials and maintenance.</p>
+
+        <h3>Roof</h3>
+        <p>The roof is the most vulnerable part of your home in a wildfire. Class A fire-rated roofing materials (metal, tile, asphalt shingles) are the minimum for fire-prone areas. Keep gutters clear of debris year-round.</p>
+
+        <h3>Vents</h3>
+        <p>Attic and foundation vents are the primary entry point for burning embers. Replace standard vents with ember-resistant or intumescent vents that automatically close when exposed to heat.</p>
+
+        <h3>Windows & Doors</h3>
+        <p>Single-pane windows can shatter from radiant heat before the fire even reaches your home. Dual-pane or tempered glass significantly improves resistance. Seal gaps around doors and windows.</p>
+
+        <h3>Deck & Siding</h3>
+        <p>Combustible wood decks attached to homes are a leading ignition point. Replace with composite decking, stone, or concrete pavers. Fiber cement or stucco siding outperforms wood significantly.</p>
+
+        <div class="product-block" id="products">
+          <div class="product-block-header">
+            <h3>Home Hardening Products</h3>
+          </div>
+          <div class="product-row product-row-2">
+            <ProductCard
+              name="Brandguard Ember & Fire Resistant Vent"
+              asin="B07GBKFYQM"
+              price="$24"
+              store="amazon"
+              badge="Essential"
+              desc="Replaces standard vents with ember-resistant mesh. Keeps burning embers from entering your attic — one of the highest-ROI wildfire upgrades."
+            />
+            <ProductCard
+              name="Ready Defense Deck & Fence Spray"
+              asin="B07GBKFYQM"
+              price="$89"
+              store="amazon"
+              desc="Fire-retardant spray for wood decks, fences, and siding. Creates a barrier that slows ignition significantly. Apply before fire season."
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block" id="evacuation">
+        <h2>3. Evacuation Planning</h2>
+        <p>The most important wildfire decision you'll make is when to leave. Leaving early — before a mandatory order — is always safer. Roads become gridlocked during mandatory evacuations, and fire can move faster than traffic.</p>
+
+        <div class="callout callout-red">
+          <strong>Never wait for a mandatory evacuation order.</strong> By the time an order is issued, roads may already be dangerous. Know your trigger point in advance and leave when you hit it.
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div>
+              <strong>Know your evacuation zone</strong>
+              <p>Find your zone at <a href="https://www.ready.gov/wildfires" target="_blank" rel="noopener">ready.gov/wildfires</a>. Know multiple routes out of your neighborhood.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div>
+              <strong>Set your personal trigger</strong>
+              <p>Decide in advance: "If a fire is reported within X miles, we leave immediately." Write it down. Don't make this decision under stress.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div>
+              <strong>Pack your go-bag now</strong>
+              <p>Documents, medications, chargers, cash, clothing for 3 days, and pet supplies. Keep it near the door during fire season.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div>
+              <strong>Sign up for alerts</strong>
+              <p>Register for your county's emergency alert system. Enable wireless emergency alerts on your phone. Don't rely on seeing smoke.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-block" id="air">
+        <h2>4. Air Quality Protection</h2>
+        <p>Wildfire smoke is dangerous long before flames reach your area. Fine particulate matter (PM2.5) from smoke can travel hundreds of miles and cause serious respiratory harm.</p>
+
+        <ul class="action-list">
+          <li>Check AQI at <a href="https://www.airnow.gov" target="_blank" rel="noopener">airnow.gov</a> — stay inside when AQI exceeds 150</li>
+          <li>Run an air purifier with a HEPA filter during smoke events</li>
+          <li>Keep windows and doors closed — use weatherstripping to seal gaps</li>
+          <li>Set HVAC to recirculate, not fresh air intake</li>
+          <li>Wear an N95 mask if you must go outside</li>
+          <li>Have 72 hours of supplies so you don't need to leave during peak smoke</li>
+        </ul>
+
+        <div class="product-block">
+          <div class="product-block-header">
+            <h3>Air Quality Products</h3>
+          </div>
+          <div class="product-row product-row-2">
+            <ProductCard
+              name="Coway AP-1512HH HEPA Air Purifier"
+              asin="B01728NLRG"
+              price="$129"
+              store="amazon"
+              badge="Top Rated"
+              desc="Covers up to 360 sq ft. True HEPA filter captures 99.97% of particles including wildfire smoke. Four-stage filtration."
+            />
+            <ProductCard
+              name="3M Aura N95 Particulate Respirator"
+              asin="B00AYCPGIC"
+              price="$29"
+              store="amazon"
+              desc="NIOSH-approved N95 protection against wildfire smoke. More comfortable than standard N95s. Pack of 10."
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Checklist CTA -->
+      <div class="checklist-cta" id="checklist">
+        <h2>Free Wildfire Home Protection Checklist</h2>
+        <p>Defensible space tasks, home hardening checklist, go-bag packing list, and evacuation planning guide — all in one download.</p>
+        <form class="cta-form" name="wildfire-checklist" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="wildfire-checklist" />
+          <input type="email" name="email" placeholder="your@email.com" required />
+          <button type="submit" class="btn btn-primary">Send Me the Checklist</button>
+        </form>
+      </div>
+
+    </article>
+
+    <aside class="sidebar">
+      <div class="sb-card">
+        <h4>On This Page</h4>
+        <a href="#risks">Wildfire Risks</a>
+        <a href="#defensible">Defensible Space</a>
+        <a href="#home">Home Hardening</a>
+        <a href="#evacuation">Evacuation Planning</a>
+        <a href="#air">Air Quality</a>
+        <a href="#checklist">Free Checklist</a>
+      </div>
+
+      <div class="sb-card sb-alert">
+        <h4>Leave Early</h4>
+        <p>Don't wait for a mandatory evacuation order. Decide your trigger point now — before fire season starts.</p>
+      </div>
+
+      <h4 class="sb-section-label">Related Guides</h4>
+
+      <a href="/emergency-kits" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=300&q=80&fit=crop" alt="Emergency kits" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Emergency Kits →</div>
+      </a>
+
+      <a href="/insurance" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=300&q=80&fit=crop" alt="Insurance guide" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Insurance Guide →</div>
+      </a>
+
+      <div class="sb-card sb-cta">
+        <h4>Check Fire Risk</h4>
+        <p>See current wildfire conditions and evacuation zones in your area.</p>
+        <a href="https://www.ready.gov/wildfires" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:14px; font-size:0.85rem; width:100%; text-align:center; display:block;">
+          Ready.gov Wildfires →
+        </a>
+      </div>
+    </aside>
+
+  </div>
+
+</BaseLayout>
+
+<script>
+  const sections = ['risks','defensible','home','evacuation','air','checklist']
+  const tabs = document.querySelectorAll('.section-tabs .tab')
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tabs.forEach(t => t.classList.remove('active'))
+        const activeTab = document.querySelector(`.tab[href="#${entry.target.id}"]`)
+        if (activeTab) activeTab.classList.add('active')
+      }
+    })
+  }, { rootMargin: '-20% 0px -70% 0px' })
+  sections.forEach(id => { const el = document.getElementById(id); if (el) observer.observe(el) })
+</script>
+
+<style>
+  .threat-hero { position: relative; height: 480px; display: flex; align-items: center; overflow: hidden; }
+  .hero-img-wrap { position: absolute; inset: 0; z-index: 0; }
+  .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(13,35,56,0.92) 0%, rgba(13,35,56,0.65) 60%, rgba(13,35,56,0.3) 100%); }
+  .hero-content { position: relative; z-index: 1; max-width: 640px; color: white; }
+  .hero-label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A8CEDF; margin-bottom: 16px; }
+  .hero-content h1 { color: white; margin-bottom: 20px; }
+  .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.8); line-height: 1.7; margin-bottom: 32px; max-width: 560px; }
+  .hero-actions { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+  .btn-text { color: rgba(255,255,255,0.75); font-size: 0.9rem; font-weight: 500; text-decoration: none; transition: color 0.15s; }
+  .btn-text:hover { color: white; text-decoration: none; }
+
+  .key-facts { background: var(--off-white); border-bottom: 1px solid var(--border); padding: 24px 0; }
+  .facts-row { display: flex; align-items: center; }
+  .fact { flex: 1; padding: 0 32px; }
+  .fact:first-child { padding-left: 0; }
+  .fact-value { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
+  .fact-label { font-size: 0.78rem; color: var(--text-light); }
+  .fact-divider { width: 2px; height: 36px; background: var(--border); flex-shrink: 0; }
+
+  .section-tabs { background: white; border-bottom: 2px solid var(--border); position: sticky; top: 68px; z-index: 90; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .tabs-row { display: flex; overflow-x: auto; scrollbar-width: none; }
+  .tabs-row::-webkit-scrollbar { display: none; }
+  .tab { font-size: 0.82rem; font-weight: 500; color: var(--text-mid); padding: 14px 20px; white-space: nowrap; text-decoration: none; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all 0.15s; border-right: 1.5px solid var(--border); }
+  .tab:last-child { border-right: none; }
+  .tab:hover { color: var(--sky); background: var(--sky-light); text-decoration: none; }
+  .tab.active { color: var(--sky); border-bottom-color: var(--sky); font-weight: 600; background: var(--sky-light); }
+
+  .page-layout { display: grid; grid-template-columns: 1fr 280px; gap: 56px; padding-top: 48px; padding-bottom: 96px; align-items: start; }
+  .lead { font-size: 1.05rem; line-height: 1.8; color: var(--text-mid); margin-bottom: 32px; }
+  .article p { color: #333; line-height: 1.75; margin-bottom: 16px; }
+  .article h3 { margin-top: 24px; margin-bottom: 10px; color: var(--navy); }
+
+  .part-heading { display: flex; align-items: center; gap: 16px; margin: 48px 0 24px; padding-bottom: 16px; border-bottom: 2px solid var(--navy); scroll-margin-top: 140px; }
+  .part-number { background: var(--navy); color: white; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 4px; white-space: nowrap; }
+  .part-title { font-size: 1.4rem; color: var(--navy); margin: 0; }
+
+  .section-block { margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--border); scroll-margin-top: 140px; }
+  .section-block h2 { color: var(--navy); margin-bottom: 20px; font-size: 1.4rem; }
+
+  .risk-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 24px 0 0; }
+  .risk-item { background: var(--off-white); border: 1px solid var(--border); border-radius: 8px; padding: 24px 16px; text-align: center; }
+  .risk-icon-wrap { width: 56px; height: 56px; margin: 0 auto 14px; }
+  .risk-icon-wrap svg { width: 100%; height: 100%; }
+  .risk-item h3 { font-size: 0.95rem; margin: 0 0 8px; color: var(--navy); }
+  .risk-item p { font-size: 0.82rem; color: var(--text-mid); line-height: 1.5; margin: 0; }
+
+  .zone-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 24px 0; }
+  .zone-card { border-radius: 8px; padding: 24px; border: 1px solid var(--border); }
+  .zone-1 { background: #FFF8F5; border-left: 4px solid var(--orange); }
+  .zone-2 { background: var(--off-white); border-left: 4px solid var(--sky); }
+  .zone-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-light); margin-bottom: 8px; }
+  .zone-card h3 { font-size: 1rem; color: var(--navy); margin: 0 0 12px; }
+  .zone-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+  .zone-list li { font-size: 0.82rem; color: var(--text-mid); padding-left: 16px; position: relative; }
+  .zone-list li::before { content: "→"; position: absolute; left: 0; color: var(--orange); font-weight: 700; }
+
+  .steps { display: flex; flex-direction: column; gap: 16px; margin: 24px 0; }
+  .step { display: flex; gap: 16px; align-items: flex-start; }
+  .step-num { background: var(--sky); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px; }
+  .step strong { display: block; margin-bottom: 3px; color: var(--navy); }
+  .step p { margin: 0; font-size: 0.88rem; color: var(--text-mid); }
+
+  .callout { background: var(--orange-bg); border-left: 3px solid var(--orange); border-radius: 0 6px 6px 0; padding: 14px 18px; margin: 24px 0; font-size: 0.9rem; line-height: 1.6; color: #5a3010; }
+  .callout-red { background: #FDF0EF; border-color: #C0392B; color: #5a1010; }
+
+  .product-block { background: var(--off-white); border: 1px solid var(--border); border-radius: 8px; padding: 24px; margin-top: 28px; }
+  .product-block-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 20px; }
+  .product-block-header h3 { margin: 0; }
+  .product-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 20px; }
+  .product-row-2 { grid-template-columns: repeat(2, 1fr); }
+
+  .action-list { list-style: none; padding: 0; margin: 20px 0; display: flex; flex-direction: column; gap: 8px; }
+  .action-list li { padding: 10px 14px 10px 38px; background: var(--off-white); border: 1px solid var(--border); border-radius: 5px; font-size: 0.9rem; position: relative; }
+  .action-list li::before { content: "☐"; position: absolute; left: 12px; color: var(--sky); }
+
+  .checklist-cta { margin-top: 56px; padding: 40px; background: var(--sky-light); border: 1px solid #B8D8EE; border-radius: 8px; border-left: 4px solid var(--sky); scroll-margin-top: 140px; }
+  .checklist-cta h2 { font-size: 1.3rem; margin-bottom: 10px; }
+  .checklist-cta p { font-size: 0.9rem; color: var(--text-mid); margin-bottom: 20px; }
+  .cta-form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .cta-form input { padding: 10px 14px; border: 1.5px solid var(--border); border-radius: 4px; font-size: 0.9rem; min-width: 240px; font-family: var(--font-sans); }
+
+  .sidebar { position: sticky; top: 120px; display: flex; flex-direction: column; gap: 16px; }
+  .sb-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+  .sb-card h4 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); margin-bottom: 14px; font-weight: 600; }
+  .sb-card a { display: block; font-size: 0.85rem; padding: 7px 0; border-bottom: 1px solid #f0f4f7; color: var(--sky); }
+  .sb-card a:last-child { border-bottom: none; }
+  .sb-card p { font-size: 0.85rem; color: var(--text-mid); line-height: 1.5; }
+  .sb-alert { border-top: 3px solid var(--orange); }
+  .sb-alert h4 { color: var(--orange); }
+  .sb-cta { background: var(--off-white); }
+  .sb-section-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); font-weight: 600; padding: 0 4px; }
+  .sb-visual-card { display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
+  .sb-visual-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); text-decoration: none; }
+  .sb-visual-img { position: relative; height: 90px; overflow: hidden; }
+  .sb-visual-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+  .sb-visual-card:hover .sb-visual-img img { transform: scale(1.05); }
+  .sb-visual-overlay { position: absolute; inset: 0; background: rgba(13,35,56,0.45); }
+  .sb-visual-label { background: var(--navy); color: white; font-size: 0.82rem; font-weight: 600; padding: 10px 14px; }
+</style>
