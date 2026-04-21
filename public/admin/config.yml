@@ -16,3 +16,112 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "homepage"
+    label: "Homepage"
+    files:
+      - label: "Homepage Content"
+        name: "homepage"
+        file: "src/content/homepage/index.md"
+        fields:
+          - label: "Meta / SEO"
+            name: "meta"
+            widget: "object"
+            fields:
+              - { label: "Page Title", name: "title", widget: "string", hint: "Shown in browser tab and search results" }
+              - { label: "Meta Description", name: "description", widget: "text", hint: "1-2 sentences for search engine previews" }
+
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow (small text above headline)", name: "eyebrow", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "text" }
+              - { label: "Hero Image", name: "image", widget: "image", hint: "Upload or paste a URL. Recommended: 1600×900px" }
+              - { label: "Image Alt Text (for accessibility)", name: "imageAlt", widget: "string" }
+              - label: "Primary CTA Button"
+                name: "ctaPrimary"
+                widget: "object"
+                fields:
+                  - { label: "Button Text", name: "text", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string", hint: "e.g. /free-checklists" }
+              - label: "Secondary CTA Button"
+                name: "ctaSecondary"
+                widget: "object"
+                fields:
+                  - { label: "Button Text", name: "text", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string" }
+
+          - label: "Stats Bar"
+            name: "stats"
+            widget: "list"
+            min: 4
+            max: 4
+            fields:
+              - { label: "Value (big number/text)", name: "value", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+
+          - label: "Threats Section"
+            name: "threatsSection"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "text" }
+              - label: "Threat Cards"
+                name: "cards"
+                widget: "list"
+                min: 5
+                max: 5
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string" }
+                  - label: "Icon"
+                    name: "iconKey"
+                    widget: "select"
+                    options:
+                      - { label: "Hurricane", value: "hurricane" }
+                      - { label: "Flood", value: "flood" }
+                      - { label: "Wildfire", value: "wildfire" }
+                      - { label: "Winter Storm", value: "winter-storm" }
+                      - { label: "Tornado", value: "tornado" }
+
+          - label: "Products Section"
+            name: "productsSection"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "text" }
+              - label: "Product Cards"
+                name: "cards"
+                widget: "list"
+                min: 6
+                max: 6
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Image Alt Text", name: "imageAlt", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string" }
+                  - label: "Icon"
+                    name: "iconKey"
+                    widget: "select"
+                    options:
+                      - { label: "Generator", value: "generator" }
+                      - { label: "Insurance", value: "insurance" }
+                      - { label: "Emergency Kit", value: "emergency-kit" }
+                      - { label: "Flood Protection", value: "flood-protection" }
+                      - { label: "Safe Room", value: "safe-room" }
+                      - { label: "Backup Power", value: "backup-power" }
+
+          - label: "Email Capture Section"
+            name: "emailCapture"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Subheading", name: "subheading", widget: "text" }
+              - { label: "Button Text", name: "buttonText", widget: "string" }
+              - { label: "Form Name (don't change unless you know what you're doing)", name: "formName", widget: "string" }
