@@ -13,7 +13,7 @@ if (store === 'amazon' && asin) href = amazonLink(asin)
   <div class="card-footer">
     <span class="price">{price}</span>
     <a href={href} target="_blank" rel="nofollow sponsored noopener" class="buy-btn">
-      View on {store === 'amazon' ? 'Amazon' : store === 'homedepot' ? 'Home Depot' : 'Lowe\'s'} →
+      View on {store === 'amazon' ? 'Amazon' : store === 'homedepot' ? 'Home Depot' : store === 'lowes' ? 'Lowe\'s' : store} →
     </a>
   </div>
 </div>
