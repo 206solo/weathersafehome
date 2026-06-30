@@ -4,7 +4,7 @@
 // ─────────────────────────────────────────────
 
 export const AFFILIATE_IDS = {
-  amazon:   'weathersafe-20',   // replace with your Amazon Associates tag
+  amazon:   'weathersafeho-20',   // replace with your Amazon Associates tag
   homedepot: '',                // add when approved via Impact Radius
   lowes:     '',                // add when approved via Impact Radius
   acehardware: '',              // add when approved via ShareASale
