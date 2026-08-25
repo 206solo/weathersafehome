@@ -1,0 +1,543 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+
+<BaseLayout
+  title="Smart Home Devices for Weather Protection — Buying Guide"
+  description="Which smart home devices actually protect your home from weather damage. Leak sensors, automatic water shutoffs, smart smoke and CO alarms, freeze detection, and what fails when the power goes out."
+>
+
+  <!-- Hero -->
+  <section class="threat-hero">
+    <div class="hero-img-wrap">
+      <img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=1600&q=80&fit=crop" alt="Smart home devices" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <div class="hero-label">Home Protection · Smart Devices</div>
+      <h1>Smart Home Devices That Actually Protect Your Home</h1>
+      <p class="hero-sub">
+        Most "smart home" advice is about convenience. This guide is about damage prevention —
+        the handful of devices that catch a problem while it's still cheap to fix, and the
+        honest limits of every one of them.
+      </p>
+      <div class="hero-actions">
+        <a href="#compare" class="btn btn-primary">Compare Devices</a>
+        <a href="#failure" class="btn btn-secondary">What Fails in an Outage</a>
+        <a href="#checklist" class="btn btn-text">Get the Free Guide →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key facts -->
+  <div class="key-facts">
+    <div class="container facts-row">
+      <div class="fact">
+        <div class="fact-value">$15</div>
+        <div class="fact-label">Starting cost of a water leak sensor</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">$25,000</div>
+        <div class="fact-label">Damage one inch of water can cause</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">10 years</div>
+        <div class="fact-label">NFPA replacement interval for smoke alarms</div>
+      </div>
+      <div class="fact-divider"></div>
+      <div class="fact">
+        <div class="fact-value">Zero</div>
+        <div class="fact-label">Alerts a Wi-Fi sensor sends during an outage</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tab strip -->
+  <nav class="section-tabs">
+    <div class="container tabs-row">
+      <a href="#compare" class="tab">Compare Devices</a>
+      <a href="#water" class="tab">Water & Freeze</a>
+      <a href="#fire" class="tab">Fire & CO</a>
+      <a href="#power" class="tab">Power Monitoring</a>
+      <a href="#climate" class="tab">Climate & Structure</a>
+      <a href="#cameras" class="tab">Cameras</a>
+      <a href="#failure" class="tab">Failure Modes</a>
+      <a href="#checklist" class="tab">Free Guide</a>
+    </div>
+  </nav>
+
+  <div class="container page-layout">
+    <article class="article">
+
+      <p class="lead">
+        A smart doorbell will not save your house. A $15 water sensor under your water heater
+        might. The devices worth buying share one trait: they detect a slow-moving disaster
+        early enough that you can still do something about it. Here's what's worth installing,
+        in the order we'd install it — and what every one of these devices does the moment
+        your power and internet go down.
+      </p>
+
+      <div class="part-heading" id="compare">
+        <div class="part-number">Part 1</div>
+        <h2 class="part-title">Comparing Your Options</h2>
+      </div>
+
+      <p>
+        Cost ranges below are our own editorial estimates for the product category, based on
+        typical retail pricing. They are not quotes for any specific product — check the
+        retailer for current pricing.
+      </p>
+
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Device</th>
+            <th>Typical Cost</th>
+            <th>Prevents</th>
+            <th>Works Without Power?</th>
+            <th>Priority</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row-highlight">
+            <td><strong>Water leak sensor</strong></td>
+            <td>$15–$40 each</td>
+            <td>Slow leaks, tank failures</td>
+            <td>Local siren yes, alerts no</td>
+            <td>Buy first</td>
+          </tr>
+          <tr class="row-highlight">
+            <td><strong>Smart smoke / CO alarm</strong></td>
+            <td>$40–$130 each</td>
+            <td>Fire, carbon monoxide</td>
+            <td>Yes — battery required</td>
+            <td>Buy first</td>
+          </tr>
+          <tr>
+            <td><strong>Freeze / temp sensor</strong></td>
+            <td>$20–$50</td>
+            <td>Burst pipes</td>
+            <td>Local only</td>
+            <td>Cold climates</td>
+          </tr>
+          <tr>
+            <td><strong>Automatic water shutoff</strong></td>
+            <td>$400–$1,000 installed</td>
+            <td>Catastrophic flooding</td>
+            <td>Varies by model</td>
+            <td>High value, high cost</td>
+          </tr>
+          <tr>
+            <td><strong>Smart thermostat</strong></td>
+            <td>$100–$250</td>
+            <td>Freeze damage while away</td>
+            <td>No</td>
+            <td>Worthwhile</td>
+          </tr>
+          <tr>
+            <td><strong>Sump pump monitor</strong></td>
+            <td>$50–$200</td>
+            <td>Basement flooding</td>
+            <td>Battery models only</td>
+            <td>If you have a sump</td>
+          </tr>
+          <tr>
+            <td><strong>Cellular-backup camera</strong></td>
+            <td>$100–$300 + fee</td>
+            <td>Post-evacuation blind spots</td>
+            <td>Yes, with LTE backup</td>
+            <td>Optional</td>
+          </tr>
+          <tr>
+            <td><strong>Smart doorbell / lock</strong></td>
+            <td>$100–$350</td>
+            <td>Convenience only</td>
+            <td>No</td>
+            <td>Skip for protection</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <strong>If you buy one thing:</strong> a three-pack of water leak sensors placed under
+        the water heater, behind the washing machine, and under the kitchen sink. It's the
+        cheapest device on this list and it guards against the most common expensive claim
+        most homeowners will ever file.
+      </div>
+
+      <div class="part-heading" id="picks">
+        <div class="part-number">Part 2</div>
+        <h2 class="part-title">What to Look For, Category by Category</h2>
+      </div>
+
+      <div class="section-block" id="water">
+        <h2>1. Water Leak &amp; Freeze Detection</h2>
+        <p>
+          Water is the peril most likely to damage your home and the one smart sensors handle
+          best. A failing water heater, a cracked supply line behind a washing machine, or a
+          slow leak under a sink can run for days before anyone notices. A sensor turns that
+          into a same-hour problem.
+        </p>
+
+        <h3>What to look for</h3>
+        <ul class="check-list">
+          <li><strong>A loud local siren, not just an app alert.</strong> If the hub is down or your phone is on silent, the siren is what saves you. Look for 90dB or better.</li>
+          <li><strong>A replaceable, long-life battery</strong> with low-battery warnings — these sit forgotten for years.</li>
+          <li><strong>A probe or cable extension</strong> for pans and tight spaces behind appliances.</li>
+          <li><strong>Built-in temperature reporting</strong>, so one device covers both leak and freeze risk.</li>
+          <li><strong>Multi-packs.</strong> Coverage matters more than features. Six cheap sensors beat one expensive one.</li>
+        </ul>
+
+        <h3>Where to place them</h3>
+        <ul class="check-list">
+          <li>Under and beside the water heater — the single highest-value spot</li>
+          <li>Behind the washing machine, at the floor</li>
+          <li>Under kitchen and bathroom sinks</li>
+          <li>Beside the sump pit, above the normal water line</li>
+          <li>At the base of the furnace or air handler (condensate overflow)</li>
+          <li>Near any supply line running through an unheated space</li>
+        </ul>
+
+        <h3>Automatic water shutoff valves</h3>
+        <p>
+          A shutoff valve installs on your main line and closes it when it detects an abnormal
+          flow pattern or a signal from a paired leak sensor. This is the difference between a
+          wet floor and a destroyed first floor, and it's the only device here that acts rather
+          than alerts. Expect $400–$1,000 including professional installation, and check whether
+          your insurer offers a premium discount — several do, which changes the math
+          considerably. Confirm the model holds its position or fails closed during a power
+          outage before you buy.
+        </p>
+
+        <div class="callout callout-blue">
+          <strong>Cold-climate note:</strong> Pair freeze sensors with the pipe-insulation steps in
+          our <a href="/winter-storms">winter storm guide</a>. A sensor tells you a pipe is
+          approaching freezing; insulation and a dripping faucet are what actually prevent the burst.
+        </div>
+      </div>
+
+      <div class="section-block" id="fire">
+        <h2>2. Smart Smoke &amp; CO Alarms</h2>
+        <p>
+          Interconnection is the real feature here. When a basement alarm sounds, every alarm in
+          the house sounds — that's what wakes people upstairs. Smart models add a phone alert
+          when nobody is home, which matters if a fire starts while you're at work.
+        </p>
+
+        <h3>What to look for</h3>
+        <ul class="check-list">
+          <li><strong>Combination smoke + CO in one unit</strong>, so you aren't managing two device types on two schedules.</li>
+          <li><strong>Both photoelectric and ionization sensing</strong> (often sold as "dual sensor") — they detect smoldering and flaming fires respectively.</li>
+          <li><strong>Interconnection</strong>, wired or wireless, across every level.</li>
+          <li><strong>A 10-year sealed battery</strong> or hardwired power with battery backup. NFPA recommends replacing smoke alarms 10 years from the manufacture date printed on the unit — not from when you installed it.</li>
+          <li><strong>Local alarm independent of the cloud.</strong> The siren must work with the internet down. Verify this, don't assume it.</li>
+        </ul>
+
+        <div class="callout callout-red">
+          <strong>Generator season is CO season.</strong> If you run a portable generator, battery-powered
+          CO alarms on every level are not optional. See the safety section of our
+          <a href="/backup-power#safety">backup power guide</a> — carbon monoxide is colorless,
+          odorless, and reaches lethal concentrations within minutes.
+        </div>
+      </div>
+
+      <div class="section-block" id="power">
+        <h2>3. Power &amp; Outage Monitoring</h2>
+        <p>
+          If you're away when the power fails, you want to know — a dead sump pump during a
+          rainstorm or a thawing freezer are both problems with a clock on them.
+        </p>
+
+        <h3>What to look for</h3>
+        <ul class="check-list">
+          <li><strong>Sump pump monitors</strong> with their own battery and a high-water float, so they alarm on both power loss and pump failure. A pump that's running but not keeping up is the failure mode people miss.</li>
+          <li><strong>Smart plugs with energy monitoring</strong> on the freezer and sump — an unexpected drop to zero watts tells you something died.</li>
+          <li><strong>A small UPS for your router and modem.</strong> This is the piece nearly everyone skips. Without it, every Wi-Fi device in your house goes silent the instant the power fails, which is exactly when you need them talking.</li>
+          <li><strong>Generator monitoring</strong>, if you have a standby unit — most manufacturers offer a Wi-Fi module that reports exercise cycles and fault codes.</li>
+        </ul>
+
+        <p>
+          For sizing a generator to run these circuits, see our
+          <a href="/generators">generator buying guide</a> and the wattage breakdown in the
+          <a href="/backup-power">backup power guide</a>.
+        </p>
+      </div>
+
+      <div class="section-block" id="climate">
+        <h2>4. Climate &amp; Structural Monitoring</h2>
+        <p>
+          These are lower priority than water and fire, but they close real gaps — especially
+          for second homes, rentals, and anyone who travels during winter.
+        </p>
+
+        <h3>What to look for</h3>
+        <ul class="check-list">
+          <li><strong>Smart thermostats with a low-temperature alert</strong> and a hard minimum setpoint. The alert is the point; remote control is a bonus.</li>
+          <li><strong>Standalone temperature and humidity sensors</strong> for crawlspaces, attics, and unheated garages where pipes run.</li>
+          <li><strong>Smart garage door controllers</strong> with an open-state alert. An open garage door during high wind is a structural risk, not just a security one — see the wind-load discussion in our <a href="/hurricanes">hurricane guide</a>.</li>
+          <li><strong>Indoor air quality monitors with PM2.5</strong> if you're in wildfire country. They tell you when to close up and run filtration — pair with the guidance in our <a href="/wildfires">wildfire guide</a>.</li>
+        </ul>
+      </div>
+
+      <div class="section-block" id="cameras">
+        <h2>5. Cameras — Useful, With Caveats</h2>
+        <p>
+          A camera doesn't prevent damage. What it does is let you see your property after you
+          evacuate and before you're allowed back, and give you timestamped footage for an
+          insurance claim. That's a genuine benefit, but be clear-eyed that it's documentation,
+          not protection.
+        </p>
+
+        <h3>What to look for</h3>
+        <ul class="check-list">
+          <li><strong>Cellular (LTE) backup.</strong> A camera on home Wi-Fi is useless in exactly the scenario you bought it for. Without cellular fallback, the feed dies with your internet.</li>
+          <li><strong>Local storage on an SD card</strong> in addition to cloud, so footage survives a connectivity loss.</li>
+          <li><strong>Battery or solar power</strong> for at least one exterior camera.</li>
+          <li><strong>An honest look at the subscription cost</strong> — most of these carry a monthly fee that exceeds the hardware price within two years.</li>
+        </ul>
+
+        <div class="callout callout-blue">
+          <strong>Better claim prep than any camera:</strong> the annual walkthrough video described
+          in our <a href="/insurance">insurance guide</a>. Twenty minutes, narrated, stored in
+          the cloud. It documents what you owned before the loss, which is the part adjusters
+          actually argue about.
+        </div>
+      </div>
+
+      <div class="part-heading" id="failure">
+        <div class="part-number">Part 3</div>
+        <h2 class="part-title">What Every One of These Devices Does in a Real Storm</h2>
+      </div>
+
+      <p>
+        This is the section most smart home guides leave out. Nearly every device above depends
+        on two things that fail early in a severe weather event: household power and internet
+        service. When both are gone, a cloud-dependent sensor is an inert piece of plastic.
+      </p>
+
+      <ul class="action-list">
+        <li>Wi-Fi sensors stop sending alerts the moment your router loses power — the sensor may have battery, but the network doesn't</li>
+        <li>Cloud-only devices stay dark even if your power is fine but your ISP is down</li>
+        <li>Hub-based systems fail entirely if the hub is unpowered — one point of failure for every sensor</li>
+        <li>Cameras without LTE backup record nothing you can see remotely</li>
+        <li>Smart locks and thermostats generally revert to their last state with no notification</li>
+      </ul>
+
+      <h3>How to build around it</h3>
+      <ul class="check-list">
+        <li><strong>Put your router and modem on a small UPS.</strong> Cheapest, highest-leverage fix on this page — it keeps your entire sensor network alive through short outages and gives you a working alert path during longer ones.</li>
+        <li><strong>Prefer devices with a loud local siren</strong> that fires independently of any network.</li>
+        <li><strong>Prefer local control or local storage</strong> over cloud-only designs wherever the option exists.</li>
+        <li><strong>Test the failure case deliberately.</strong> Unplug your router, trip a sensor, and see what actually happens. Do this once a year, in the same session you test your smoke alarms.</li>
+        <li><strong>Don't let sensors replace physical measures.</strong> A freeze sensor is not pipe insulation. A leak sensor is not a shutoff valve. Sensors buy you time; hardware prevents the damage.</li>
+      </ul>
+
+      <div class="callout callout-red">
+        <strong>The honest summary:</strong> smart devices are an early-warning layer, not a
+        protection layer. They're worth the money because early warning is genuinely valuable —
+        but a home that depends on Wi-Fi to stay dry is a home with a single point of failure.
+      </div>
+
+      <div class="part-heading">
+        <div class="part-number">Part 4</div>
+        <h2 class="part-title">A Sensible Order to Buy In</h2>
+      </div>
+
+      <ol class="step-list">
+        <li><strong>Water leak sensors, multi-pack.</strong> Under $50 covers the six highest-risk spots in most homes.</li>
+        <li><strong>Combination smoke + CO alarms on every level</strong>, interconnected, with sealed 10-year batteries.</li>
+        <li><strong>A UPS for the router and modem.</strong> Makes everything above and below it actually work when it counts.</li>
+        <li><strong>Freeze and temperature sensors</strong> in unheated spaces, if you're anywhere with a real winter.</li>
+        <li><strong>A sump pump monitor</strong>, if you have a sump pit.</li>
+        <li><strong>A smart thermostat with low-temperature alerting</strong>, especially for a home you leave empty.</li>
+        <li><strong>An automatic water shutoff valve</strong>, once the cheap layers are in place — and ask your insurer about a discount first.</li>
+        <li><strong>Cameras with cellular backup</strong>, last, and only if remote visibility genuinely matters to you.</li>
+      </ol>
+
+      <div class="callout">
+        <strong>Specific product recommendations are coming.</strong> We're finishing hands-on
+        research for this category and will only list products once we've verified current
+        availability and specifications. In the meantime, the criteria above are enough to
+        evaluate anything you find on your own.
+      </div>
+
+      <div class="checklist-cta" id="checklist">
+        <h2>Free Home Monitoring Checklist</h2>
+        <p>Sensor placement map, an annual test routine, and the outage-resilience checklist from Part 3 — in one download.</p>
+        <form class="cta-form" name="smart-home-guide" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="smart-home-guide" />
+          <input type="email" name="email" placeholder="your@email.com" required />
+          <button type="submit" class="btn btn-primary">Send Me the Checklist</button>
+        </form>
+      </div>
+
+    </article>
+
+    <aside class="sidebar">
+      <div class="sb-card">
+        <h4>On This Page</h4>
+        <a href="#compare">Compare Devices</a>
+        <a href="#water">Water &amp; Freeze</a>
+        <a href="#fire">Fire &amp; CO</a>
+        <a href="#power">Power Monitoring</a>
+        <a href="#climate">Climate &amp; Structure</a>
+        <a href="#cameras">Cameras</a>
+        <a href="#failure">Failure Modes</a>
+        <a href="#checklist">Free Checklist</a>
+      </div>
+
+      <div class="sb-card sb-alert">
+        <h4>Start Here</h4>
+        <p>A three-pack of water leak sensors under the water heater, washing machine, and kitchen sink costs less than dinner out and guards against the most common expensive claim homeowners file.</p>
+      </div>
+
+      <h4 class="sb-section-label">Related Guides</h4>
+
+      <a href="/backup-power" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1548438294-1ad5d5f4f063?w=300&q=80&fit=crop" alt="Backup power" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Backup Power Guide →</div>
+      </a>
+
+      <a href="/flood-protection-products" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1547683905-f686c993aae5?w=300&q=80&fit=crop" alt="Flood protection" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Flood Protection →</div>
+      </a>
+
+      <a href="/winter-storms" class="sb-visual-card">
+        <div class="sb-visual-img">
+          <img src="https://images.unsplash.com/photo-1511131341194-24e2eeeebb09?w=300&q=80&fit=crop" alt="Winter storms" />
+          <div class="sb-visual-overlay"></div>
+        </div>
+        <div class="sb-visual-label">Winter Storm Guide →</div>
+      </a>
+
+      <div class="sb-card">
+        <h4>Sensor Placement</h4>
+        <p style="font-size:0.82rem; color:var(--text-mid); margin-bottom:10px;">The six spots worth covering first:</p>
+        <div class="quick-calc">
+          <div class="calc-row"><span>Water heater</span><span>Critical</span></div>
+          <div class="calc-row"><span>Washing machine</span><span>Critical</span></div>
+          <div class="calc-row"><span>Under sinks</span><span>High</span></div>
+          <div class="calc-row"><span>Sump pit</span><span>High</span></div>
+          <div class="calc-row"><span>Furnace / air handler</span><span>Medium</span></div>
+          <div class="calc-row calc-total"><span>Crawlspace pipes</span><span>Cold climates</span></div>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+</BaseLayout>
+
+<script>
+  const sections = ['compare','water','fire','power','climate','cameras','failure','checklist']
+  const tabs = document.querySelectorAll('.section-tabs .tab')
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        tabs.forEach(t => t.classList.remove('active'))
+        const activeTab = document.querySelector(`.tab[href="#${entry.target.id}"]`)
+        if (activeTab) activeTab.classList.add('active')
+      }
+    })
+  }, { rootMargin: '-20% 0px -70% 0px' })
+  sections.forEach(id => { const el = document.getElementById(id); if (el) observer.observe(el) })
+</script>
+
+<style>
+  .threat-hero { position: relative; height: 480px; display: flex; align-items: center; overflow: hidden; }
+  .hero-img-wrap { position: absolute; inset: 0; z-index: 0; }
+  .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+  .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, rgba(13,35,56,0.92) 0%, rgba(13,35,56,0.65) 60%, rgba(13,35,56,0.3) 100%); }
+  .hero-content { position: relative; z-index: 1; max-width: 640px; color: white; }
+  .hero-label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A8CEDF; margin-bottom: 16px; }
+  .hero-content h1 { color: white; margin-bottom: 20px; }
+  .hero-sub { font-size: 1.05rem; color: rgba(255,255,255,0.8); line-height: 1.7; margin-bottom: 32px; max-width: 560px; }
+  .hero-actions { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
+  .btn-text { color: rgba(255,255,255,0.75); font-size: 0.9rem; font-weight: 500; text-decoration: none; transition: color 0.15s; }
+  .btn-text:hover { color: white; text-decoration: none; }
+
+  .key-facts { background: var(--off-white); border-bottom: 1px solid var(--border); padding: 24px 0; }
+  .facts-row { display: flex; align-items: center; }
+  .fact { flex: 1; padding: 0 32px; }
+  .fact:first-child { padding-left: 0; }
+  .fact-value { font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
+  .fact-label { font-size: 0.78rem; color: var(--text-light); }
+  .fact-divider { width: 2px; height: 36px; background: var(--border); flex-shrink: 0; }
+
+  .section-tabs { background: white; border-bottom: 2px solid var(--border); position: sticky; top: 68px; z-index: 90; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .tabs-row { display: flex; overflow-x: auto; scrollbar-width: none; }
+  .tabs-row::-webkit-scrollbar { display: none; }
+  .tab { font-size: 0.82rem; font-weight: 500; color: var(--text-mid); padding: 14px 20px; white-space: nowrap; text-decoration: none; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all 0.15s; border-right: 1.5px solid var(--border); }
+  .tab:last-child { border-right: none; }
+  .tab:hover { color: var(--sky); background: var(--sky-light); text-decoration: none; }
+  .tab.active { color: var(--sky); border-bottom-color: var(--sky); font-weight: 600; background: var(--sky-light); }
+
+  .page-layout { display: grid; grid-template-columns: 1fr 280px; gap: 56px; padding-top: 48px; padding-bottom: 96px; align-items: start; }
+  .lead { font-size: 1.05rem; line-height: 1.8; color: var(--text-mid); margin-bottom: 32px; }
+  .article p { color: #333; line-height: 1.75; margin-bottom: 16px; }
+  .article h3 { margin-top: 24px; margin-bottom: 10px; color: var(--navy); }
+
+  .part-heading { display: flex; align-items: center; gap: 16px; margin: 48px 0 24px; padding-bottom: 16px; border-bottom: 2px solid var(--navy); scroll-margin-top: 140px; }
+  .part-number { background: var(--navy); color: white; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 4px; white-space: nowrap; }
+  .part-title { font-size: 1.4rem; color: var(--navy); margin: 0; }
+
+  .section-block { margin-top: 48px; padding-top: 48px; border-top: 1px solid var(--border); scroll-margin-top: 140px; }
+  .section-block h2 { color: var(--navy); margin-bottom: 20px; font-size: 1.4rem; }
+
+  .compare-table { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 0.88rem; }
+  .compare-table th { background: var(--navy); color: white; padding: 10px 14px; text-align: left; font-weight: 600; }
+  .compare-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+  .compare-table tr:hover td { background: var(--sky-light); }
+  .row-highlight td { background: var(--sky-light); font-weight: 500; }
+
+  .callout { background: var(--orange-bg); border-left: 3px solid var(--orange); border-radius: 0 6px 6px 0; padding: 14px 18px; margin: 24px 0; font-size: 0.9rem; line-height: 1.6; color: #5a3010; }
+  .callout-red { background: #FDF0EF; border-color: #C0392B; color: #5a1010; }
+  .callout-blue { background: var(--sky-light); border-color: var(--sky); color: var(--navy); }
+
+  .check-list { list-style: none; padding: 0; margin: 16px 0 20px; display: flex; flex-direction: column; gap: 8px; }
+  .check-list li { font-size: 0.9rem; color: #333; line-height: 1.65; padding-left: 24px; position: relative; }
+  .check-list li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--sky); font-weight: 700; }
+
+  .action-list { list-style: none; padding: 0; margin: 20px 0; display: flex; flex-direction: column; gap: 8px; }
+  .action-list li { padding: 10px 14px 10px 38px; background: var(--off-white); border: 1px solid var(--border); border-radius: 5px; font-size: 0.9rem; position: relative; }
+  .action-list li::before { content: "⚠"; position: absolute; left: 12px; color: #C0392B; }
+
+  .step-list { list-style: none; counter-reset: step; padding: 0; margin: 20px 0; display: flex; flex-direction: column; gap: 10px; }
+  .step-list li { counter-increment: step; position: relative; padding: 12px 16px 12px 48px; background: var(--off-white); border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; line-height: 1.6; color: #333; }
+  .step-list li::before { content: counter(step); position: absolute; left: 14px; top: 12px; width: 22px; height: 22px; background: var(--navy); color: white; border-radius: 50%; font-size: 0.72rem; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+
+  .checklist-cta { margin-top: 56px; padding: 40px; background: var(--sky-light); border: 1px solid #B8D8EE; border-radius: 8px; border-left: 4px solid var(--sky); scroll-margin-top: 140px; }
+  .checklist-cta h2 { font-size: 1.3rem; margin-bottom: 10px; }
+  .checklist-cta p { font-size: 0.9rem; color: var(--text-mid); margin-bottom: 20px; }
+  .cta-form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .cta-form input { padding: 10px 14px; border: 1.5px solid var(--border); border-radius: 4px; font-size: 0.9rem; min-width: 240px; font-family: var(--font-sans); }
+
+  .sidebar { position: sticky; top: 120px; display: flex; flex-direction: column; gap: 16px; }
+  .sb-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+  .sb-card h4 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); margin-bottom: 14px; font-weight: 600; }
+  .sb-card a { display: block; font-size: 0.85rem; padding: 7px 0; border-bottom: 1px solid #f0f4f7; color: var(--sky); }
+  .sb-card a:last-child { border-bottom: none; }
+  .sb-card p { font-size: 0.85rem; color: var(--text-mid); line-height: 1.5; }
+  .sb-alert { border-top: 3px solid var(--orange); }
+  .sb-alert h4 { color: var(--orange); }
+  .sb-section-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); font-weight: 600; padding: 0 4px; }
+  .sb-visual-card { display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--border); text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
+  .sb-visual-card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); text-decoration: none; }
+  .sb-visual-img { position: relative; height: 90px; overflow: hidden; }
+  .sb-visual-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+  .sb-visual-card:hover .sb-visual-img img { transform: scale(1.05); }
+  .sb-visual-overlay { position: absolute; inset: 0; background: rgba(13,35,56,0.45); }
+  .sb-visual-label { background: var(--navy); color: white; font-size: 0.82rem; font-weight: 600; padding: 10px 14px; }
+  .quick-calc { display: flex; flex-direction: column; gap: 6px; }
+  .calc-row { display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-mid); padding: 4px 0; border-bottom: 1px solid #f0f4f7; }
+  .calc-total { font-weight: 700; color: var(--navy); border-bottom: none; padding-top: 8px; }
+</style>

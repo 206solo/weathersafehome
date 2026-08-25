@@ -1,5 +1,5 @@
 ---
-import { DISCLOSURE } from '../lib/affiliates.js'
+import { DISCLOSURE, AMAZON_DISCLOSURE, DISCLOSURE_REST } from '../lib/affiliates.js'
 const { title, description } = Astro.props
 const currentPath = Astro.url.pathname
 ---
@@ -75,7 +75,7 @@ const currentPath = Astro.url.pathname
 
   <div class="disclosure-bar">
     <div class="container">
-      {DISCLOSURE}
+      <strong>{AMAZON_DISCLOSURE}</strong> {DISCLOSURE_REST}
     </div>
   </div>
 
@@ -86,9 +86,9 @@ const currentPath = Astro.url.pathname
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <div class="footer-logo">WeatherSafeHome.org</div>
+        <div class="footer-logo">WeatherSafeHome.com</div>
         <p>Helping homeowners prepare for and protect against weather perils.</p>
-        <p class="footer-disclosure">{DISCLOSURE}</p>
+        <p class="footer-disclosure"><strong>{AMAZON_DISCLOSURE}</strong> {DISCLOSURE_REST}</p>
       </div>
       <div class="footer-links">
         <div>
@@ -121,7 +121,7 @@ const currentPath = Astro.url.pathname
     </div>
     <div class="footer-bottom">
       <div class="container">
-        © {new Date().getFullYear()} WeatherSafeHome.org · All rights reserved
+        © {new Date().getFullYear()} WeatherSafeHome.com · All rights reserved
       </div>
     </div>
   </footer>
@@ -272,10 +272,13 @@ const currentPath = Astro.url.pathname
   .disclosure-bar {
     background: var(--off-white);
     border-bottom: 1px solid var(--border);
-    font-size: 0.72rem;
-    color: var(--text-light);
-    padding: 7px 0;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--text-mid);
+    padding: 10px 0;
   }
+
+  .disclosure-bar strong { color: var(--navy); font-weight: 700; }
 
   /* ── Footer ── */
   .site-footer {
@@ -306,7 +309,8 @@ const currentPath = Astro.url.pathname
 
   .footer-disclosure {
     margin-top: 16px !important;
-    font-size: 0.72rem !important;
+    font-size: 0.78rem !important;
+    color: rgba(255,255,255,0.75) !important;
     border-top: 1px solid rgba(255,255,255,0.1);
     padding-top: 16px;
   }

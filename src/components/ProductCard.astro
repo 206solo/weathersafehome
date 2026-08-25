@@ -1,5 +1,5 @@
 ---
-const { name, asin, url, price, store = 'amazon', img, desc, badge } = Astro.props
+const { name, asin, url, store = 'amazon', img, desc, badge } = Astro.props
 import { amazonLink } from '../lib/affiliates.js'
 
 let href = url
@@ -11,9 +11,8 @@ if (store === 'amazon' && asin) href = amazonLink(asin)
   <h4>{name}</h4>
   {desc && <p>{desc}</p>}
   <div class="card-footer">
-    <span class="price">{price}</span>
     <a href={href} target="_blank" rel="nofollow sponsored noopener" class="buy-btn">
-      View on {store === 'amazon' ? 'Amazon' : store === 'homedepot' ? 'Home Depot' : store === 'lowes' ? 'Lowe\'s' : store} →
+      Check price on {store === 'amazon' ? 'Amazon' : store === 'homedepot' ? 'Home Depot' : store === 'lowes' ? 'Lowe\'s' : store} →
     </a>
   </div>
 </div>
@@ -63,16 +62,9 @@ if (store === 'amazon' && asin) href = amazonLink(asin)
   .card-footer {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 10px;
-    margin-top: 4px;
+    margin-top: 8px;
     flex-wrap: wrap;
-  }
-
-  .price {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--navy);
   }
 
   .buy-btn {
@@ -85,6 +77,8 @@ if (store === 'amazon' && asin) href = amazonLink(asin)
     text-decoration: none;
     white-space: nowrap;
     transition: background 0.15s;
+    width: 100%;
+    text-align: center;
   }
 
   .buy-btn:hover {
