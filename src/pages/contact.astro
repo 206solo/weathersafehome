@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro'
+---
+
+<BaseLayout
+  title="Contact Us"
+  description="Get in touch with WeatherSafeHome — questions, corrections, product suggestions, or partnership inquiries."
+>
+
+  <section class="legal-header">
+    <div class="container">
+      <div class="hero-label">Get In Touch</div>
+      <h1>Contact WeatherSafeHome</h1>
+      <p class="effective">Questions, corrections, product suggestions, or partnership inquiries — we read every message.</p>
+    </div>
+  </section>
+
+  <div class="container contact-layout">
+
+    <div class="contact-main">
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hp-field"><label>Leave this field empty: <input name="bot-field" /></label></p>
+
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="field">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject">
+            <option>General question</option>
+            <option>Correction or factual error</option>
+            <option>Product suggestion</option>
+            <option>Partnership or advertising</option>
+            <option>Privacy request (access or deletion)</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="7" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send Message</button>
+
+        <p class="form-note">
+          We use the information you submit here only to respond to your inquiry. See our
+          <a href="/privacy-policy">Privacy Policy</a> for details on how we handle your information.
+        </p>
+      </form>
+    </div>
+
+    <aside class="contact-sidebar">
+
+      <div class="sb-card">
+        <h4>Email Us Directly</h4>
+        <p>Prefer email? Reach us at:</p>
+        <a href="mailto:info@weathersafehome.com" class="sb-email">info@weathersafehome.com</a>
+      </div>
+
+      <div class="sb-card">
+        <h4>Privacy Requests</h4>
+<p>To request access to, correction of, or deletion of your personal information, email us or use the form with “Privacy request” selected.</p>
+        <a href="/privacy-policy" class="sb-link">Read our Privacy Policy →</a>
+      </div>
+
+      <div class="sb-card">
+        <h4>Corrections</h4>
+        <p>Found something inaccurate or out of date? Tell us which page and what's wrong — we update our guides when standards change.</p>
+      </div>
+
+      <div class="sb-card sb-alert">
+        <h4>In an Emergency</h4>
+        <p>We are not an emergency service. If you are in immediate danger, call 911 or your local emergency number, and follow instructions from local officials and the National Weather Service.</p>
+      </div>
+
+    </aside>
+
+  </div>
+
+</BaseLayout>
+
+<style>
+  .legal-header { background: var(--navy); color: white; padding: 56px 0 48px; }
+  .legal-header .hero-label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A8CEDF; margin-bottom: 14px; }
+  .legal-header h1 { color: white; margin-bottom: 12px; }
+  .legal-header .effective { font-size: 0.95rem; color: rgba(255,255,255,0.75); margin: 0; max-width: 620px; line-height: 1.6; }
+
+  .contact-layout { display: grid; grid-template-columns: 1fr 300px; gap: 56px; padding: 56px 0 96px; align-items: start; }
+
+  .contact-form { max-width: 560px; }
+  .field { margin-bottom: 20px; }
+  .field label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+  .field input, .field textarea, .field select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-family: var(--font-sans);
+    color: var(--text);
+    background: white;
+  }
+  .field input:focus, .field textarea:focus, .field select:focus { outline: none; border-color: var(--sky); }
+  .field textarea { resize: vertical; line-height: 1.6; }
+
+  .hp-field { position: absolute; left: -9999px; }
+
+  .form-note { font-size: 0.8rem; color: var(--text-mid); line-height: 1.6; margin-top: 18px; max-width: 480px; }
+
+  .contact-sidebar { position: sticky; top: 100px; display: flex; flex-direction: column; gap: 16px; }
+  .sb-card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+  .sb-card h4 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-light); margin-bottom: 12px; font-weight: 600; }
+  .sb-card p { font-size: 0.85rem; color: var(--text-mid); line-height: 1.6; margin: 0; }
+  .sb-email { display: block; margin-top: 10px; font-size: 0.9rem; font-weight: 600; color: var(--sky); }
+  .sb-link { display: block; margin-top: 12px; font-size: 0.82rem; color: var(--sky); line-height: 1.5; }
+  .sb-alert { border-top: 3px solid var(--orange); }
+  .sb-alert h4 { color: var(--orange); }
+
+  @media (max-width: 900px) {
+    .contact-layout { grid-template-columns: 1fr; gap: 40px; }
+    .contact-sidebar { position: static; }
+  }
+</style>

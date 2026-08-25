@@ -1,0 +1,58 @@
+---
+import BaseLayout from './BaseLayout.astro'
+const { title, description, heading, effective } = Astro.props
+---
+
+<BaseLayout title={title} description={description}>
+
+  <section class="legal-header">
+    <div class="container">
+      <div class="hero-label">Legal</div>
+      <h1>{heading}</h1>
+      {effective && <p class="effective">Effective Date: {effective}</p>}
+    </div>
+  </section>
+
+  <div class="container legal-layout">
+    <article class="legal-body">
+      <slot />
+    </article>
+  </div>
+
+</BaseLayout>
+
+<style is:global>
+  .legal-header { background: var(--navy); color: white; padding: 56px 0 48px; }
+  .legal-header .hero-label { font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A8CEDF; margin-bottom: 14px; }
+  .legal-header h1 { color: white; margin-bottom: 12px; }
+  .legal-header .effective { font-size: 0.9rem; color: rgba(255,255,255,0.7); margin: 0; }
+
+  .legal-layout { padding: 56px 0 96px; }
+  .legal-body { max-width: 760px; }
+
+  .legal-body h2 { font-size: 1.2rem; color: var(--navy); margin: 40px 0 14px; }
+  .legal-body h2:first-child { margin-top: 0; }
+  .legal-body h3 { font-size: 0.98rem; color: var(--navy); margin: 24px 0 8px; }
+  .legal-body p { color: #333; line-height: 1.8; margin-bottom: 16px; }
+  .legal-body ul { margin: 0 0 16px; padding-left: 22px; }
+  .legal-body li { color: #333; line-height: 1.8; margin-bottom: 8px; }
+  .legal-body a { color: var(--sky); word-break: break-word; }
+
+  .legal-body .legal-intro {
+    background: var(--off-white);
+    border-left: 3px solid var(--sky);
+    border-radius: 0 6px 6px 0;
+    padding: 20px 24px;
+    margin-bottom: 36px;
+  }
+  .legal-body .legal-intro p:last-child { margin-bottom: 0; }
+
+  .legal-body .legal-callout {
+    background: var(--orange-bg);
+    border-left: 3px solid var(--orange);
+    border-radius: 0 6px 6px 0;
+    padding: 20px 24px;
+    margin: 28px 0;
+  }
+  .legal-body .legal-callout p:last-child { margin-bottom: 0; }
+</style>

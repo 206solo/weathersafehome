@@ -30,8 +30,12 @@ export function lowesLink(url) {
 }
 
 // ── Disclosure text ────────────────────────────
-// Used in the footer and article pages automatically.
-export const DISCLOSURE = `WeatherSafeHome.org participates in affiliate 
-advertising programs including the Amazon Services LLC Associates Program. 
-We may earn a commission when you click our links and make a purchase, 
-at no extra cost to you. All recommendations are our own.`
+// AMAZON_DISCLOSURE is required verbatim by the Associates Operating
+// Agreement Sec. 5 ("Identifying Yourself as an Associate") and must appear
+// clearly and prominently on every page carrying a Special Link.
+// Do not paraphrase, abbreviate, or de-emphasize it.
+export const AMAZON_DISCLOSURE = `As an Amazon Associate I earn from qualifying purchases.`
+
+export const DISCLOSURE_REST = `WeatherSafeHome.com is a participant in the Amazon Services LLC Associates Program and other affiliate advertising programs. We may earn a commission when you click our links and make a purchase, at no extra cost to you. All recommendations are our own.`
+
+export const DISCLOSURE = `${AMAZON_DISCLOSURE} ${DISCLOSURE_REST}`
