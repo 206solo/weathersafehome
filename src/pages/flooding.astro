@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import { HERO_DISCLOSURE } from '../lib/affiliates.js'
 import ProductCard from '../components/ProductCard.astro'
 ---
 
@@ -21,6 +22,7 @@ import ProductCard from '../components/ProductCard.astro'
         Flooding is the most common and costly natural disaster in the US — and your
         homeowner's insurance doesn't cover it. Here's what you need to know before the water rises.
       </p>
+      <p class="hero-disclosure">{HERO_DISCLOSURE}</p>
       <div class="hero-actions">
         <a href="#protect" class="btn btn-primary">Protect Your Home</a>
         <a href="#checklist" class="btn btn-secondary">Get the Free Checklist</a>

@@ -39,3 +39,6 @@ export const AMAZON_DISCLOSURE = `As an Amazon Associate I earn from qualifying 
 export const DISCLOSURE_REST = `WeatherSafeHome.com is a participant in the Amazon Services LLC Associates Program and other affiliate advertising programs. We may earn a commission when you click our links and make a purchase, at no extra cost to you. All recommendations are our own.`
 
 export const DISCLOSURE = `${AMAZON_DISCLOSURE} ${DISCLOSURE_REST}`
+
+// Short disclosure shown in page heroes, above the calls to action
+export const HERO_DISCLOSURE = `Disclosure: We may earn a commission when you purchase through links on this page, at no additional cost to you.`

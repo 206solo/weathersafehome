@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import { HERO_DISCLOSURE } from '../lib/affiliates.js'
 import ProductCard from '../components/ProductCard.astro'
 ---
 
@@ -21,6 +22,7 @@ import ProductCard from '../components/ProductCard.astro'
         A FEMA-rated safe room is the only guaranteed protection from an EF5 tornado.
         Here's how they work, what they cost, and how to choose the right one for your home.
       </p>
+      <p class="hero-disclosure">{HERO_DISCLOSURE}</p>
       <div class="hero-actions">
         <a href="#types" class="btn btn-primary">Compare Options</a>
         <a href="#cost" class="btn btn-secondary">Understand the Costs</a>

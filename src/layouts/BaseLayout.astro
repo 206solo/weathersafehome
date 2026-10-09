@@ -1,5 +1,5 @@
 ---
-import { DISCLOSURE, AMAZON_DISCLOSURE, DISCLOSURE_REST } from '../lib/affiliates.js'
+import { AMAZON_DISCLOSURE, DISCLOSURE_REST } from '../lib/affiliates.js'
 const { title, description } = Astro.props
 const currentPath = Astro.url.pathname
 const posthogKey = import.meta.env.PUBLIC_POSTHOG_KEY
@@ -89,12 +89,6 @@ const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST || 'https://us.i.posthog
       </nav>
     </div>
   </header>
-
-  <div class="disclosure-bar">
-    <div class="container">
-      <strong>{AMAZON_DISCLOSURE}</strong> {DISCLOSURE_REST}
-    </div>
-  </div>
 
   <main>
     <slot />
@@ -293,17 +287,14 @@ const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST || 'https://us.i.posthog
   .nav-dropdown-menu a:last-child { border-bottom: none; }
   .nav-dropdown-menu a:hover { background: var(--sky-light); color: var(--sky); }
 
-  /* ── Disclosure bar ── */
-  .disclosure-bar {
-    background: var(--off-white);
-    border-bottom: 1px solid var(--border);
-    font-size: 0.8rem;
+  /* ── Hero disclosure ── */
+  .hero-disclosure {
+    font-size: 0.75rem;
     line-height: 1.5;
-    color: var(--text-mid);
-    padding: 10px 0;
+    color: rgba(255,255,255,0.6);
+    max-width: 560px;
+    margin: -16px 0 28px;
   }
-
-  .disclosure-bar strong { color: var(--navy); font-weight: 700; }
 
   /* ── Footer ── */
   .site-footer {

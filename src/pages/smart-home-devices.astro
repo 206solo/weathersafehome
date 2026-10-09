@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import { HERO_DISCLOSURE } from '../lib/affiliates.js'
 ---
 
 <BaseLayout
@@ -21,6 +22,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
         the handful of devices that catch a problem while it's still cheap to fix, and the
         honest limits of every one of them.
       </p>
+      <p class="hero-disclosure">{HERO_DISCLOSURE}</p>
       <div class="hero-actions">
         <a href="#compare" class="btn btn-primary">Compare Devices</a>
         <a href="#failure" class="btn btn-secondary">What Fails in an Outage</a>

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import { HERO_DISCLOSURE } from '../lib/affiliates.js'
 import CardIcon from '../components/CardIcon.astro'
 import { getEntry } from 'astro:content'
 
@@ -29,6 +30,7 @@ const linkLabel = (key: string) => key === 'flood' ? 'flooding' : key.replace('-
       <p class="hero-eyebrow">{hero.eyebrow}</p>
       <h1>{headlineParts[0]}<br/>{headlineParts[1]}</h1>
       <p class="hero-sub">{hero.subheading}</p>
+      <p class="hero-disclosure">{HERO_DISCLOSURE}</p>
       <div class="hero-ctas">
         <a href={hero.ctaPrimary.link} class="btn btn-primary">{hero.ctaPrimary.text}</a>
         <a href={hero.ctaSecondary.link} class="btn btn-secondary">{hero.ctaSecondary.text}</a>

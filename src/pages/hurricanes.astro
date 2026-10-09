@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import { HERO_DISCLOSURE } from '../lib/affiliates.js'
 import ProductCard from '../components/ProductCard.astro'
 ---
 
@@ -21,6 +22,7 @@ import ProductCard from '../components/ProductCard.astro'
         The decisions that protect your home are made weeks before landfall — not hours before.
         Here's what you need to know, and what you need to have.
       </p>
+      <p class="hero-disclosure">{HERO_DISCLOSURE}</p>
       <div class="hero-actions">
         <a href="#protect" class="btn btn-primary">Protect Your Home</a>
         <a href="#checklist" class="btn btn-secondary">Get the Free Checklist</a>
