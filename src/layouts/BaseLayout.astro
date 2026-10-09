@@ -498,6 +498,8 @@ const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST || 'https://us.i.posthog
     .site main :is(.sidebar, .about-sidebar, .contact-sidebar) { position: static; }
 
     .site main :is(.hero, .threat-hero) { height: auto; min-height: 380px; padding: 56px 0; }
+    /* Keep the house in the homepage hero photo in frame on narrow screens */
+    .site main .hero .hero-img { object-position: 80% center; }
 
     .site main :is(.facts-row, .stats-row) { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 24px; }
     .site main :is(.fact, .stat) { padding: 0; }

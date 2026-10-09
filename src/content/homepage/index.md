@@ -7,8 +7,8 @@ hero:
   eyebrow: "Trusted Home Weather Protection Guides"
   headline: "Is Your Home Ready|for the Next Storm?"
   subheading: "Expert guides, honest product reviews, and free checklists to help you protect your home from hurricanes, floods, wildfires, and more."
-  image: "https://images.unsplash.com/photo-1504608524841-42584120d26f?w=1600&q=80&fit=crop"
-  imageAlt: "Storm approaching a neighborhood"
+  image: "https://images.unsplash.com/photo-1748701821466-0b9f8bf839ac?w=1600&q=80&fit=crop"
+  imageAlt: "Storm clouds approaching a house"
   ctaPrimary:
     text: "Get Free Checklists"
     link: "/free-checklists"
