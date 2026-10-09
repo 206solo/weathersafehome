@@ -45,6 +45,16 @@ const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST || 'https://us.i.posthog
     </script>
   )}
   <!-- End PostHog -->
+
+  <!-- Lasso Affiliate Link Code -->
+  <script is:inline type="text/javascript" src="https://js.codedrink.com/snippet.min.js" defer></script>
+  <script is:inline type="text/javascript" defer>
+    document.addEventListener("LSAFFEventLoaded",
+      function(e) {
+        e.detail.init();
+      });
+  </script>
+  <!-- End Lasso Affiliate Link Code -->
 </head>
 
 <body class="site">
