@@ -47,18 +47,21 @@ const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST || 'https://us.i.posthog
   <!-- End PostHog -->
 </head>
 
-<body>
+<body class="site">
 
   <header class="site-header">
     <div class="container">
       <a href="/" class="logo">
         <span class="logo-weather">Weather</span><span class="logo-safe">Safe</span><span class="logo-home">Home</span>
       </a>
-      <nav class="main-nav">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
         <a href="/free-checklists">Free Checklists</a>
 
         <div class="nav-dropdown">
-          <span class="nav-parent">Threats ▾</span>
+          <span class="nav-parent">Threats <span class="nav-caret">▾</span></span>
           <div class="nav-dropdown-menu">
             <a href="/hurricanes">Hurricanes</a>
             <a href="/tornadoes">Tornadoes</a>
@@ -69,7 +72,7 @@ const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST || 'https://us.i.posthog
         </div>
 
         <div class="nav-dropdown">
-          <span class="nav-parent">Home Protection ▾</span>
+          <span class="nav-parent">Home Protection <span class="nav-caret">▾</span></span>
           <div class="nav-dropdown-menu">
             <a href="/generators">Generators</a>
             <a href="/insurance">Insurance</a>
@@ -141,6 +144,14 @@ const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST || 'https://us.i.posthog
   </footer>
 
   <script>
+    const header = document.querySelector('.site-header')
+    const navToggle = document.querySelector('.nav-toggle')
+    navToggle?.addEventListener('click', () => {
+      const open = header.classList.toggle('nav-open')
+      navToggle.setAttribute('aria-expanded', String(open))
+      navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
+    })
+
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
         if (!user) {
@@ -396,4 +407,135 @@ const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST || 'https://us.i.posthog
   h1 { font-size: clamp(1.75rem, 3.5vw, 2.6rem); line-height: 1.2; font-weight: 700; }
   h2 { font-size: clamp(1.3rem, 2.5vw, 1.75rem); line-height: 1.3; font-weight: 700; }
   h3 { font-size: 1.1rem; line-height: 1.4; font-weight: 600; }
+
+  /* ── Mobile ── */
+  body { overflow-x: clip; }
+
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    margin-right: -10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav-toggle span {
+    display: block;
+    height: 2px;
+    background: #fff;
+    border-radius: 1px;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+
+  .nav-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-open .nav-toggle span:nth-child(2) { opacity: 0; }
+  .nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  @media (max-width: 900px) {
+    .nav-toggle { display: flex; }
+
+    .main-nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0;
+      padding: 8px 20px 20px;
+      background: var(--navy);
+      border-bottom: 3px solid var(--orange);
+      max-height: calc(100vh - 68px);
+      overflow-y: auto;
+    }
+
+    .nav-open .main-nav { display: flex; }
+
+    .main-nav > a { font-size: 1rem; padding: 12px 8px; }
+
+    .nav-parent,
+    .nav-dropdown:hover .nav-parent {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--orange);
+      background: none;
+      cursor: default;
+      padding: 16px 8px 6px;
+    }
+
+    .nav-caret { display: none; }
+
+    .nav-dropdown-menu {
+      display: block;
+      position: static;
+      min-width: 0;
+      margin: 0;
+      padding: 0;
+      background: none;
+      border: none;
+      box-shadow: none;
+    }
+
+    .nav-dropdown-menu a {
+      color: rgba(255,255,255,0.85);
+      font-size: 1rem;
+      padding: 10px 8px 10px 16px;
+      border-bottom: none;
+      border-radius: 4px;
+    }
+
+    .nav-dropdown-menu a:hover { background: rgba(255,255,255,0.1); color: #fff; }
+
+    .footer-inner { grid-template-columns: 1fr; gap: 40px; }
+
+    /*
+      Page-level overrides. Page styles are scoped by Astro as
+      `.class[data-astro-cid-*]`, so these are prefixed with `.site main`
+      to outrank them.
+    */
+
+    /* Two-column layouts stack; the sidebar follows the main content */
+    .site main :is(.page-layout, .about-layout, .contact-layout) { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+    .site main :is(.sidebar, .about-sidebar, .contact-sidebar) { position: static; }
+
+    .site main :is(.hero, .threat-hero) { height: auto; min-height: 380px; padding: 56px 0; }
+
+    .site main :is(.facts-row, .stats-row) { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 24px; }
+    .site main :is(.fact, .stat) { padding: 0; }
+    .site main :is(.fact-divider, .stat-div) { display: none; }
+
+    .site main :is(.card-grid, .card-grid-3, .article-grid, .product-row, .sizing-cards, .shelter-grid) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .site main :is(.risk-grid, .coverage-grid, .type-grid) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    .site main .compare-table { display: block; overflow-x: auto; }
+  }
+
+  @media (max-width: 640px) {
+    .container { padding: 0 20px; }
+    .footer-inner { padding: 48px 20px 40px; }
+    .footer-links { grid-template-columns: repeat(2, 1fr); gap: 28px 24px; }
+    .footer-bottom { padding: 16px 20px; }
+
+    .site main :is(.card-grid, .card-grid-3, .article-grid, .product-row, .product-row-2, .sizing-cards, .shelter-grid, .two-up, .zone-grid, .values-grid, .checklist-grid) { grid-template-columns: minmax(0, 1fr); }
+
+    .site main .part-heading { flex-wrap: wrap; gap: 8px 12px; }
+    .site main .product-block-header { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .site main .tl-item { gap: 14px; }
+    .site main .cl-card { padding: 20px; gap: 14px; }
+    .site main .cl-body { min-width: 0; }
+    .site main .cl-card-featured { grid-column: auto; }
+    .site main .coverage-badge { white-space: normal; max-width: calc(100% - 24px); }
+
+    .site main :is(.cta-form, .email-form, .cl-form) input { min-width: 0; flex: 1 1 100%; }
+    .site main .email-text { min-width: 0; }
+    .site main :is(.cta-form, .email-form, .cl-form) .btn { flex: 1 1 100%; text-align: center; }
+  }
 </style>
