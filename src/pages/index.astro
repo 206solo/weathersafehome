@@ -9,6 +9,18 @@ const { meta, hero, stats, threatsSection, productsSection, emailCapture } = hom
 
 const headlineParts = hero.headline.split('|');
 const linkLabel = (key: string) => key === 'flood' ? 'flooding' : key.replace('-', ' ');
+
+// CMS images may be Unsplash URLs or local uploads; only Unsplash URLs can be resized
+const isUnsplash = (src: string) => src.startsWith('https://images.unsplash.com/');
+const sized = (src: string, w: number, q: number) => {
+  if (!isUnsplash(src)) return src;
+  const [base, query = ''] = src.split('?');
+  const keep = query.split('&').filter((p) => p && !/^(w|q|fit|auto)=/.test(p));
+  return `${base}?${[...keep, `w=${w}`, `q=${q}`, 'fit=crop', 'auto=format'].join('&')}`;
+};
+const heroSrcset = isUnsplash(hero.image)
+  ? [800, 1200, 1600].map((w) => `${sized(hero.image, w, 70)} ${w}w`).join(', ')
+  : undefined;
 ---
 
 <BaseLayout
@@ -20,7 +32,10 @@ const linkLabel = (key: string) => key === 'flood' ? 'flooding' : key.replace('-
   <section class="hero">
     <div class="hero-img-wrap">
       <img
-        src={hero.image}
+        src={sized(hero.image, 1200, 70)}
+        srcset={heroSrcset}
+        sizes={heroSrcset && '100vw'}
+        fetchpriority="high"
         alt={hero.imageAlt}
         class="hero-img"
       />
@@ -65,7 +80,7 @@ const linkLabel = (key: string) => key === 'flood' ? 'flooding' : key.replace('-
         {threatsSection.cards.map((card) => (
           <a href={card.link} class="nav-card">
             <div class="nav-card-img-wrap">
-              <img src={card.image} alt={card.imageAlt} />
+              <img src={sized(card.image, 600, 75)} loading="lazy" alt={card.imageAlt} />
               <div class="nav-card-overlay"></div>
               <CardIcon iconKey={card.iconKey} />
             </div>
@@ -92,7 +107,7 @@ const linkLabel = (key: string) => key === 'flood' ? 'flooding' : key.replace('-
         {productsSection.cards.map((card) => (
           <a href={card.link} class="nav-card nav-card-sm">
             <div class="nav-card-img-wrap">
-              <img src={card.image} alt={card.imageAlt} />
+              <img src={sized(card.image, 600, 75)} loading="lazy" alt={card.imageAlt} />
               <div class="nav-card-overlay"></div>
               <CardIcon iconKey={card.iconKey} size="small" />
             </div>
