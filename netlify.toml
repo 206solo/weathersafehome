@@ -5,22 +5,22 @@
 # ── Redirect old Squarespace URLs ──────────────────────────
 [[redirects]]
   from = "/protecting-your-home-from-flood-and-wind-damage/"
-  to   = "/flooding"
+  to   = "/flooding/"
   status = 301
 
 [[redirects]]
   from = "/considering-climate-risks-in-new-home-purchases/"
-  to   = "/articles"
+  to   = "/articles/"
   status = 301
 
 [[redirects]]
   from = "/top-10-steps-to-making-your-home-safer-from-wildfires/"
-  to   = "/wildfires"
+  to   = "/wildfires/"
   status = 301
 
 [[redirects]]
   from = "/our-story/"
-  to   = "/about"
+  to   = "/about/"
   status = 301
 
 [[redirects]]

@@ -45,7 +45,7 @@ collections:
                 widget: "object"
                 fields:
                   - { label: "Button Text", name: "text", widget: "string" }
-                  - { label: "Link", name: "link", widget: "string", hint: "e.g. /free-checklists" }
+                  - { label: "Link", name: "link", widget: "string", hint: "e.g. /free-checklists/" }
               - label: "Secondary CTA Button"
                 name: "ctaSecondary"
                 widget: "object"
