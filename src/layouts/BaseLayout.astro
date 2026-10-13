@@ -13,8 +13,22 @@ const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST || 'https://us.i.posthog
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content={description} />
   <title>{title} | Weather Safe Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet" />
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <!-- Netlify Identity: only load for CMS invite/recovery links, so it doesn't block normal visitors -->
+  <script is:inline>
+  if (/(invite|recovery|confirmation|email_change)_token=/.test(location.hash)) {
+    var s = document.createElement('script');
+    s.src = 'https://identity.netlify.com/v1/netlify-identity-widget.js';
+    s.onload = function () {
+      // The widget may have already fired 'init' by the time onload runs, so don't wait for it
+      if (!window.netlifyIdentity.currentUser()) window.netlifyIdentity.on('login', function () { document.location.href = '/admin/'; });
+    };
+    document.head.appendChild(s);
+  }
+  </script>
 
   <!-- Meta Pixel Code -->
   <script is:inline>
@@ -155,16 +169,6 @@ const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST || 'https://us.i.posthog
       navToggle.setAttribute('aria-expanded', String(open))
       navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
     })
-
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
   </script>
 
 </body>
