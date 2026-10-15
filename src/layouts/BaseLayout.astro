@@ -173,6 +173,35 @@ const posthogHost = import.meta.env.PUBLIC_POSTHOG_HOST || 'https://us.i.posthog
       navToggle.setAttribute('aria-expanded', String(open))
       navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
     })
+
+    // PostHog events (no-ops when analytics isn't loaded)
+    const track = (event: string, props: Record<string, unknown>, beacon = false) =>
+      (window as any).posthog?.capture?.(event, props, beacon ? { transport: 'sendBeacon' } : undefined)
+
+    // Outbound Amazon product clicks → "amazon_click". Delegated so every Amazon link,
+    // current or future, is covered; auxclick catches middle-click / open-in-new-tab.
+    const trackAmazon = (e: MouseEvent) => {
+      if (e.type === 'auxclick' && e.button !== 1) return
+      const link = (e.target as Element).closest<HTMLAnchorElement>('a[href*="amazon.com/dp/"], a[href*="amzn.to/"]')
+      if (!link) return
+      const card = link.closest('.product-card')
+      track('amazon_click', {
+        asin: link.href.match(/\/dp\/([A-Z0-9]{10})/i)?.[1],
+        product: card?.querySelector('h4')?.textContent?.trim() ?? link.textContent?.trim(),
+        page: location.pathname,
+        source: card ? 'product_card' : 'inline',
+      })
+    }
+    document.addEventListener('click', trackAmazon)
+    document.addEventListener('auxclick', trackAmazon)
+
+    // Netlify Forms post and navigate away, so send these by beacon.
+    // The submit event only fires once the browser's own validation passes.
+    document.addEventListener('submit', (e) => {
+      const form = e.target as HTMLFormElement
+      const name = form.getAttribute('name') ?? 'unknown'
+      track(name === 'contact' ? 'contact_submitted' : 'signup_submitted', { form: name, page: location.pathname }, true)
+    })
   </script>
 
 </body>
